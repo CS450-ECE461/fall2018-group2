@@ -1,5 +1,9 @@
 # Free Candy Group 2
 
+### Workflow
+
+##### GitHub [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) with an additional `development` branch
+
 ### Setup
 
 `npm install -g ember-cli`
