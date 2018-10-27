@@ -6,6 +6,8 @@
 
 `npm install -g @onehilltech/blueprint-cli`
 
+`npm install --save sendbird`
+
 ### Web Stack
 
 #### [EmberJS](https://www.emberjs.com/) Front-end
