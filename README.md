@@ -20,7 +20,13 @@ Creating a platform that helps people use their skills efficiently and be reward
 
 ### Workflow
 
-##### GitHub [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) with an additional `development` branch
+##### Issue Tracking
+
+For tracking issues through their life cycle we will use GitHub projects. We have a kanban board setup on in our Experiences project with five "stages": To Do, Emergency, Doing, Testing, Done.
+
+##### Version Control
+
+For our version control workflow we will use the [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) along with an additional `development` branch. That is, our Feature Branch Workflow will take place off of the development branch. Once multiple features are integrated into the development branch, the development branch will be integrated into the master branch for a release.
 
 ### Setup
 
