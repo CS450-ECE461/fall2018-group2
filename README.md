@@ -22,7 +22,7 @@ Creating a platform that helps people use their skills efficiently and be reward
 
 ##### Issue Tracking
 
-For tracking issues through their life cycle we will use GitHub projects. We have a kanban board setup on in our Experiences project with five "stages": To Do, Emergency, Doing, Testing, Done.
+For tracking issues through their life cycle we will use GitHub Projects. We have a kanban board setup in our `Experiences` Project with five stages for issues: To Do, Emergency, Doing, Testing, Done.
 
 ##### Version Control
 
