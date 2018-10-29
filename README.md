@@ -3,11 +3,11 @@
 ## The Problem
 
 When traveling to another city or staying in, people want more personal and unique experiences. What’s a better way to communicate than with the
-locals and community surrounding? Locals have a wonderful connection to the city they live in and know the ins and outs. Some are able to contribute more due to their acquired skills or personal belongings. Perhaps the host just wants another friend to tag along. Although I have gained inspiration from Airbnb’s experience feature, I do see that they lack the ability to let host and buyer to communicate to groups. Having group communication helps direct information out quicker to many people. Additionally, groups can communicate similarities of what is to be expected and get to know each other prior to events.
+locals and community surrounding? Locals have a wonderful connection to the city they live in and know the ins and outs. Some are able to contribute more due to their acquired skills or personal belongings. Perhaps the host just wants another friend to tag along. Although I have gained inspiration from Airbnb’s experience feature, I do see that they lack the ability to let host and buyer communicate to groups. Having group communication helps direct information out quicker to many people. Additionally, groups can communicate similarities of what is to be expected and get to know each other prior to events.
 
 ## The Solution
 
-Creating a platform that helps people use their skills efficiently and be rewarded for their contributions to the community will give newcomers rich and unique experiences. Creating an open feature of communication will help host analyze what their users intentions are and adjust accordingly.
+Creating a platform that helps people use their skills efficiently and be rewarded for their contributions to the community will give newcomers rich and unique experiences. Creating an open feature of communication will help hosts analyze what their users intentions are and adjust accordingly.
 
 ### Members / Roles
 
@@ -22,7 +22,7 @@ Creating a platform that helps people use their skills efficiently and be reward
 
 ##### Issue Tracking
 
-For tracking issues through their life cycle we will use GitHub Projects. We have a kanban board setup in our `Experiences` Project with five stages for issues: To Do, Emergency, Doing, Testing, Done.
+For tracking issues through their life cycle we will use GitHub Projects. We have a kanban board setup in our `Experiences` Project with five stages for issues: To Do, Emergency, In Progress, Testing, Done.
 
 ##### Version Control
 
