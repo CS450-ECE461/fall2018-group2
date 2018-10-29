@@ -11,12 +11,12 @@ Creating a platform that helps people use their skills efficiently and be reward
 
 ### Members / Roles
 
-|                                   | Zachary       | Seth       | Leo     | MJ     | Jose     |
-| --------------------------------- | :-----------: |:----------:| :------:| :----: | :------: |
-| Front-end Design (HTML & CSS)     | If needed     | Yes        | ?       | ?      | ?        |
-| Front-end Development             | Yes           | Yes        | ?       | ?      | ?        |
-| Back-end Development              | Yes           | If needed  | ?       | ?      | ?        |
-| Database (MongoDB)                | If needed     | No         | ?       | ?      | ?        |
+|                                   | Zachary       | Seth       | Leo     | MJ        | Jose     |
+| --------------------------------- | :-----------: |:----------:| :------:| :-------: | :------: |
+| Front-end Design (HTML & CSS)     | If needed     | Yes        | ?       | Yes       | ?        |
+| Front-end Development             | Yes           | Yes        | ?       | Yes       | ?        |
+| Back-end Development              | Yes           | If needed  | ?       | If needed | ?        |
+| Database (MongoDB)                | If needed     | No         | ?       | If needed | ?        |
 
 ### Workflow
 
