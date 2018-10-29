@@ -11,12 +11,16 @@ Creating a platform that helps people use their skills efficiently and be reward
 
 ### Members / Roles
 
-|                                   | Zachary       | Seth       | Leo       | MJ        | Jose     |
-| --------------------------------- | :-----------: |:----------:| :--------:| :-------: | :-------:|
-| Front-end Design (HTML & CSS)     | If needed     | Yes        | If Needed | Yes       | If Needed|
-| Front-end Development             | Yes           | Yes        | If Needed | Yes       | If Needed|
-| Back-end Development              | Yes           | If needed  | Yes       | If needed | Yes      |
-| Database (MongoDB)                | If needed     | If needed  | Yes       | If needed | Yes      |
+|                                   | Zachary       | Seth       | Leo       | MJ        | Jose      |
+| --------------------------------- | :-----------: |:----------:| :--------:| :-------: | :-------: |
+| Front-end Design (HTML & CSS)     | If needed     | Yes        | If Needed | Yes       | If Needed |
+| Front-end Development             | Yes           | Yes        | If Needed | Yes       | If Needed |
+| Back-end Development              | Yes           | If needed  | Yes       | If needed | Yes       |
+| Database (MongoDB)                | If needed     | If needed  | Yes       | If needed | Yes       |
+
+### Requirements
+
+All requirements will be recorded in GitHub as issues. Each requirement will be tagged as either `frontend`, `backend`, or `integration` (for when frontend and backend features are integrated together). Each issue will also be tied to our kanban board to track that feature's progress and will be assigned to a specific person. 
 
 ### Workflow
 
