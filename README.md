@@ -16,7 +16,7 @@ Creating a platform that helps people use their skills efficiently and be reward
 | Front-end Design (HTML & CSS)     | If needed     | Yes        | ?       | Yes       | ?        |
 | Front-end Development             | Yes           | Yes        | ?       | Yes       | ?        |
 | Back-end Development              | Yes           | If needed  | ?       | If needed | ?        |
-| Database (MongoDB)                | If needed     | No         | ?       | If needed | ?        |
+| Database (MongoDB)                | If needed     | If needed  | ?       | If needed | ?        |
 
 ### Workflow
 
