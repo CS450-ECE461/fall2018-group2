@@ -20,7 +20,7 @@ Creating a platform that helps people use their skills efficiently and be reward
 
 ### Requirements
 
-Requirements will be gathered from clients through an interview process, and all requirements will be recorded in GitHub as issues. Each requirement will be tagged as either `frontend`, `backend`, or `integration` (for when frontend and backend features are integrated together). Each issue will also be tied to our kanban board to track that feature's progress and will be assigned to a specific person. 
+Requirements will be gathered from clients through an interview process, and all requirements will be recorded in GitHub as issues. Each requirement will be tagged as either `frontend`, `backend`, or `integration` (for when frontend and backend features are integrated together). Each issue will also be tied to our kanban board to track that feature's progress and will be assigned to a specific person.
 
 ### Implementation and Testing
 
