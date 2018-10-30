@@ -46,7 +46,7 @@ For our version control workflow we will use the [Feature Branch Workflow](https
 Code to be merged to `master` needs to be submitted as `pull requests` to be reviewed by the team. Code is to be merged if the implementation meets all of the following criteria:
 - Code passes all previous and current test cases
 - Feature is focused and of a single concern
-- Feature in does not break previous implementation
+- Feature does not break previous implementation
 - Code has been reviewed by someone other than the author
 - Code meets standards set by the team (style, naming conventions, comments, levels of abstractions, etc)
 
