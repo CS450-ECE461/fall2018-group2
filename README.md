@@ -22,6 +22,11 @@ Creating a platform that helps people use their skills efficiently and be reward
 
 Requirements will be gathered from clients through an interview process, and all requirements will be recorded in GitHub as issues. Each requirement will be tagged as either `frontend`, `backend`, or `integration` (for when frontend and backend features are integrated together). Each issue will also be tied to our kanban board to track that feature's progress and will be assigned to a specific person. 
 
+### Implementation and Testing
+
+Our project implements a test-driven developement approach. For every feature that we implement, we will first right the 
+appropriate test for that feature and then implement the feature. Testing before implementing ensures the test oracle is defined from the requirements and not the assumptions in the implementation.
+
 ### Workflow
 
 ##### Issue Tracking
