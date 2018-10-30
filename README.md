@@ -50,6 +50,16 @@ Code to be merged to `master` needs to be submitted as `pull requests` to be rev
 - Code has been reviewed by someone other than the author
 - Code meets standards set by the team (style, naming conventions, comments, levels of abstractions, etc)
 
+### Standards
+
+##### Naming Conventions
+
+For naming conventions we will follow the [W3 JavaScript Style Guide](https://www.w3schools.com/js/js_conventions.asp).
+
+##### Best Practices
+
+For "best practices" we will follow the [W3 Best Practices](https://www.w3schools.com/js/js_best_practices.asp).
+
 ### Run
 
 `node ./blueprint-experiences/app`
