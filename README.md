@@ -33,9 +33,22 @@ appropriate test for that feature and then implement the feature. Testing before
 
 For tracking issues through their life cycle we will use GitHub Projects. We have a kanban board setup in our `Experiences` Project with five stages for issues: To Do, Emergency, In Progress, Testing, Done.
 
+##### Features and issues:
+- Features should be implemented as `issues` on individual `isssue` branches.
+- Branches should be named according to the `issue` and its `number`. Say `issue75`.
+- When work for an `issue` depends on work being developed on another `issue` branch, merge should occur between the branches in question.
+
 ##### Version Control
 
 For our version control workflow we will use the [Feature Branch Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) along with an additional `development` branch. That is, our Feature Branch Workflow will take place off of the development branch. Once multiple features are integrated into the development branch, the development branch will be integrated into the master branch for a release.
+
+##### Merge and Pull Requests
+Code to be merged to `master` needs to be submitted as `pull requests` to be reviewed by the team. Code is to be merged if the implementation meets all of the following criteria:
+- Code passes all previous and current test cases
+- Feature is focused and of a single concern
+- Feature in does not break previous implementation
+- Code has been reviewed by someone other than the author
+- Code meets standards set by the team (style, naming conventions, comments, levels of abstractions, etc)
 
 ### Run
 
