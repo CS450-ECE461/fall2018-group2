@@ -11,7 +11,7 @@ Creating a platform that helps people use their skills efficiently and be reward
 
 ### Members / Roles
 
-|                                   | Zachary       | Seth       | Leo       | MJ        | Jose      |
+|                                   | Zachary       | Seth       | Leo       | Mateus    | Jose      |
 | --------------------------------- | :-----------: |:----------:| :--------:| :-------: | :-------: |
 | Front-end Design (HTML & CSS)     | If needed     | Yes        | If Needed | Yes       | If Needed |
 | Front-end Development             | Yes           | Yes        | If Needed | Yes       | If Needed |
