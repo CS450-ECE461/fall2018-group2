@@ -193,6 +193,23 @@
     initialize: _initializeStoreService.default
   };
 });
+;define('ember-experiences/models/user', ['exports', 'ember-data'], function (exports, _emberData) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _emberData.default.Model.extend({
+    firstName: _emberData.default.attr('string'),
+    lastName: _emberData.default.attr('string'),
+    password: _emberData.default.attr('string'),
+    role: _emberData.default.attr(),
+
+    fullName: Ember.computed('firstName', 'lastName', function () {
+      return `${this.firstName} ${this.lastName}`;
+    })
+  });
+});
 ;define('ember-experiences/resolver', ['exports', 'ember-resolver'], function (exports, _emberResolver) {
   'use strict';
 
@@ -262,7 +279,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+89225daa"});
+            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+9a0d9358"});
           }
         
 //# sourceMappingURL=ember-experiences.map

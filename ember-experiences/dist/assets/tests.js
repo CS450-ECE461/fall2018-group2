@@ -4647,6 +4647,11 @@ define('ember-experiences/tests/lint/app.lint-test', [], function () {
     assert.ok(true, 'app.js should pass ESLint\n\n');
   });
 
+  QUnit.test('models/user.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'models/user.js should pass ESLint\n\n');
+  });
+
   QUnit.test('resolver.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'resolver.js should pass ESLint\n\n');
@@ -4676,6 +4681,11 @@ define('ember-experiences/tests/lint/tests.lint-test', [], function () {
     assert.expect(1);
     assert.ok(true, 'test-helper.js should pass ESLint\n\n');
   });
+
+  QUnit.test('unit/models/user-test.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'unit/models/user-test.js should pass ESLint\n\n');
+  });
 });
 define("qunit/index", ["exports"], function (exports) {
   "use strict";
@@ -4700,6 +4710,20 @@ define('ember-experiences/tests/test-helper', ['ember-experiences/app', 'ember-e
   (0, _testHelpers.setApplication)(_app.default.create(_environment.default.APP));
 
   (0, _emberQunit.start)();
+});
+define('ember-experiences/tests/unit/models/user-test', ['qunit', 'ember-qunit'], function (_qunit, _emberQunit) {
+  'use strict';
+
+  (0, _qunit.module)('Unit | Model | user', function (hooks) {
+    (0, _emberQunit.setupTest)(hooks);
+
+    // Replace this with your real tests.
+    (0, _qunit.test)('it exists', function (assert) {
+      let store = this.owner.lookup('service:store');
+      let model = store.createRecord('user', {});
+      assert.ok(model);
+    });
+  });
 });
 define('ember-experiences/config/environment', [], function() {
   var prefix = 'ember-experiences';
