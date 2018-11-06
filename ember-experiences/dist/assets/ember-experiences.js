@@ -292,7 +292,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "k5gtaRJM", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[7,\"form\"],[11,\"class\",\"login-form\"],[9],[0,\"\\n  \"],[7,\"h1\"],[9],[0,\"Login\"],[10],[0,\"\\n\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"email\",\"Email\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"password\",\"Password\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"value\",\"class\"],[\"submit\",\"Submit\",\"login-submit\"]]],false],[0,\"\\n\"],[10],[0,\"\\n\\n\\n\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/login.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "vJuT5vbw", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[7,\"form\"],[11,\"class\",\"login-form\"],[9],[0,\"\\n  \"],[7,\"h1\"],[9],[0,\"Login\"],[10],[0,\"\\n\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"email\",\"Email\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"password\",\"Password\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"value\",\"class\"],[\"submit\",\"Submit\",\"login-submit\"]]],false],[0,\"\\n\"],[10]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/login.hbs" } });
 });
 ;
 
