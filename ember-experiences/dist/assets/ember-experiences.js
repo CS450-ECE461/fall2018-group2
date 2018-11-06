@@ -214,9 +214,40 @@
     rootURL: _environment.default.rootURL
   });
 
-  Router.map(function () {});
+  Router.map(function () {
+    this.route('login');
+    this.route('dashboard');
+  });
 
   exports.default = Router;
+});
+;define('ember-experiences/routes/dashboard', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/index', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({
+    beforeModel() {
+      this.replaceWith('/dashboard');
+    }
+  });
+});
+;define('ember-experiences/routes/login', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
 });
 ;define('ember-experiences/services/ajax', ['exports', 'ember-ajax/services/ajax'], function (exports, _ajax) {
   'use strict';
@@ -237,7 +268,31 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "m2iXJzmX", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"welcome-page\"],false],[0,\"\\n\"],[0,\"\\n\"],[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/application.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "/XJmJiJp", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/application.hbs" } });
+});
+;define("ember-experiences/templates/dashboard", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "ApC7ALGc", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/dashboard.hbs" } });
+});
+;define("ember-experiences/templates/index", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "09hucyXS", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/index.hbs" } });
+});
+;define("ember-experiences/templates/login", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "vJuT5vbw", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[7,\"form\"],[11,\"class\",\"login-form\"],[9],[0,\"\\n  \"],[7,\"h1\"],[9],[0,\"Login\"],[10],[0,\"\\n\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"email\",\"Email\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"password\",\"Password\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"value\",\"class\"],[\"submit\",\"Submit\",\"login-submit\"]]],false],[0,\"\\n\"],[10]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/login.hbs" } });
 });
 ;
 
@@ -262,7 +317,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+89225daa"});
+            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+f6302247"});
           }
         
 //# sourceMappingURL=ember-experiences.map

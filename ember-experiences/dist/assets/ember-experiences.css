@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+
+/* Remove default margin */
+* {
+  margin: 0px;
+}
+
+.login-form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #A61F2B;
+  font-size: 3em;
+  font-family: 'Comfortaa', cursive;
+}
+
+.login-input {
+  width: 250px;
+  height: 50px;
+  border: 2px solid #03010A;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 1em;
+  margin-top: 20px;
+  outline: none;
+  transition: 200ms;
+}
+
+.login-input:focus {
+  border-color: #A61F2B;
+}
+
+.login-submit {
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #A61F2B;
+  color: white;
+  border-radius: 5px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 1em;
+  outline: none;
+  box-shadow: 0 0 5px grey;
+}
