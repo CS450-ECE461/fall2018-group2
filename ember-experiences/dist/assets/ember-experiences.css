@@ -49,3 +49,7 @@ h1 {
   outline: none;
   box-shadow: 0 0 5px grey;
 }
+
+.register-link {
+  margin-top: 20px;
+}
