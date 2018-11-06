@@ -2607,11 +2607,18 @@ define('ember-experiences/tests/acceptance/login-test', ['qunit', '@ember/test-h
       assert.equal((0, _testHelpers.currentURL)(), '/dashboard', 'should redirect to dashboard');
     });
 
-    (0, _qunit.test)('should redirect to /register when registration link is clicked', async function (assert) {
+    (0, _qunit.test)('should redirect to /register when registration link is clicked from /login', async function (assert) {
       await (0, _testHelpers.visit)('/login');
       await (0, _testHelpers.click)('.register-link');
 
       assert.equal((0, _testHelpers.currentURL)(), '/register', 'should redirect to register page');
+    });
+
+    (0, _qunit.test)('should redirect to /login when login link is clicked from /register', async function (assert) {
+      await (0, _testHelpers.visit)('/register');
+      await (0, _testHelpers.click)('.login-link');
+
+      assert.equal((0, _testHelpers.currentURL)(), '/login', 'should redirec to login page');
     });
   });
 });

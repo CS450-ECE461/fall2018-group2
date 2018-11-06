@@ -11,10 +11,17 @@ module('Acceptance | login', function(hooks) {
     assert.equal(currentURL(), '/dashboard', 'should redirect to dashboard');
   });
 
-  test('should redirect to /register when registration link is clicked', async  function(assert) {
+  test('should redirect to /register when registration link is clicked from /login', async  function(assert) {
     await visit('/login');
     await click('.register-link');
 
     assert.equal(currentURL(), '/register', 'should redirect to register page');
+  });
+
+  test('should redirect to /login when login link is clicked from /register', async function(assert) {
+    await visit('/register');
+    await click('.login-link');
+
+    assert.equal(currentURL(), '/login', 'should redirec to login page');
   });
 });
