@@ -217,6 +217,7 @@
   Router.map(function () {
     this.route('login');
     this.route('dashboard');
+    this.route('register');
   });
 
   exports.default = Router;
@@ -242,6 +243,14 @@
   });
 });
 ;define('ember-experiences/routes/login', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/register', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -292,7 +301,15 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "vJuT5vbw", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[7,\"form\"],[11,\"class\",\"login-form\"],[9],[0,\"\\n  \"],[7,\"h1\"],[9],[0,\"Login\"],[10],[0,\"\\n\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"email\",\"Email\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"password\",\"Password\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"value\",\"class\"],[\"submit\",\"Submit\",\"login-submit\"]]],false],[0,\"\\n\"],[10]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/login.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "QL9kPXqc", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[7,\"form\"],[11,\"class\",\"register-login-form\"],[9],[0,\"\\n  \"],[7,\"h1\"],[9],[0,\"Login\"],[10],[0,\"\\n\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"email\",\"Email\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"password\",\"Password\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"value\",\"class\"],[\"submit\",\"Submit\",\"login-submit\"]]],false],[0,\"\\n\\n  \"],[4,\"link-to\",[\"register\"],[[\"class\"],[\"register-link\"]],{\"statements\":[[0,\"Need an account?\"]],\"parameters\":[]},null],[0,\"\\n\"],[10]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/login.hbs" } });
+});
+;define("ember-experiences/templates/register", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "3eKqMJv+", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[7,\"form\"],[11,\"class\",\"register-login-form\"],[9],[0,\"\\n  \"],[7,\"h1\"],[9],[0,\"Register\"],[10],[0,\"\\n\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"email\",\"Email\",\"register-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"password\",\"Password\",\"register-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"password\",\"Confirm \",\"register-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"value\",\"class\"],[\"submit\",\"Submit\",\"register-submit\"]]],false],[0,\"\\n\\n  \"],[4,\"link-to\",[\"login\"],[[\"class\"],[\"login-link\"]],{\"statements\":[[0,\"Already have an account? Log in\"]],\"parameters\":[]},null],[0,\"\\n\"],[10]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/register.hbs" } });
 });
 ;
 
@@ -317,7 +334,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+f6302247"});
+            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+6ce17669"});
           }
         
 //# sourceMappingURL=ember-experiences.map

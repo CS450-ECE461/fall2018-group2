@@ -6,7 +6,7 @@
   margin: 0px;
 }
 
-.login-form {
+.register-login-form {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -21,7 +21,7 @@ h1 {
   font-family: 'Comfortaa', cursive;
 }
 
-.login-input {
+.login-input, .register-input {
   width: 250px;
   height: 50px;
   border: 2px solid #03010A;
@@ -33,11 +33,11 @@ h1 {
   transition: 200ms;
 }
 
-.login-input:focus {
+.login-input:focus, .register-input:focus {
   border-color: #A61F2B;
 }
 
-.login-submit {
+.login-submit, .register-submit {
   width: 100px;
   height: 50px;
   margin-top: 20px;
@@ -48,4 +48,9 @@ h1 {
   font-size: 1em;
   outline: none;
   box-shadow: 0 0 5px grey;
+}
+
+.register-link, .login-link {
+  margin-top: 20px;
+  color: #A61F2B;
 }
