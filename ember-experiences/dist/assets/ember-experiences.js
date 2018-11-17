@@ -241,6 +241,201 @@
     }
   });
 });
+;define('ember-experiences/components/mdc-tab-bar', ['exports', 'ember-cli-mdc-tab-bar/components/mdc-tab-bar'], function (exports, _mdcTabBar) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabBar.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-content', ['exports', 'ember-cli-mdc-tab/components/mdc-tab-content'], function (exports, _mdcTabContent) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabContent.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-icon', ['exports', 'ember-cli-mdc-tab/components/mdc-tab-icon'], function (exports, _mdcTabIcon) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabIcon.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-indicator-content', ['exports', 'ember-cli-mdc-tab-indicator/components/mdc-tab-indicator-content'], function (exports, _mdcTabIndicatorContent) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabIndicatorContent.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-indicator', ['exports', 'ember-cli-mdc-tab-indicator/components/mdc-tab-indicator'], function (exports, _mdcTabIndicator) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabIndicator.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-link-to', ['exports', 'ember-cli-mdc-tab/components/mdc-tab-link-to'], function (exports, _mdcTabLinkTo) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabLinkTo.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-panel', ['exports', 'ember-cli-mdc-tabs/components/mdc-tab-panel'], function (exports, _mdcTabPanel) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabPanel.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-panels', ['exports', 'ember-cli-mdc-tabs/components/mdc-tab-panels'], function (exports, _mdcTabPanels) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabPanels.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-ripple', ['exports', 'ember-cli-mdc-tab/components/mdc-tab-ripple'], function (exports, _mdcTabRipple) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabRipple.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-scroller-scroll-area', ['exports', 'ember-cli-mdc-tab-scroller/components/mdc-tab-scroller-scroll-area'], function (exports, _mdcTabScrollerScrollArea) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabScrollerScrollArea.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-scroller-scroll-content', ['exports', 'ember-cli-mdc-tab-scroller/components/mdc-tab-scroller-scroll-content'], function (exports, _mdcTabScrollerScrollContent) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabScrollerScrollContent.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-scroller', ['exports', 'ember-cli-mdc-tab-scroller/components/mdc-tab-scroller'], function (exports, _mdcTabScroller) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabScroller.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab-text-label', ['exports', 'ember-cli-mdc-tab/components/mdc-tab-text-label'], function (exports, _mdcTabTextLabel) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabTextLabel.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tab', ['exports', 'ember-cli-mdc-tab/components/mdc-tab'], function (exports, _mdcTab) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTab.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-tabs', ['exports', 'ember-cli-mdc-tabs/components/mdc-tabs'], function (exports, _mdcTabs) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTabs.default;
+    }
+  });
+});
 ;define('ember-experiences/components/mdc-textarea-with-helper-text', ['exports', 'ember-cli-mdc-textfield/components/mdc-textarea-with-helper-text'], function (exports, _mdcTextareaWithHelperText) {
   'use strict';
 
@@ -344,6 +539,14 @@
       return _mdcTextfield.default;
     }
   });
+});
+;define('ember-experiences/components/nav-bar', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Component.extend({});
 });
 ;define('ember-experiences/components/welcome-page', ['exports', 'ember-welcome-page/components/welcome-page'], function (exports, _welcomePage) {
   'use strict';
@@ -639,14 +842,53 @@
   });
 
   Router.map(function () {
-    this.route('dashboard');
     this.route('sign-in');
     this.route('sign-up');
+    this.route('explore');
+    this.route('experiences', function () {
+      this.route('favorites');
+    });
+    this.route('profile');
+    this.route('experience', { path: '/experience/:id' }, function () {
+      this.route('conversation');
+    });
   });
 
   exports.default = Router;
 });
-;define('ember-experiences/routes/dashboard', ['exports'], function (exports) {
+;define('ember-experiences/routes/experience', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/experience/conversation', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/experiences', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/experiences/favorites', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/explore', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -662,9 +904,17 @@
   });
   exports.default = Ember.Route.extend({
     beforeModel() {
-      this.replaceWith('/dashboard');
+      this.replaceWith('/explore');
     }
   });
+});
+;define('ember-experiences/routes/profile', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
 });
 ;define('ember-experiences/routes/sign-in', ['exports'], function (exports) {
   'use strict';
@@ -807,13 +1057,53 @@
   });
   exports.default = Ember.HTMLBars.template({ "id": "/XJmJiJp", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/application.hbs" } });
 });
-;define("ember-experiences/templates/dashboard", ["exports"], function (exports) {
+;define("ember-experiences/templates/components/nav-bar", ["exports"], function (exports) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "ApC7ALGc", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/dashboard.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "pT3JaNxG", "block": "{\"symbols\":[],\"statements\":[[1,[27,\"mdc-tab-bar\",null,[[\"class\"],[\"g\"]]],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/components/nav-bar.hbs" } });
+});
+;define("ember-experiences/templates/experience", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "2fyoHfcc", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/experience.hbs" } });
+});
+;define("ember-experiences/templates/experience/conversation", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "YNOw40nE", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/experience/conversation.hbs" } });
+});
+;define("ember-experiences/templates/experiences", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "UFoYg9Jz", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/experiences.hbs" } });
+});
+;define("ember-experiences/templates/experiences/favorites", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "j1KaSM/n", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/experiences/favorites.hbs" } });
+});
+;define("ember-experiences/templates/explore", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "xKWU7I+Y", "block": "{\"symbols\":[],\"statements\":[[4,\"nav-bar\",null,null,{\"statements\":[],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/explore.hbs" } });
 });
 ;define("ember-experiences/templates/index", ["exports"], function (exports) {
   "use strict";
@@ -823,13 +1113,21 @@
   });
   exports.default = Ember.HTMLBars.template({ "id": "09hucyXS", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/index.hbs" } });
 });
+;define("ember-experiences/templates/profile", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "Ob07CwHK", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/profile.hbs" } });
+});
 ;define("ember-experiences/templates/sign-in", ["exports"], function (exports) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "/fcZyViJ", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign In\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-in\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-up\"],null,{\"statements\":[[0,\"Sign Up\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-in.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "7szBvljB", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign In\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-in\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-up\"],[[\"class\"],[\"sign-up-link\"]],{\"statements\":[[0,\"Sign Up\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-in.hbs" } });
 });
 ;define("ember-experiences/templates/sign-up", ["exports"], function (exports) {
   "use strict";
@@ -837,7 +1135,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "pXYBpbHH", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign Up\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-up\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-in\"],null,{\"statements\":[[0,\"Sign In\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-up.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "gTpT876T", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign Up\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-up\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-in\"],[[\"class\"],[\"sign-in-link\"]],{\"statements\":[[0,\"Sign In\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-up.hbs" } });
 });
 ;define('ember-experiences/util-tests/collection-action', ['exports', 'ember-api-actions/util-tests/collection-action'], function (exports, _collectionAction) {
   'use strict';
@@ -888,7 +1186,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+f4915167"});
+            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+fb7d1108"});
           }
         
 //# sourceMappingURL=ember-experiences.map
