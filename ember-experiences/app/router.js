@@ -7,9 +7,16 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('dashboard');
   this.route('sign-in');
   this.route('sign-up');
+  this.route('explore');
+  this.route('experiences', function() {
+    this.route('favorites');
+  });
+  this.route('profile');
+  this.route('experience', { path: '/experience/:id' }, function() {
+    this.route('conversation');
+  });
 });
 
 export default Router;
