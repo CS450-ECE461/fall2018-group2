@@ -358,6 +358,22 @@
     }
   });
 });
+;define('ember-experiences/controllers/sign-in', ['exports', 'ember-cli-gatekeeper/mixins/completed'], function (exports, _completed) {
+    'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = Ember.Controller.extend(_completed.default, {});
+});
+;define('ember-experiences/controllers/sign-up', ['exports', 'ember-cli-gatekeeper/mixins/completed'], function (exports, _completed) {
+    'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = Ember.Controller.extend(_completed.default, {});
+});
 ;define('ember-experiences/helpers/app-version', ['exports', 'ember-experiences/config/environment', 'ember-cli-app-version/utils/regexp'], function (exports, _environment, _regexp) {
   'use strict';
 
@@ -624,6 +640,8 @@
 
   Router.map(function () {
     this.route('dashboard');
+    this.route('sign-in');
+    this.route('sign-up');
   });
 
   exports.default = Router;
@@ -647,6 +665,22 @@
       this.replaceWith('/dashboard');
     }
   });
+});
+;define('ember-experiences/routes/sign-in', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/sign-up', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
 });
 ;define('ember-experiences/serializers/account', ['exports', 'ember-cli-gatekeeper/serializers/account'], function (exports, _account) {
   'use strict';
@@ -789,6 +823,22 @@
   });
   exports.default = Ember.HTMLBars.template({ "id": "09hucyXS", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/index.hbs" } });
 });
+;define("ember-experiences/templates/sign-in", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "1xqAXJaC", "block": "{\"symbols\":[],\"statements\":[[1,[27,\"gatekeeper-sign-in\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-in.hbs" } });
+});
+;define("ember-experiences/templates/sign-up", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "I+yrP4HA", "block": "{\"symbols\":[],\"statements\":[[1,[27,\"gatekeeper-sign-up\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-up.hbs" } });
+});
 ;define('ember-experiences/util-tests/collection-action', ['exports', 'ember-api-actions/util-tests/collection-action'], function (exports, _collectionAction) {
   'use strict';
 
@@ -838,7 +888,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+08b56434"});
+            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+fd0a0f5a"});
           }
         
 //# sourceMappingURL=ember-experiences.map
