@@ -4693,16 +4693,6 @@ define('ember-experiences/tests/lint/app.lint-test', [], function () {
     assert.expect(1);
     assert.ok(true, 'routes/index.js should pass ESLint\n\n');
   });
-
-  QUnit.test('routes/login.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/login.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('routes/register.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'routes/register.js should pass ESLint\n\n');
-  });
 });
 define('ember-experiences/tests/lint/templates.template.lint-test', [], function () {
   'use strict';
@@ -4722,16 +4712,6 @@ define('ember-experiences/tests/lint/templates.template.lint-test', [], function
   QUnit.test('ember-experiences/templates/index.hbs', function (assert) {
     assert.expect(1);
     assert.ok(true, 'ember-experiences/templates/index.hbs should pass TemplateLint.\n\n');
-  });
-
-  QUnit.test('ember-experiences/templates/login.hbs', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'ember-experiences/templates/login.hbs should pass TemplateLint.\n\n');
-  });
-
-  QUnit.test('ember-experiences/templates/register.hbs', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'ember-experiences/templates/register.hbs should pass TemplateLint.\n\n');
   });
 });
 define('ember-experiences/tests/lint/tests.lint-test', [], function () {
@@ -4757,16 +4737,6 @@ define('ember-experiences/tests/lint/tests.lint-test', [], function () {
   QUnit.test('unit/routes/index-test.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'unit/routes/index-test.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('unit/routes/login-test.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'unit/routes/login-test.js should pass ESLint\n\n');
-  });
-
-  QUnit.test('unit/routes/register-test.js', function (assert) {
-    assert.expect(1);
-    assert.ok(true, 'unit/routes/register-test.js should pass ESLint\n\n');
   });
 });
 define("qunit/index", ["exports"], function (exports) {
@@ -4813,30 +4783,6 @@ define('ember-experiences/tests/unit/routes/index-test', ['qunit', 'ember-qunit'
 
     (0, _qunit.test)('it exists', function (assert) {
       let route = this.owner.lookup('route:index');
-      assert.ok(route);
-    });
-  });
-});
-define('ember-experiences/tests/unit/routes/login-test', ['qunit', 'ember-qunit'], function (_qunit, _emberQunit) {
-  'use strict';
-
-  (0, _qunit.module)('Unit | Route | login', function (hooks) {
-    (0, _emberQunit.setupTest)(hooks);
-
-    (0, _qunit.test)('it exists', function (assert) {
-      let route = this.owner.lookup('route:login');
-      assert.ok(route);
-    });
-  });
-});
-define('ember-experiences/tests/unit/routes/register-test', ['qunit', 'ember-qunit'], function (_qunit, _emberQunit) {
-  'use strict';
-
-  (0, _qunit.module)('Unit | Route | register', function (hooks) {
-    (0, _emberQunit.setupTest)(hooks);
-
-    (0, _qunit.test)('it exists', function (assert) {
-      let route = this.owner.lookup('route:register');
       assert.ok(route);
     });
   });
