@@ -829,7 +829,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "1xqAXJaC", "block": "{\"symbols\":[],\"statements\":[[1,[27,\"gatekeeper-sign-in\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-in.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "/fcZyViJ", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign In\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-in\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-up\"],null,{\"statements\":[[0,\"Sign Up\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-in.hbs" } });
 });
 ;define("ember-experiences/templates/sign-up", ["exports"], function (exports) {
   "use strict";
@@ -837,7 +837,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "I+yrP4HA", "block": "{\"symbols\":[],\"statements\":[[1,[27,\"gatekeeper-sign-up\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-up.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "pXYBpbHH", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign Up\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-up\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-in\"],null,{\"statements\":[[0,\"Sign In\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-up.hbs" } });
 });
 ;define('ember-experiences/util-tests/collection-action', ['exports', 'ember-api-actions/util-tests/collection-action'], function (exports, _collectionAction) {
   'use strict';
@@ -888,7 +888,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+fd0a0f5a"});
+            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+3a5488b2"});
           }
         
 //# sourceMappingURL=ember-experiences.map
