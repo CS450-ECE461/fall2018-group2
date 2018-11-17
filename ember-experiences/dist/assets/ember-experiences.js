@@ -2,6 +2,19 @@
 
 
 
+;define('ember-experiences/adapters/account', ['exports', 'ember-cli-gatekeeper/adapters/account'], function (exports, _account) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _account.default;
+    }
+  });
+});
 ;define('ember-experiences/app', ['exports', 'ember-experiences/resolver', 'ember-load-initializers', 'ember-experiences/config/environment'], function (exports, _resolver, _emberLoadInitializers, _environment) {
   'use strict';
 
@@ -20,6 +33,318 @@
 
   exports.default = App;
 });
+;define('ember-experiences/components/g-recaptcha-invisible', ['exports', 'ember-cli-google-recaptcha/components/g-recaptcha-invisible'], function (exports, _gRecaptchaInvisible) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _gRecaptchaInvisible.default;
+    }
+  });
+});
+;define('ember-experiences/components/g-recaptcha-v2', ['exports', 'ember-cli-google-recaptcha/components/g-recaptcha-v2'], function (exports, _gRecaptchaV) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _gRecaptchaV.default;
+    }
+  });
+});
+;define('ember-experiences/components/gatekeeper-sign-in-with-recaptcha', ['exports', 'ember-cli-gatekeeper/components/gatekeeper-sign-in-with-recaptcha'], function (exports, _gatekeeperSignInWithRecaptcha) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _gatekeeperSignInWithRecaptcha.default;
+    }
+  });
+});
+;define('ember-experiences/components/gatekeeper-sign-in', ['exports', 'ember-cli-gatekeeper/components/gatekeeper-sign-in'], function (exports, _gatekeeperSignIn) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _gatekeeperSignIn.default;
+    }
+  });
+});
+;define('ember-experiences/components/gatekeeper-sign-up-with-recaptcha', ['exports', 'ember-cli-gatekeeper/components/gatekeeper-sign-up-with-recaptcha'], function (exports, _gatekeeperSignUpWithRecaptcha) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _gatekeeperSignUpWithRecaptcha.default;
+    }
+  });
+});
+;define('ember-experiences/components/gatekeeper-sign-up', ['exports', 'ember-cli-gatekeeper/components/gatekeeper-sign-up'], function (exports, _gatekeeperSignUp) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _gatekeeperSignUp.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-button-icon', ['exports', 'ember-cli-mdc-button/components/mdc-button-icon'], function (exports, _mdcButtonIcon) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcButtonIcon.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-button-linkto', ['exports', 'ember-cli-mdc-button/components/mdc-button-linkto'], function (exports, _mdcButtonLinkto) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcButtonLinkto.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-button', ['exports', 'ember-cli-mdc-button/components/mdc-button'], function (exports, _mdcButton) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcButton.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-floating-label', ['exports', 'ember-cli-mdc-floating-label/components/mdc-floating-label'], function (exports, _mdcFloatingLabel) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcFloatingLabel.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-form', ['exports', 'ember-cli-mdc-form/components/mdc-form'], function (exports, _mdcForm) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcForm.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-icon', ['exports', 'ember-cli-mdc-icon/components/mdc-icon'], function (exports, _mdcIcon) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcIcon.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-line-ripple', ['exports', 'ember-cli-mdc-line-ripple/components/mdc-line-ripple'], function (exports, _mdcLineRipple) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcLineRipple.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-notched-outline', ['exports', 'ember-cli-mdc-notched-outline/components/mdc-notched-outline'], function (exports, _mdcNotchedOutline) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcNotchedOutline.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-ripple', ['exports', 'ember-cli-mdc-ripple/components/mdc-ripple'], function (exports, _mdcRipple) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcRipple.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-snackbar', ['exports', 'ember-cli-mdc-snackbar/components/mdc-snackbar'], function (exports, _mdcSnackbar) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcSnackbar.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-textarea-with-helper-text', ['exports', 'ember-cli-mdc-textfield/components/mdc-textarea-with-helper-text'], function (exports, _mdcTextareaWithHelperText) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTextareaWithHelperText.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-textarea', ['exports', 'ember-cli-mdc-textfield/components/mdc-textarea'], function (exports, _mdcTextarea) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTextarea.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-textfield-helper-text', ['exports', 'ember-cli-mdc-textfield/components/mdc-textfield-helper-text'], function (exports, _mdcTextfieldHelperText) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTextfieldHelperText.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-textfield-icon', ['exports', 'ember-cli-mdc-textfield/components/mdc-textfield-icon'], function (exports, _mdcTextfieldIcon) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTextfieldIcon.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-textfield-input', ['exports', 'ember-cli-mdc-textfield/components/mdc-textfield-input'], function (exports, _mdcTextfieldInput) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTextfieldInput.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-textfield-textarea', ['exports', 'ember-cli-mdc-textfield/components/mdc-textfield-textarea'], function (exports, _mdcTextfieldTextarea) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTextfieldTextarea.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-textfield-with-helper-text', ['exports', 'ember-cli-mdc-textfield/components/mdc-textfield-with-helper-text'], function (exports, _mdcTextfieldWithHelperText) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTextfieldWithHelperText.default;
+    }
+  });
+});
+;define('ember-experiences/components/mdc-textfield', ['exports', 'ember-cli-mdc-textfield/components/mdc-textfield'], function (exports, _mdcTextfield) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTextfield.default;
+    }
+  });
+});
 ;define('ember-experiences/components/welcome-page', ['exports', 'ember-welcome-page/components/welcome-page'], function (exports, _welcomePage) {
   'use strict';
 
@@ -32,6 +357,22 @@
       return _welcomePage.default;
     }
   });
+});
+;define('ember-experiences/controllers/sign-in', ['exports', 'ember-cli-gatekeeper/mixins/completed'], function (exports, _completed) {
+    'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = Ember.Controller.extend(_completed.default, {});
+});
+;define('ember-experiences/controllers/sign-up', ['exports', 'ember-cli-gatekeeper/mixins/completed'], function (exports, _completed) {
+    'use strict';
+
+    Object.defineProperty(exports, "__esModule", {
+        value: true
+    });
+    exports.default = Ember.Controller.extend(_completed.default, {});
 });
 ;define('ember-experiences/helpers/app-version', ['exports', 'ember-experiences/config/environment', 'ember-cli-app-version/utils/regexp'], function (exports, _environment, _regexp) {
   'use strict';
@@ -121,6 +462,25 @@
     }
   };
 });
+;define('ember-experiences/initializers/custom-properties', ['exports', 'ember-cli-custom-properties/initializers/custom-properties'], function (exports, _customProperties) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _customProperties.default;
+    }
+  });
+  Object.defineProperty(exports, 'initialize', {
+    enumerable: true,
+    get: function () {
+      return _customProperties.initialize;
+    }
+  });
+});
 ;define('ember-experiences/initializers/ember-data', ['exports', 'ember-data/setup-container', 'ember-data'], function (exports, _setupContainer) {
   'use strict';
 
@@ -182,6 +542,25 @@
     initialize: initialize
   };
 });
+;define('ember-experiences/initializers/session', ['exports', 'ember-cli-gatekeeper/initializers/session'], function (exports, _session) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _session.default;
+    }
+  });
+  Object.defineProperty(exports, 'initialize', {
+    enumerable: true,
+    get: function () {
+      return _session.initialize;
+    }
+  });
+});
 ;define('ember-experiences/instance-initializers/ember-data', ['exports', 'ember-data/initialize-store-service'], function (exports, _initializeStoreService) {
   'use strict';
 
@@ -192,6 +571,51 @@
     name: 'ember-data',
     initialize: _initializeStoreService.default
   };
+});
+;define('ember-experiences/instance-initializers/typography', ['exports', 'ember-cli-mdc-typography/instance-initializers/typography'], function (exports, _typography) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _typography.default;
+    }
+  });
+  Object.defineProperty(exports, 'initialize', {
+    enumerable: true,
+    get: function () {
+      return _typography.initialize;
+    }
+  });
+});
+;define('ember-experiences/models/account', ['exports', 'ember-cli-gatekeeper/models/account'], function (exports, _account) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _account.default;
+    }
+  });
+});
+;define('ember-experiences/node_modules/micromatch', ['exports', 'npm:micromatch'], function (exports, _npmMicromatch) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _npmMicromatch.default;
+    }
+  });
 });
 ;define('ember-experiences/resolver', ['exports', 'ember-resolver'], function (exports, _emberResolver) {
   'use strict';
@@ -215,9 +639,9 @@
   });
 
   Router.map(function () {
-    this.route('login');
     this.route('dashboard');
-    this.route('register');
+    this.route('sign-in');
+    this.route('sign-up');
   });
 
   exports.default = Router;
@@ -242,7 +666,7 @@
     }
   });
 });
-;define('ember-experiences/routes/login', ['exports'], function (exports) {
+;define('ember-experiences/routes/sign-in', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -250,13 +674,26 @@
   });
   exports.default = Ember.Route.extend({});
 });
-;define('ember-experiences/routes/register', ['exports'], function (exports) {
+;define('ember-experiences/routes/sign-up', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
   exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/serializers/account', ['exports', 'ember-cli-gatekeeper/serializers/account'], function (exports, _account) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _account.default;
+    }
+  });
 });
 ;define('ember-experiences/services/ajax', ['exports', 'ember-ajax/services/ajax'], function (exports, _ajax) {
   'use strict';
@@ -268,6 +705,97 @@
     enumerable: true,
     get: function () {
       return _ajax.default;
+    }
+  });
+});
+;define('ember-experiences/services/g-recaptcha', ['exports', 'ember-cli-google-recaptcha/services/g-recaptcha'], function (exports, _gRecaptcha) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _gRecaptcha.default;
+    }
+  });
+});
+;define('ember-experiences/services/gatekeeper', ['exports', 'ember-cli-gatekeeper/services/gatekeeper'], function (exports, _gatekeeper) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _gatekeeper.default;
+    }
+  });
+});
+;define('ember-experiences/services/local-storage', ['exports', 'ember-cli-storage/services/local-storage'], function (exports, _localStorage) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _localStorage.default;
+    }
+  });
+});
+;define('ember-experiences/services/mdc-textarea-configurator', ['exports', 'ember-cli-mdc-textfield/services/mdc-textarea-configurator'], function (exports, _mdcTextareaConfigurator) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTextareaConfigurator.default;
+    }
+  });
+});
+;define('ember-experiences/services/mdc-textfield-configurator', ['exports', 'ember-cli-mdc-textfield/services/mdc-textfield-configurator'], function (exports, _mdcTextfieldConfigurator) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdcTextfieldConfigurator.default;
+    }
+  });
+});
+;define('ember-experiences/services/session-storage', ['exports', 'ember-cli-storage/services/session-storage'], function (exports, _sessionStorage) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _sessionStorage.default;
+    }
+  });
+});
+;define('ember-experiences/services/session', ['exports', 'ember-cli-gatekeeper/services/session'], function (exports, _session) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _session.default;
     }
   });
 });
@@ -295,21 +823,47 @@
   });
   exports.default = Ember.HTMLBars.template({ "id": "09hucyXS", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/index.hbs" } });
 });
-;define("ember-experiences/templates/login", ["exports"], function (exports) {
+;define("ember-experiences/templates/sign-in", ["exports"], function (exports) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "QL9kPXqc", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[7,\"form\"],[11,\"class\",\"register-login-form\"],[9],[0,\"\\n  \"],[7,\"h1\"],[9],[0,\"Login\"],[10],[0,\"\\n\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"email\",\"Email\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"password\",\"Password\",\"login-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"value\",\"class\"],[\"submit\",\"Submit\",\"login-submit\"]]],false],[0,\"\\n\\n  \"],[4,\"link-to\",[\"register\"],[[\"class\"],[\"register-link\"]],{\"statements\":[[0,\"Need an account?\"]],\"parameters\":[]},null],[0,\"\\n\"],[10]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/login.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "/fcZyViJ", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign In\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-in\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-up\"],null,{\"statements\":[[0,\"Sign Up\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-in.hbs" } });
 });
-;define("ember-experiences/templates/register", ["exports"], function (exports) {
+;define("ember-experiences/templates/sign-up", ["exports"], function (exports) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "3eKqMJv+", "block": "{\"symbols\":[],\"statements\":[[0,\"\\n\"],[7,\"form\"],[11,\"class\",\"register-login-form\"],[9],[0,\"\\n  \"],[7,\"h1\"],[9],[0,\"Register\"],[10],[0,\"\\n\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"email\",\"Email\",\"register-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"password\",\"Password\",\"register-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"placeholder\",\"class\"],[\"password\",\"Confirm \",\"register-input\"]]],false],[0,\"\\n  \"],[1,[27,\"input\",null,[[\"type\",\"value\",\"class\"],[\"submit\",\"Submit\",\"register-submit\"]]],false],[0,\"\\n\\n  \"],[4,\"link-to\",[\"login\"],[[\"class\"],[\"login-link\"]],{\"statements\":[[0,\"Already have an account? Log in\"]],\"parameters\":[]},null],[0,\"\\n\"],[10]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/register.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "pXYBpbHH", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign Up\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-up\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-in\"],null,{\"statements\":[[0,\"Sign In\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-up.hbs" } });
+});
+;define('ember-experiences/util-tests/collection-action', ['exports', 'ember-api-actions/util-tests/collection-action'], function (exports, _collectionAction) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _collectionAction.default;
+    }
+  });
+});
+;define('ember-experiences/util-tests/member-action', ['exports', 'ember-api-actions/util-tests/member-action'], function (exports, _memberAction) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _memberAction.default;
+    }
+  });
 });
 ;
 
@@ -334,7 +888,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+6ce17669"});
+            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+f4915167"});
           }
         
 //# sourceMappingURL=ember-experiences.map
