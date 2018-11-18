@@ -15,6 +15,16 @@
     }
   });
 });
+;define('ember-experiences/adapters/application', ['exports', 'ember-data'], function (exports, _emberData) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _emberData.default.JSONAPIAdapter.extend({
+    namespace: 'api'
+  });
+});
 ;define('ember-experiences/app', ['exports', 'ember-experiences/resolver', 'ember-load-initializers', 'ember-experiences/config/environment'], function (exports, _resolver, _emberLoadInitializers, _environment) {
   'use strict';
 
@@ -481,6 +491,57 @@
     }
   });
 });
+;define('ember-experiences/initializers/ember-cli-mirage', ['exports', 'ember-experiences/config/environment', 'ember-experiences/mirage/config', 'ember-cli-mirage/get-rfc232-test-context', 'ember-cli-mirage/start-mirage'], function (exports, _environment, _config, _getRfc232TestContext, _startMirage) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.startMirage = startMirage;
+  exports.default = {
+    name: 'ember-cli-mirage',
+    initialize(application) {
+      if (_config.default) {
+        application.register('mirage:base-config', _config.default, { instantiate: false });
+      }
+      if (_config.testConfig) {
+        application.register('mirage:test-config', _config.testConfig, { instantiate: false });
+      }
+
+      _environment.default['ember-cli-mirage'] = _environment.default['ember-cli-mirage'] || {};
+      if (_shouldUseMirage(_environment.default.environment, _environment.default['ember-cli-mirage'])) {
+        startMirage(_environment.default);
+      }
+    }
+  };
+  function startMirage(env = _environment.default) {
+    return (0, _startMirage.default)(null, { env, baseConfig: _config.default, testConfig: _config.testConfig });
+  }
+
+  function _shouldUseMirage(env, addonConfig) {
+    if (typeof FastBoot !== 'undefined') {
+      return false;
+    }
+    if ((0, _getRfc232TestContext.default)()) {
+      return false;
+    }
+    let userDeclaredEnabled = typeof addonConfig.enabled !== 'undefined';
+    let defaultEnabled = _defaultEnabled(env, addonConfig);
+
+    return userDeclaredEnabled ? addonConfig.enabled : defaultEnabled;
+  }
+
+  /*
+    Returns a boolean specifying the default behavior for whether
+    to initialize Mirage.
+  */
+  function _defaultEnabled(env, addonConfig) {
+    let usingInDev = env === 'development' && !addonConfig.usingProxy;
+    let usingInTest = env === 'test';
+
+    return usingInDev || usingInTest;
+  }
+});
 ;define('ember-experiences/initializers/ember-data', ['exports', 'ember-data/setup-container', 'ember-data'], function (exports, _setupContainer) {
   'use strict';
 
@@ -561,6 +622,19 @@
     }
   });
 });
+;define('ember-experiences/instance-initializers/ember-cli-mirage-autostart', ['exports', 'ember-cli-mirage/instance-initializers/ember-cli-mirage-autostart'], function (exports, _emberCliMirageAutostart) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _emberCliMirageAutostart.default;
+    }
+  });
+});
 ;define('ember-experiences/instance-initializers/ember-data', ['exports', 'ember-data/initialize-store-service'], function (exports, _initializeStoreService) {
   'use strict';
 
@@ -590,6 +664,84 @@
       return _typography.initialize;
     }
   });
+});
+;define('ember-experiences/mirage/config', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  exports.default = function () {
+    this.namespace = '/api';
+
+    this.get('/experiences', function () {
+      return {
+        data: [{
+          type: 'experiences',
+          id: 'first-experience',
+          attributes: {
+            cost: '$80',
+            duration: '2 hours',
+            tag: 'tag1',
+            title: 'Title of first experience',
+            details: 'Details of first experience.',
+            provided: 'What is provided for first experience.',
+            address: 'Address of first experience'
+          }
+        }, {
+          type: 'experiences',
+          id: 'second-experience',
+          attributes: {
+            cost: '$120',
+            duration: '3 hours',
+            tag: 'tag2',
+            title: 'Title of first experience',
+            details: 'Details of second experience.',
+            provided: 'What is provided for second experience.',
+            address: 'Address of second experience'
+          }
+        }, {
+          type: 'experiences',
+          id: 'third-experience',
+          attributes: {
+            cost: '$60',
+            duration: '1 hour',
+            tag: 'tag3',
+            title: 'Title of third experience',
+            details: 'Details of third experience.',
+            provided: 'What is provided for third experience.',
+            address: 'Address of third experience'
+          }
+        }]
+      };
+    });
+  };
+});
+;define("ember-experiences/mirage/scenarios/default", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  exports.default = function () /* server */{
+
+    /*
+      Seed your development database using your factories.
+      This data will not be loaded in your tests.
+    */
+
+    // server.createList('post', 10);
+  };
+});
+;define('ember-experiences/mirage/serializers/application', ['exports', 'ember-cli-mirage'], function (exports, _emberCliMirage) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _emberCliMirage.JSONAPISerializer.extend({});
 });
 ;define('ember-experiences/models/account', ['exports', 'ember-cli-gatekeeper/models/account'], function (exports, _account) {
   'use strict';
@@ -639,14 +791,53 @@
   });
 
   Router.map(function () {
-    this.route('dashboard');
     this.route('sign-in');
     this.route('sign-up');
+    this.route('explore');
+    this.route('experiences', function () {
+      this.route('favorites');
+    });
+    this.route('profile');
+    this.route('experience', { path: '/experience/:id' }, function () {
+      this.route('conversation');
+    });
   });
 
   exports.default = Router;
 });
-;define('ember-experiences/routes/dashboard', ['exports'], function (exports) {
+;define('ember-experiences/routes/experience', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/experience/conversation', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/experiences', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/experiences/favorites', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
+});
+;define('ember-experiences/routes/explore', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -662,9 +853,17 @@
   });
   exports.default = Ember.Route.extend({
     beforeModel() {
-      this.replaceWith('/dashboard');
+      this.replaceWith('/explore');
     }
   });
+});
+;define('ember-experiences/routes/profile', ['exports'], function (exports) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.Route.extend({});
 });
 ;define('ember-experiences/routes/sign-in', ['exports'], function (exports) {
   'use strict';
@@ -807,13 +1006,45 @@
   });
   exports.default = Ember.HTMLBars.template({ "id": "/XJmJiJp", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/application.hbs" } });
 });
-;define("ember-experiences/templates/dashboard", ["exports"], function (exports) {
+;define("ember-experiences/templates/experience", ["exports"], function (exports) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "ApC7ALGc", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/dashboard.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "2fyoHfcc", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/experience.hbs" } });
+});
+;define("ember-experiences/templates/experience/conversation", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "YNOw40nE", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/experience/conversation.hbs" } });
+});
+;define("ember-experiences/templates/experiences", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "UFoYg9Jz", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/experiences.hbs" } });
+});
+;define("ember-experiences/templates/experiences/favorites", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "j1KaSM/n", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/experiences/favorites.hbs" } });
+});
+;define("ember-experiences/templates/explore", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "vK4nLDB/", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/explore.hbs" } });
 });
 ;define("ember-experiences/templates/index", ["exports"], function (exports) {
   "use strict";
@@ -823,13 +1054,21 @@
   });
   exports.default = Ember.HTMLBars.template({ "id": "09hucyXS", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/index.hbs" } });
 });
+;define("ember-experiences/templates/profile", ["exports"], function (exports) {
+  "use strict";
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = Ember.HTMLBars.template({ "id": "Ob07CwHK", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/profile.hbs" } });
+});
 ;define("ember-experiences/templates/sign-in", ["exports"], function (exports) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "/fcZyViJ", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign In\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-in\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-up\"],null,{\"statements\":[[0,\"Sign Up\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-in.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "7szBvljB", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign In\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-in\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-up\"],[[\"class\"],[\"sign-up-link\"]],{\"statements\":[[0,\"Sign Up\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-in.hbs" } });
 });
 ;define("ember-experiences/templates/sign-up", ["exports"], function (exports) {
   "use strict";
@@ -837,7 +1076,27 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "pXYBpbHH", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign Up\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-up\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-in\"],null,{\"statements\":[[0,\"Sign In\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-up.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "gTpT876T", "block": "{\"symbols\":[],\"statements\":[[7,\"h1\"],[9],[0,\"Sign Up\"],[10],[0,\"\\n\"],[1,[27,\"gatekeeper-sign-up\",null,[[\"complete\"],[[27,\"action\",[[22,0,[]],\"complete\"],null]]]],false],[0,\"\\n\\n\"],[7,\"br\"],[9],[10],[0,\"\\n\"],[4,\"link-to\",[\"sign-in\"],[[\"class\"],[\"sign-in-link\"]],{\"statements\":[[0,\"Sign In\"]],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/sign-up.hbs" } });
+});
+;define('ember-experiences/tests/mirage/mirage.lint-test', [], function () {
+  'use strict';
+
+  QUnit.module('ESLint | mirage');
+
+  QUnit.test('mirage/config.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'mirage/config.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('mirage/scenarios/default.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'mirage/scenarios/default.js should pass ESLint\n\n');
+  });
+
+  QUnit.test('mirage/serializers/application.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'mirage/serializers/application.js should pass ESLint\n\n');
+  });
 });
 ;define('ember-experiences/util-tests/collection-action', ['exports', 'ember-api-actions/util-tests/collection-action'], function (exports, _collectionAction) {
   'use strict';
@@ -888,7 +1147,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+f4915167"});
+            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+fb7d1108"});
           }
         
 //# sourceMappingURL=ember-experiences.map
