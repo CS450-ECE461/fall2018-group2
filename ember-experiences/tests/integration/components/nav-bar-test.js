@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render, click, currentUrl } from '@ember/test-helpers';
+import { render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Component | nav-bar', function(hooks) {
@@ -12,7 +12,7 @@ module('Integration | Component | nav-bar', function(hooks) {
 
     await render(hbs`{{nav-bar}}`);
 
-    assert.equal(this.element.textContent.trim(), '');
+    assert.equal(this.element.textContqent.trim(), '');
 
     // Template block usage:
     await render(hbs`
@@ -22,23 +22,5 @@ module('Integration | Component | nav-bar', function(hooks) {
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');
-  });
-
-  test('redirects to /experiences when nav link is clicked', async function(assert) {
-    await click('.experiences');
-
-    assert.equal(currentUrl(), '/experiences');
-  });
-
-  test('redirects to /profile when nav link is clicked', async function(assert) {
-    await click('.profile');
-
-    assert.equal(currentUrl(), '/profile');
-  });
-
-  test('redirects to /explore when nav link is clicked', async function(assert) {
-    await click('.explore');
-
-    assert.equal(currentUrl(), '/explore');
   });
 });
