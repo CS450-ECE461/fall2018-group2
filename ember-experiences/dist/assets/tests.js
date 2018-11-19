@@ -4672,7 +4672,7 @@ define('ember-experiences/tests/integration/components/nav-bar-test', ['qunit', 
         "meta": {}
       }));
 
-      assert.equal(this.element.textContqent.trim(), '');
+      assert.equal(this.element.textContent.trim(), '');
 
       // Template block usage:
       await (0, _testHelpers.render)(Ember.HTMLBars.template({
@@ -4777,7 +4777,7 @@ define('ember-experiences/tests/lint/templates.template.lint-test', [], function
 
   QUnit.test('ember-experiences/templates/components/nav-bar.hbs', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'ember-experiences/templates/components/nav-bar.hbs should pass TemplateLint.\n\nember-experiences/templates/components/nav-bar.hbs\n  4:17  error  Incorrect indentation of htmlAttribute \'src\' beginning at L4:C17. Expected \'src\' to be at L5:C14.  attribute-indentation\n  4:56  error  Incorrect indentation of htmlAttribute \'alt\' beginning at L4:C56. Expected \'alt\' to be at L6:C14.  attribute-indentation\n  4:74  error  Incorrect indentation of htmlAttribute \'class\' beginning at L4:C74. Expected \'class\' to be at L7:C14.  attribute-indentation\n  4:95  error  Incorrect indentation of close bracket \'>\' for the element \'<img>\' beginning at L4:C95. Expected \'<img>\' to be at L8:C12.  attribute-indentation\n  2:4  error  Incorrect indentation for `<div>` beginning at L2:C4. Expected `<div>` to be at an indentation of 2 but was found at 4.  block-indentation\n  7:4  error  Incorrect indentation for `<div>` beginning at L7:C4. Expected `<div>` to be at an indentation of 2 but was found at 4.  block-indentation\n  12:4  error  Incorrect indentation for `<div>` beginning at L12:C4. Expected `<div>` to be at an indentation of 2 but was found at 4.  block-indentation\n  3:8  error  Incorrect indentation for `{{#link-to}}` beginning at L3:C8. Expected `{{#link-to}}` to be at an indentation of 6 but was found at 8.  block-indentation\n  4:12  error  Incorrect indentation for `<img>` beginning at L4:C12. Expected `<img>` to be at an indentation of 10 but was found at 12.  block-indentation\n  8:8  error  Incorrect indentation for `{{#link-to}}` beginning at L8:C8. Expected `{{#link-to}}` to be at an indentation of 6 but was found at 8.  block-indentation\n  9:12  error  Incorrect indentation for `<img>` beginning at L9:C12. Expected `<img>` to be at an indentation of 10 but was found at 12.  block-indentation\n  13:8  error  Incorrect indentation for `{{#link-to}}` beginning at L13:C8. Expected `{{#link-to}}` to be at an indentation of 6 but was found at 8.  block-indentation\n  14:12  error  Incorrect indentation for `<img>` beginning at L14:C12. Expected `<img>` to be at an indentation of 10 but was found at 12.  block-indentation\n');
+    assert.ok(true, 'ember-experiences/templates/components/nav-bar.hbs should pass TemplateLint.\n\n');
   });
 
   QUnit.test('ember-experiences/templates/experience.hbs', function (assert) {

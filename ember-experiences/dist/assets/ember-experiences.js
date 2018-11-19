@@ -1055,7 +1055,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "/XJmJiJp", "block": "{\"symbols\":[],\"statements\":[[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/application.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "yCCaR0MB", "block": "{\"symbols\":[],\"statements\":[[4,\"nav-bar\",null,null,{\"statements\":[],\"parameters\":[]},null],[0,\"\\n\"],[1,[21,\"outlet\"],false]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/application.hbs" } });
 });
 ;define("ember-experiences/templates/components/nav-bar", ["exports"], function (exports) {
   "use strict";
@@ -1063,7 +1063,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "Qtit6eGv", "block": "{\"symbols\":[],\"statements\":[[7,\"div\"],[11,\"class\",\"nav-bar\"],[9],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"icon-group\"],[9],[0,\"\\n\"],[4,\"link-to\",[\"experiences\"],[[\"class\"],[\"experiences\"]],{\"statements\":[[0,\"            \"],[7,\"img\"],[11,\"src\",\"./assets/images/calendar-alt.svg\"],[11,\"alt\",\"Your Events\"],[11,\"class\",\"nav-bar-image\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"    \"],[10],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"icon-group\"],[9],[0,\"\\n\"],[4,\"link-to\",[\"explore\"],[[\"class\"],[\"explore\"]],{\"statements\":[[0,\"            \"],[7,\"img\"],[11,\"src\",\"./assets/images/home.svg\"],[11,\"alt\",\"Landing Page\"],[11,\"class\",\"nav-bar-image\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"    \"],[10],[0,\"\\n    \"],[7,\"div\"],[11,\"class\",\"icon-group\"],[9],[0,\"\\n\"],[4,\"link-to\",[\"profile\"],[[\"class\"],[\"profile\"]],{\"statements\":[[0,\"            \"],[7,\"img\"],[11,\"src\",\"./assets/images/user.svg\"],[11,\"alt\",\"Pofile\"],[11,\"class\",\"nav-bar-image\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"    \"],[10],[0,\"\\n\"],[10]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/components/nav-bar.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "/0LlHrx5", "block": "{\"symbols\":[\"&default\"],\"statements\":[[7,\"div\"],[11,\"class\",\"nav-bar\"],[9],[0,\"\\n  \"],[7,\"div\"],[11,\"class\",\"icon-group\"],[9],[0,\"\\n\"],[4,\"link-to\",[\"experiences\"],[[\"class\"],[\"experiences\"]],{\"statements\":[[0,\"      \"],[7,\"img\"],[11,\"src\",\"./assets/images/calendar-alt.svg\"],[11,\"alt\",\"Your Events\"],[11,\"class\",\"nav-bar-image\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"  \"],[10],[0,\"\\n  \"],[7,\"div\"],[11,\"class\",\"icon-group\"],[9],[0,\"\\n\"],[4,\"link-to\",[\"explore\"],[[\"class\"],[\"explore\"]],{\"statements\":[[0,\"      \"],[7,\"img\"],[11,\"src\",\"./assets/images/home.svg\"],[11,\"alt\",\"Landing Page\"],[11,\"class\",\"nav-bar-image\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"  \"],[10],[0,\"\\n  \"],[7,\"div\"],[11,\"class\",\"icon-group\"],[9],[0,\"\\n\"],[4,\"link-to\",[\"profile\"],[[\"class\"],[\"profile\"]],{\"statements\":[[0,\"      \"],[7,\"img\"],[11,\"src\",\"./assets/images/user.svg\"],[11,\"alt\",\"Pofile\"],[11,\"class\",\"nav-bar-image\"],[9],[10],[0,\"\\n\"]],\"parameters\":[]},null],[0,\"  \"],[10],[0,\"\\n  \"],[14,1],[0,\"\\n\"],[10]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/components/nav-bar.hbs" } });
 });
 ;define("ember-experiences/templates/experience", ["exports"], function (exports) {
   "use strict";
@@ -1087,7 +1087,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "arrNvBRZ", "block": "{\"symbols\":[],\"statements\":[[4,\"nav-bar\",null,null,{\"statements\":[],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/experiences.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "/kc0VRui", "block": "{\"symbols\":[],\"statements\":[],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/experiences.hbs" } });
 });
 ;define("ember-experiences/templates/experiences/favorites", ["exports"], function (exports) {
   "use strict";
@@ -1103,7 +1103,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "xKWU7I+Y", "block": "{\"symbols\":[],\"statements\":[[4,\"nav-bar\",null,null,{\"statements\":[],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/explore.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "8vud6zsZ", "block": "{\"symbols\":[],\"statements\":[],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/explore.hbs" } });
 });
 ;define("ember-experiences/templates/index", ["exports"], function (exports) {
   "use strict";
@@ -1119,7 +1119,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "0okYTL1O", "block": "{\"symbols\":[],\"statements\":[[4,\"nav-bar\",null,null,{\"statements\":[],\"parameters\":[]},null]],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/profile.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "e+vRKUB4", "block": "{\"symbols\":[],\"statements\":[],\"hasEval\":false}", "meta": { "moduleName": "ember-experiences/templates/profile.hbs" } });
 });
 ;define("ember-experiences/templates/sign-in", ["exports"], function (exports) {
   "use strict";
@@ -1186,7 +1186,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+4155080a"});
+            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+a6314cac"});
           }
         
 //# sourceMappingURL=ember-experiences.map
