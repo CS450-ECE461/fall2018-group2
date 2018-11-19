@@ -1186,7 +1186,7 @@ catch(err) {
 
 ;
           if (!runningTests) {
-            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+84d0222d"});
+            require("ember-experiences/app")["default"].create({"name":"ember-experiences","version":"0.0.0+4155080a"});
           }
         
 //# sourceMappingURL=ember-experiences.map

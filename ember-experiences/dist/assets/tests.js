@@ -4672,7 +4672,7 @@ define('ember-experiences/tests/integration/components/nav-bar-test', ['qunit', 
         "meta": {}
       }));
 
-      assert.equal(this.element.textContent.trim(), '');
+      assert.equal(this.element.textContqent.trim(), '');
 
       // Template block usage:
       await (0, _testHelpers.render)(Ember.HTMLBars.template({
@@ -4682,24 +4682,6 @@ define('ember-experiences/tests/integration/components/nav-bar-test', ['qunit', 
       }));
 
       assert.equal(this.element.textContent.trim(), 'template block text');
-    });
-
-    (0, _qunit.test)('redirects to /experiences when nav link is clicked', async function (assert) {
-      await (0, _testHelpers.click)('.experiences');
-
-      assert.equal((0, _testHelpers.currentUrl)(), '/experiences');
-    });
-
-    (0, _qunit.test)('redirects to /profile when nav link is clicked', async function (assert) {
-      await (0, _testHelpers.click)('.profile');
-
-      assert.equal((0, _testHelpers.currentUrl)(), '/profile');
-    });
-
-    (0, _qunit.test)('redirects to /explore when nav link is clicked', async function (assert) {
-      await (0, _testHelpers.click)('.explore');
-
-      assert.equal((0, _testHelpers.currentUrl)(), '/explore');
     });
   });
 });

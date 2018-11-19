@@ -12,7 +12,7 @@ module('Integration | Component | nav-bar', function(hooks) {
 
     await render(hbs`{{nav-bar}}`);
 
-    assert.equal(this.element.textContqent.trim(), '');
+    assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
