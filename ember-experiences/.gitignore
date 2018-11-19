@@ -1,5 +1,5 @@
 # compiled output
-ember-experiences/dist/
+/dist/
 /tmp/
 
 # dependencies
