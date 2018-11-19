@@ -1,0 +1,30 @@
+<div class="nav-bar">
+  <div class="icon-group">
+    {{#link-to "experiences" class="experiences-nav-link"}}
+      <img 
+        src="./assets/images/calendar-alt.svg" 
+        alt="Your Events" 
+        class="nav-bar-image"
+      >
+    {{/link-to}}
+  </div>
+  <div class="icon-group">
+    {{#link-to "explore" class="explore-nav-link"}}
+      <img 
+        src="./assets/images/home.svg"
+        alt="Landing Page"
+        class="nav-bar-image"
+      >
+    {{/link-to}}
+  </div>
+  <div class="icon-group">
+    {{#link-to "profile" class="profile-nav-link"}}
+      <img 
+        src="./assets/images/user.svg"
+        alt="Pofile"
+        class="nav-bar-image"
+      >
+    {{/link-to}}
+  </div>
+  {{yield}}
+</div>
