@@ -22,7 +22,7 @@ export default function() {
           cost: '$120',
           duration: '3 hours',
           tag: 'tag2',
-          title: 'Title of first experience',
+          title: 'Title of second experience',
           details: 'Details of second experience.',
           provided: 'What is provided for second experience.',
           address: 'Address of second experience'
