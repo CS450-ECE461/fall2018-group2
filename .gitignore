@@ -1,0 +1,4 @@
+node_modules
+ember-experiences/dist/
+ember-experiences/dist/*
+vendor.js
