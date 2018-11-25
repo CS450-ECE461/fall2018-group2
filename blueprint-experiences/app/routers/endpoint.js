@@ -5,13 +5,12 @@ const { Router } = require ('@onehilltech/blueprint');
  * @class endpoint
  */
 module.exports = Router.extend ({
-  /// The router specification.
   specification: {
-    '/gatekeeper': blueprint.mount('@onehilltech/blueprint-gatekeeper:v1'),
+    '/gatekeeper': blueprint.mount ('@onehilltech/blueprint-gatekeeper:v1')
 
+    // protecting the /v1 routes
     '/v1': {
       policy: 'gatekeeper.auth.bearer'
     }
-
   }
 });

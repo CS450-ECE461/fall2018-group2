@@ -17,6 +17,14 @@ module.exports = function(environment) {
       }
     },
 
+    gatekeeper: {
+      baseUrl: 'http://localhost:5000/gatekeeper',
+  
+      tokenOptions: {      
+        client_id: '59ee923e1fd71c2ae68ade62',
+      }
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
