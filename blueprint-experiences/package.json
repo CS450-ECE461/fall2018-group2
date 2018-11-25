@@ -13,11 +13,7 @@
     "uninstall-service": "sudo -s forever-service delete blueprint-experiences_d"
   },
   "dependencies": {
-    "@onehilltech/blueprint": "^4.5.4",
-    "@onehilltech/blueprint-cli": "^1.2.0",
-    "@onehilltech/blueprint-gatekeeper": "^0.84.6",
-    "@onehilltech/blueprint-mongodb": "^1.8.2",
-    "@onehilltech/dab": "^1.2.0",
+    "@onehilltech/blueprint-gatekeeper": "^0.86.1",
     "mocha": "^5.2.0",
     "pug": "^2.0.3"
   },
