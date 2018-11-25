@@ -1,5 +1,5 @@
 # compiled output
-ember-experiences/dist/
+/dist/
 /tmp/
 
 # dependencies
@@ -19,3 +19,5 @@ ember-experiences/dist/
 /.node_modules.ember-try/
 /bower.json.ember-try
 /package.json.ember-try
+
+.idea/

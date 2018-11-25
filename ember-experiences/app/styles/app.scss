@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-bar {
+    width: 100vw;
+    height: 50px;
+    background-color: #E74D4D;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon-group {
+        width: calc(100vw / 3);
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .nav-bar-image {
+            fill: #FFF;
+            stroke: white;
+            color: white;
+            filter: invert(100%);
+                -webkit-filter: invert(100%);
+            height: 30px;
+        }
+    }
+}
