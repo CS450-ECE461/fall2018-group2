@@ -15,4 +15,4 @@ const experienceSchema = new Schema ({
 
 }, { softDelete: true });
 
-module.exports = mongodb.resource('user', experienceSchema, 'experiences');
+module.exports = mongodb.resource('experience', experienceSchema, 'experiences');
