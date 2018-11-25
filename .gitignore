@@ -1,3 +1,6 @@
+.idea
+.vscode
+.DS_Store
 node_modules
 ember-experiences/dist/
 ember-experiences/dist/*
