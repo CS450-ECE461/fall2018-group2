@@ -1,0 +1,24 @@
+// route: featured-experience
+
+.featured-experience {
+  margin-right: 7px;
+
+  .image-container {
+    background-color: #E74D4D;
+    width: 145px;
+    height: 145px;
+    border-radius: 5px;
+  }
+
+  .details {
+    padding-top: 7px;
+
+    .featured-title {
+      font-weight: bold;
+    }
+    .featured-description {
+      color: black;
+      font-size: 12px;
+    }
+  }
+}
