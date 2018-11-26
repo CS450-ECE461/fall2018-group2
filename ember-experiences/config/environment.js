@@ -21,7 +21,7 @@ module.exports = function(environment) {
       baseUrl: 'http://localhost:5000/gatekeeper',
   
       tokenOptions: {      
-        client_id: '59ee923e1fd71c2ae68ade62',
+        client_id: '5bf2f9f2fb18ff2b128f8ee9',
       }
     },
 
