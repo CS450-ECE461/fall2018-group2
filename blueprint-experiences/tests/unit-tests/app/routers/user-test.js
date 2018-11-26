@@ -1,5 +1,5 @@
 const { request } = require ('@onehilltech/blueprint-testing');
-const { seed } = require ('@onehilltech/blueprint-mongodb');
+const { Seed } = require ('@onehilltech/blueprint-mongodb');
 
 describe ('app | routers | user', function () {
 
@@ -10,7 +10,8 @@ describe ('app | routers | user', function () {
 
       it ('should get all users', function () {
         return request()
-          .get('/v1/users')
+          .get(`/v1/users/`)
+          .withUserToken(0)
           .expect(200);
       });
 
@@ -22,11 +23,12 @@ describe ('app | routers | user', function () {
         const user = {
           firstName: "Leo",
           lastName: "Neto",
-          role: "admin"
+          role: ['admin']
         };
 
         return request()
-          .post('/v1/users/')
+          .post(`/v1/users/`)
+          .withUserToken(0)
           .send({user})
           .expect(200);
       });
@@ -34,17 +36,4 @@ describe ('app | routers | user', function () {
     });
 
   });
-
-
-  // -- Test READ, UPDATE, and DELETE methods on a user with given id
-  describe ('/v1/users/:userId', function () {
-
-    // -- Implement GET test
-
-    // -- Implement PUT test
-
-    // -- Implement DELETE test
-
-  });
-
 });
