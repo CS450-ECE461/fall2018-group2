@@ -6,21 +6,26 @@ module.exports = Seed.extend ({
     return {
       users: [
         {firstName: 'Ali', lastName: 'Albert', role: ['host', 'visitor']},
-        {firstName: 'Bella', lastName: 'Bulma', role: ['visitor']},
-        {firstName: 'Delhi', lastName: 'Dhowry', role: ['host', 'visitor']},
         {firstName: 'Zoe', lastName: 'Ziran', role: ['admin']}
       ],
 
       native: [
-        {name: 'native0', email: 'native1@experiences.com', scope: ['gatekeeper.client.create']}
+        {
+          name: 'native0',
+          client_id: 'experiences-app',
+          client_secret: 'experiences-app',
+          email: 'native1@experiences.com',
+          scope: ['gatekeeper.account.create']
+        }
       ],
 
       accounts: dab.map (dab.get ('users'), ((user) => {
         return {
           _id: user._id,
           username: `${user.firstName}${user.lastName}`.toLowerCase(),
-          password: `${user.firstName}.${user.lastName}`.toLowerCase(),
-          email: `${user.firstName}.${user.lastName}@experiences.com`.toLowerCase()
+          password: `freecandy`,
+          email: `${user.firstName}.${user.lastName}@experiences.com`.toLowerCase(),
+          scope: ['gatekeeper.account.create']
         }
       })),
 
@@ -28,9 +33,20 @@ module.exports = Seed.extend ({
         return {
           client: dab.ref ('native.0'),
           account: account._id,
-          refresh_token: dab.id()
+          refresh_token: dab.id(),
+          scope: ['gatekeeper.account.created']
         }
       }),
+
+      client_tokens: [
+        {
+          client: dab.ref('native.0'),
+          account: dab.ref('accounts.0'),
+          refresh_token: dab.id(),
+          scope: ['gatekeeper.account.created']
+
+        }
+      ],
 
       experiences: [
         {
