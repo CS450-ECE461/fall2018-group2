@@ -21,7 +21,7 @@ module.exports = function(environment) {
       startRoute: 'index',
 
       tokenOptions: {
-        client_id: '5bfca76ff5d0d5fa2ddc5b15', // lookup db
+        client_id: '5bfdac113d1a786188a3dabc', // static client_id
         client_secret: 'experiences-app'
       }
     },
