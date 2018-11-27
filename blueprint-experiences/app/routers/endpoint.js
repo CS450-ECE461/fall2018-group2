@@ -20,4 +20,5 @@ const corsOptions = {
 module.exports = exports  = {
   '/': {use: [cors(corsOptions)]},
   '/gatekeeper': blueprint.mount ('@onehilltech/blueprint-gatekeeper:v1'),
+  '/v1': { policy: 'gatekeeper.auth.bearer'}
 };
