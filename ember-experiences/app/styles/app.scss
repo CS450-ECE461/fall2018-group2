@@ -27,6 +27,7 @@ h1 {
   overflow-y:scroll; 
   height: 100%;
   position: relative;
+  margin-bottom: 50px;
 
   section {
     width: 100%;
@@ -71,6 +72,7 @@ h1 {
     border-bottom: 0.5px solid rgba(211, 211, 211, 0.541);
 
     .content {
+      padding-top: 10px;
       width: 85%;
 
       .title {
@@ -78,12 +80,75 @@ h1 {
         font-weight: bold;
       }
 
-      .image {
+      .image-container {
+        margin-top: 10px;
+        position:relative;
         width: 100%;
-        padding-top: 100%;
+      }
+
+      .image-container:before {
+        content: "";
+        display: block;
+        padding-top: 100%; 
+      }
+
+      .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         background-color: #E74D4D;
         border-radius: 5px;
-        padding-top: 10px;
+      }
+
+      .description {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .tags {
+          color: rgba($color: #000000, $alpha: 0.56);
+          font-weight: bold;
+        }
+
+        .title {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        
+        .location {
+          color: rgba($color: #000000, $alpha: 0.87);
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+
+        .price {
+          color: rgba($color: #000000, $alpha: 0.87);
+          font-weight: normal;
+          font-size: 14px;
+          margin-bottom: 5px;
+        }
+
+        .reviews {
+          margin-bottom: 5px;
+          svg {
+            width: 16px;
+            fill: #E74D4D;
+            stroke: #E74D4D;
+          }
+
+          .outlined-star {
+            fill: white;
+            stroke: #E74D4D;
+            stroke-width: 40;
+          }
+        }
+
+        .review-num {
+          margin-left: 10px;
+        }
       }
     }
   }
