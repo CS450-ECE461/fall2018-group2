@@ -21,10 +21,11 @@
     
       .nav-bar-image {
         fill: #FFF;
-        stroke: white;
-        color: white;
-        filter: invert(100%);
+        stroke: #E74D4D;
+        stroke-width: 40;
+        filter: invert(.5) sepia(0.1) saturate(5) hue-rotate(175deg);
             -webkit-filter: invert(100%);
+        
         height: 30px;
       }
   }

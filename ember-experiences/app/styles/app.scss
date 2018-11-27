@@ -152,4 +152,58 @@ h1 {
       }
     }
   }
+
+  .list-container {
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.5px solid rgba(211, 211, 211, 0.541);
+
+    .content {
+      padding-top: 10px;
+      width: 85%;
+
+      .title {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .list {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .become-host-container {
+    background-color: #E74D4D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    width: 100vw;
+
+    .become-host-title {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+      text-align: center;
+    }
+
+    .become-host-details {
+      color: white;
+      width: 300px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
 }
