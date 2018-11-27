@@ -19,7 +19,6 @@ Router.map(function() {
   this.route('experience', { path: '/experience/:id' }, function() {
     this.route('conversation');
   });
-  this.route('my-experiences');
 });
 
 export default Router;
