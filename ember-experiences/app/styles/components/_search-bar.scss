@@ -1,13 +1,13 @@
 // route: search-bar
 
 .search-bar {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
   height: 56px;
   background-color: white;
-  opacity: 0.9;
+  background:rgba(256,256,256,0.9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,8 +21,8 @@
     padding-left: 10px;
     font-size: 16px;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.5);
     outline: none;
+    
   }
 
   input::placeholder {
