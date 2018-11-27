@@ -12,7 +12,7 @@ module.exports = Seed.extend ({
       native: [
         {
           name: 'native0',
-          client_id: 'experiences-app',
+          _id: dab.id('5bfdac113d1a786188a3dabc'),
           client_secret: 'experiences-app',
           email: 'native1@experiences.com',
           scope: ['gatekeeper.account.create']
