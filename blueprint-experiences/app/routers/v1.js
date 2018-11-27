@@ -1,7 +1,10 @@
-const { cors } = require ('@onehilltech/blueprint-gatekeeper');
+const { Router } = require('@onehilltech/blueprint');
+const cors = require('cors');
 
-module.exports = {
-  '/v1': {
-    use: [cors ()]
+module.exports = Router.extend({
+  specification: {
+    '/v1': {
+      use: [cors ()]
+    }
   }
-};
+});
