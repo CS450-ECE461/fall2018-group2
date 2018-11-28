@@ -1,14 +1,14 @@
 const { Router } = require ('@onehilltech/blueprint');
 
 /**
- * @class user
+ * @class event
  */
 module.exports = Router.extend ({
   /// The router specification.
   specification: {
-    '/users': {
+    '/events': {
       resource: {
-        controller: 'user',
+        controller: 'event',
       }
     }
   }

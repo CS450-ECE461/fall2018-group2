@@ -1,0 +1,26 @@
+// route: notification-box
+
+.notification-box {
+  width: 90vw;
+  height: 100px;
+  background-color: #E74D4D;
+  color: white;
+  border-radius: 5px;
+
+  .content {
+    height: 100%;
+    padding: 10px;
+    font-size: 14px;
+    
+
+    .title {
+      font-weight: bold;
+      color: white;
+    }
+
+    p {
+      margin-top: 10px;
+      color: white;
+    }
+  }
+}

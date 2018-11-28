@@ -8,8 +8,7 @@ module.exports = function(environment) {
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. 'with-controller': true
+        'ds-improved-ajax': true
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
@@ -19,9 +18,11 @@ module.exports = function(environment) {
 
     gatekeeper: {
       baseUrl: 'http://localhost:5000/gatekeeper',
-  
-      tokenOptions: {      
-        client_id: '59ee923e1fd71c2ae68ade62',
+      startRoute: 'index',
+
+      tokenOptions: {
+        client_id: '5bfdac113d1a786188a3dabc', // static client_id
+        client_secret: 'experiences-app'
       }
     },
 
@@ -37,6 +38,9 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV['ember-cli-mirage'] = {
+      enabled: false
+    }
   }
 
   if (environment === 'test') {
