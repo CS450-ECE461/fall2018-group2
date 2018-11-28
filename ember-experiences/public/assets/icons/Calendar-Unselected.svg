@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_10);
+      }
+
+      .cls-2 {
+        fill: rgba(0,0,0,0.25);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_10">
+      <rect width="91" height="93"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_10" data-name="Artboard – 10" class="cls-1">
+    <rect class="cls-3" width="91" height="93"/>
+    <g id="Calendar" transform="translate(-262 -421.224)">
+      <g id="Group_222" data-name="Group 222" transform="translate(298 459)">
+        <g id="Group_220" data-name="Group 220" transform="translate(3.859 6.637)">
+          <rect id="Rectangle_314" data-name="Rectangle 314" class="cls-2" width="15.435" height="0.054"/>
+        </g>
+        <g id="Group_221" data-name="Group 221">
+          <path id="Path_124" data-name="Path 124" class="cls-2" d="M0,0V18.768H19.293V0ZM1.932,5.536h15.43v11.3H1.932Z"/>
+        </g>
+      </g>
+      <g id="Group_223" data-name="Group 223" transform="translate(302.017 466.161)">
+        <path id="Path_125" data-name="Path 125" class="cls-2" d="M10.78,23.181c0-2.569,1.424-4.031,3.337-4.031s3.337,1.457,3.337,4.031-1.412,4.031-3.337,4.031S10.78,25.75,10.78,23.181Zm4.864,0c0-1.769-.624-2.5-1.523-2.5s-1.515.735-1.515,2.5.624,2.5,1.515,2.5S15.644,24.95,15.644,23.181Z" transform="translate(-10.78 -19.15)"/>
+        <path id="Path_126" data-name="Path 126" class="cls-2" d="M33.142,19.48v7.79h-1.8V20.929H29.78V19.48Z" transform="translate(-21.981 -19.345)"/>
+      </g>
+    </g>
+  </g>
+</svg>

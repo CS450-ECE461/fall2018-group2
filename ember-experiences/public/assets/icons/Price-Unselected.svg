@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_24);
+      }
+
+      .cls-2 {
+        fill: rgba(0,0,0,0.25);
+        font-size: 20px;
+        font-family: Montserrat-Black, Montserrat;
+        font-weight: 800;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_24">
+      <rect width="91" height="93"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_24" data-name="Artboard – 24" class="cls-1">
+    <rect class="cls-3" width="91" height="93"/>
+    <text id="_" data-name="$" class="cls-2" transform="translate(39 54)"><tspan x="0" y="0">$</tspan></text>
+  </g>
+</svg>

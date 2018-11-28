@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_3);
+      }
+
+      .cls-2 {
+        fill: #e74d4d;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-Artboard_3">
+      <rect width="91" height="93"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_3" data-name="Artboard – 3" class="cls-1">
+    <rect class="cls-3" width="91" height="93"/>
+    <g id="Selected_Explore_Experiences" data-name="Selected Explore Experiences" transform="translate(-159 -241)">
+      <path id="Path_132" data-name="Path 132" class="cls-2" d="M29.295,0V1.646c-.735,1.08-1.757,2.673-2.778,4.488a42.193,42.193,0,0,0-2.445,4.826c-2.27,5.112-4.879,10.79-7.1,15.9H13.113C10.166,19.987,6.127,11.356,2.381,3.694A3.111,3.111,0,0,0,.735,2.042L0,1.646V0H15.5V1.646l-.852.286-.169.058a2.686,2.686,0,0,0-.677.292c-.665.426-.84,1.144-.4,2.206.134.321.263.648.4.969.28.677.566,1.366.846,2.054,1.4,3.4,2.877,6.956,4.313,10.312,1.249-2.894,2.27-5.45,3.011-7.265A3.548,3.548,0,0,0,21.8,7.324a56.013,56.013,0,0,0-2.609-5.678V0Z" transform="translate(189.853 274.743)"/>
+    </g>
+  </g>
+</svg>
