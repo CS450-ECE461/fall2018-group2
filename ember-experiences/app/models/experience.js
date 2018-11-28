@@ -9,10 +9,10 @@ export default DS.Model.extend({
   details: DS.attr(),
   provided: DS.attr(),
   address: DS.attr(),
-  photos: DS.hasMany(),
+  photos: DS.attr(),
 
   reviews: DS.hasMany('review-experience'),
   conversations: DS.hasMany('conversation'),
 
-  host: DS.belongsTo('profile'),
+  host: DS.belongsTo('user'),
 });

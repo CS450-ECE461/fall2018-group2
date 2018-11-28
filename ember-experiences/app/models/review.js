@@ -5,5 +5,5 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   date: DS.attr('date'),
 
-  reviewer: DS.belongsTo('profile')
+  reviewer: DS.belongsTo('user')
 });
