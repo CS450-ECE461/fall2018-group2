@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_1);
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #e74d4d;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_1">
+      <rect width="91" height="93"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard – 1" class="cls-1">
+    <rect class="cls-3" width="91" height="93"/>
+    <g id="Unselected_Profile" data-name="Unselected Profile" transform="translate(-1 -241)">
+      <circle id="Ellipse_113" data-name="Ellipse 113" class="cls-2" cx="7.255" cy="7.255" r="7.255" transform="translate(39.795 272.425)"/>
+      <g id="Group_228" data-name="Group 228" transform="translate(36.977 291.165)">
+        <path id="Path_131" data-name="Path 131" class="cls-2" d="M20.147,37.353V46.22H0v-8.8c.006-.028.006-.05.011-.073l3.27-3.773H16.871Z" transform="translate(0 -33.58)"/>
+      </g>
+    </g>
+  </g>
+</svg>
