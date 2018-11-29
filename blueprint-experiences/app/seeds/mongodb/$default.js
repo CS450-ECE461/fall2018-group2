@@ -6,7 +6,12 @@ module.exports = Seed.extend ({
     return {
       users: [
         {firstName: 'Ali', lastName: 'Albert', role: ['host', 'visitor']},
-        {firstName: 'Zoe', lastName: 'Ziran', role: ['admin']}
+        {firstName: 'Zoe', lastName: 'Ziran', role: ['admin']},
+        {firstName: 'Mateus', lastName: 'Jose', role: ['admin', 'host', 'visitor']},
+        {firstName: 'Seth', lastName: 'Fuller', role: ['admin', 'host', 'visitor']},
+        {firstName: 'Leo', lastName: 'Neto', role: ['admin, visitor']},
+        {firstName: 'Zach', lastName: 'Balda', role: ['admin', 'visitor']},
+        {firstName: 'Jose', lastName: 'Cortez', role: ['admin, visitor']}
       ],
 
       native: [
@@ -59,7 +64,7 @@ module.exports = Seed.extend ({
             country: 'United States'
           },
           description: 'An event for all family and more.',
-          details: 'An event for all family and more.'
+          title: 'Basket Social'
         },
         {
           host: dab.ref('users.1'),
@@ -71,27 +76,23 @@ module.exports = Seed.extend ({
             country: 'United States'
           },
           description: 'Superb adventures from countryside rides to riverwalks',
-          details: 'Superb adventures from countryside rides to riverwalks'
-        }
-      ],
-
-      events: [
-        {
-          experience: dab.ref('experiences.0'),
-          start: '2018-02-10',
-          end: '2018-02-10',
+          title: 'Countryside Formals'
         },
         {
-          experience: dab.ref('experiences.0'),
-          start: '2018-02-12',
-          end: '2018-02-12',
-        },
-        {
-          experience: dab.ref('experiences.1'),
-          start: '2018-02-20',
-          end: '2018-02-21',
+          host: dab.ref('users.0'),
+          address: {
+            street: '900 N Rose Avenue',
+            city: 'Allentown',
+            state: 'Pennsylvania',
+            postalCode: '17400',
+            country: 'United States'
+          },
+          description: 'Superb adventures from countryside rides to riverwalks',
+          title: 'Community Outreach',
+          price: 29.50
         }
       ]
+
     }
   }
 });

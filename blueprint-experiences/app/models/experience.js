@@ -16,9 +16,15 @@ const experienceSchema = new Schema ({
 
   address: addressSchema,
 
+  title: { type: String, required: true, trim: true },
+
   description: { type: String, required: true, trim: true },
 
-  details: { type: String, required: true, trim: true },
+  price: { type: Number, required: true, min: 0, default: 12.99 },
+
+  start: { type: Date, required: true, trim: true, default: new Date () },
+
+  end: { type: Date, required: true, trim: true, default: new Date() }
 
 }, { softDelete: true });
 
