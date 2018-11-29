@@ -10,15 +10,14 @@ Router.map(function() {
   this.route('sign-in');
   this.route('sign-up');
   this.route('nav-enabled', { path: '/' }, function() {
-    this.route('experiences', function() {
-      this.route('favorites');
-    });
+    this.route('experiences', function() {});
     this.route('explore');
     this.route('profile');
   });
   this.route('experience', { path: '/experience/:id' }, function() {
     this.route('conversation');
   });
+  this.route('experiences');
 });
 
 export default Router;
