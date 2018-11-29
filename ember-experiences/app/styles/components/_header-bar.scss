@@ -10,13 +10,17 @@
   top: 0px;
   left: 0px;
   display: flex;
-  justify-content: center;
+  justify-content: stretch;
   align-items: center;
 
   #header-bar-title {
     color: white;
-    
     font-weight: bold;
     font-size: 18px;
+  }
+
+  #left-arrow-icon {
+    top:0px;
+    width: 14px;
   }
 }
