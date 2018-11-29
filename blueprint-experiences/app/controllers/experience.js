@@ -6,5 +6,5 @@ const { ResourceController } = require('@onehilltech/blueprint-mongodb');
  */
 module.exports = ResourceController.extend({
   namespace: 'experiences',
-  model: model('experience')
+  Model: model('experience'),
 });
