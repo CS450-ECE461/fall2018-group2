@@ -1,0 +1,6 @@
+{
+  "name": "ember-experiences",
+  "dependencies": {
+    "slick-carousel": "1.5.8"
+  }
+}

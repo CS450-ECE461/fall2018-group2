@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_8);
+      }
+
+      .cls-2 {
+        fill: #e74d4d;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_8">
+      <rect width="91" height="93"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_8" data-name="Artboard – 8" class="cls-1">
+    <rect class="cls-3" width="91" height="93"/>
+    <g id="Selected_My_Experiences" data-name="Selected My Experiences" transform="translate(-289 -241)">
+      <path id="Path_134" data-name="Path 134" class="cls-2" d="M20.269,25.874c-6.219,1.91-8.668,6.748-10.093,12.759C8.7,32.726,6.333,27.758,0,25.888c6.3-1.934,8.737-6.808,10.147-12.828C11.577,19.056,14,23.989,20.269,25.874Z" transform="translate(320 262.401)"/>
+      <path id="Path_135" data-name="Path 135" class="cls-2" d="M49.84,7.332c-3.582,1.276-5,4.017-5.858,7.465-.866-3.513-2.3-6.258-5.833-7.456C41.707,6.13,43.107,3.414,43.968,0,44.908,3.31,46.2,6.14,49.84,7.332Z" transform="translate(300.724 272)"/>
+      <path id="Path_136" data-name="Path 136" class="cls-2" d="M49.84,55.242c-3.582,1.276-5,4.017-5.858,7.465-.866-3.513-2.3-6.258-5.833-7.456,3.557-1.217,4.957-3.933,5.818-7.342C44.908,51.22,46.2,54.05,49.84,55.242Z" transform="translate(300.724 241.793)"/>
+    </g>
+  </g>
+</svg>

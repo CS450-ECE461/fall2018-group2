@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_14);
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: rgba(0,0,0,0.75);
+      }
+
+      .cls-3 {
+        fill: rgba(0,0,0,0.56);
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_14">
+      <rect width="91" height="93"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_14" data-name="Artboard – 14" class="cls-1">
+    <rect class="cls-6" width="91" height="93"/>
+    <g id="Group_324" data-name="Group 324" transform="translate(-282.895 -115.947)">
+      <g id="Ellipse_115" data-name="Ellipse 115" class="cls-2" transform="translate(319 153)">
+        <circle class="cls-4" cx="9.947" cy="9.947" r="9.947"/>
+        <circle class="cls-5" cx="9.947" cy="9.947" r="9.447"/>
+      </g>
+      <g id="Group_261" data-name="Group 261" transform="translate(325.631 159.631)">
+        <g id="Group_259" data-name="Group 259" transform="translate(0 0)">
+          <rect id="Rectangle_338" data-name="Rectangle 338" class="cls-3" width="1.026" height="7.9" transform="translate(0 0.725) rotate(-45)"/>
+        </g>
+        <g id="Group_260" data-name="Group 260" transform="translate(0 0.008)">
+          <rect id="Rectangle_339" data-name="Rectangle 339" class="cls-3" width="7.9" height="1.026" transform="translate(0 5.586) rotate(-45)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

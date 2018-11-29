@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Artboard_11);
+      }
+
+      .cls-2 {
+        fill: #e74d4d;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-Artboard_11">
+      <rect width="91" height="93"/>
+    </clipPath>
+  </defs>
+  <g id="Artboard_11" data-name="Artboard – 11" class="cls-1">
+    <rect class="cls-3" width="91" height="93"/>
+    <path id="Path_116" data-name="Path 116" class="cls-2" d="M7.5,15,0,7.5,7.5,0,9.747,2.245,4.494,7.5l5.253,5.253Z" transform="translate(41 39)"/>
+  </g>
+</svg>

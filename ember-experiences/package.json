@@ -28,11 +28,13 @@
     "broccoli-asset-rev": "^2.7.0",
     "ember-ajax": "^3.1.0",
     "ember-api-actions": "^0.1.9",
+    "ember-auto-import": "^1.2.16",
     "ember-browserify": "^1.2.2",
     "ember-cli": "~3.4.3",
     "ember-cli-app-version": "^3.2.0",
     "ember-cli-babel": "^6.16.0",
     "ember-cli-blueprint-helpers": "^0.4.5",
+    "ember-cli-carousel": "^1.0.4",
     "ember-cli-custom-properties": "^1.0.0",
     "ember-cli-dependency-checker": "^3.0.0",
     "ember-cli-eslint": "^4.2.3",
@@ -87,5 +89,8 @@
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
+  },
+  "dependencies": {
+    "flickity": "^2.1.2"
   }
 }
