@@ -1,0 +1,22 @@
+// route: header-bar
+
+.header-bar {
+  background-color: #E74D4D;
+  width: 100vw;
+  height: 70px;
+  z-index: 100;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.089);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #header-bar-title {
+    color: white;
+    
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
