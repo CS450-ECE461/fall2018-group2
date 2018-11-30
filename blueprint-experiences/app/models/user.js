@@ -10,4 +10,4 @@ const userSchema = new Schema ({
 
 }, { softDelete: true });
 
-module.                                                                                                                                                                                                                          exports = mongodb.resource('user', userSchema, 'users');
+module.exports = mongodb.resource('user', userSchema, 'users');
