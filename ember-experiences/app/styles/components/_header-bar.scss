@@ -1,16 +1,16 @@
 // route: header-bar
 
 .header-bar {
-  background-color: #E74D4D;
+  background-color: $primary;
   width: 100vw;
   height: 70px;
   z-index: 100;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.089);
+  box-shadow: $shadow-up;
   position: fixed;
   top: 0px;
   left: 0px;
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   align-items: center;
 
   #header-bar-title {
@@ -19,8 +19,25 @@
     font-size: 18px;
   }
 
-  #left-arrow-icon {
-    top:0px;
+  #left-icon {
+    position: absolute;
     width: 14px;
+    padding-left: 20px;
+
+    /* vertically center the icon */
+    top: 50%; 
+    transform: translateY(-50%);
+    left: 0px;
+  }
+
+  #right-icon {
+    position: absolute;
+    width: 14px;
+    padding-right: 20px;
+
+    /* vertically center the icon */
+    top: 50%; 
+    transform: translateY(-50%);
+    right: 0px;
   }
 }

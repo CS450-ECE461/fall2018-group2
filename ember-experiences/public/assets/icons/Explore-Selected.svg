@@ -1,26 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Artboard_3);
-      }
-
-      .cls-2 {
-        fill: #e74d4d;
-      }
-
-      .cls-3 {
-        fill: none;
-      }
-    </style>
-    <clipPath id="clip-Artboard_3">
-      <rect width="91" height="93"/>
-    </clipPath>
-  </defs>
-  <g id="Artboard_3" data-name="Artboard – 3" class="cls-1">
-    <rect class="cls-3" width="91" height="93"/>
-    <g id="Selected_Explore_Experiences" data-name="Selected Explore Experiences" transform="translate(-159 -241)">
-      <path id="Path_132" data-name="Path 132" class="cls-2" d="M29.295,0V1.646c-.735,1.08-1.757,2.673-2.778,4.488a42.193,42.193,0,0,0-2.445,4.826c-2.27,5.112-4.879,10.79-7.1,15.9H13.113C10.166,19.987,6.127,11.356,2.381,3.694A3.111,3.111,0,0,0,.735,2.042L0,1.646V0H15.5V1.646l-.852.286-.169.058a2.686,2.686,0,0,0-.677.292c-.665.426-.84,1.144-.4,2.206.134.321.263.648.4.969.28.677.566,1.366.846,2.054,1.4,3.4,2.877,6.956,4.313,10.312,1.249-2.894,2.27-5.45,3.011-7.265A3.548,3.548,0,0,0,21.8,7.324a56.013,56.013,0,0,0-2.609-5.678V0Z" transform="translate(189.853 274.743)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="28px" viewBox="0 0 31 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Explore - Selected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Explore---Selected" fill="#E74D4D">
+            <g id="Selected_Explore_Experiences">
+                <path d="M30.148,0.743 L30.148,2.389 C29.413,3.469 28.391,5.062 27.37,6.877 C26.4526007,8.43170654 25.6359224,10.0436859 24.925,11.703 C22.655,16.815 20.046,22.493 17.825,27.603 L13.966,27.603 C11.019,20.73 6.98,12.099 3.234,4.437 C2.92028812,3.69374107 2.33011255,3.10141419 1.588,2.785 L0.853,2.389 L0.853,0.743 L16.353,0.743 L16.353,2.389 L15.501,2.675 L15.332,2.733 C15.093984,2.79875143 14.8661717,2.89701022 14.655,3.025 C13.99,3.451 13.815,4.169 14.255,5.231 C14.389,5.552 14.518,5.879 14.655,6.2 C14.935,6.877 15.221,7.566 15.501,8.254 C16.901,11.654 18.378,15.21 19.814,18.566 C21.063,15.672 22.084,13.116 22.825,11.301 C23.2916989,10.2581821 23.2276776,9.05443242 22.653,8.067 C21.8896646,6.12726067 21.0186429,4.23164506 20.044,2.389 L20.044,0.743 L30.148,0.743 Z" id="Path_132"></path>
+            </g>
+        </g>
     </g>
-  </g>
 </svg>

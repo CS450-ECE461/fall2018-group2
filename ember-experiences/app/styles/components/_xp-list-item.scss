@@ -6,7 +6,7 @@
     height: 144px;
     margin-right: 15px;
     margin-bottom: 5px;
-    background-color: #E74D4D;
+    background-color: $primary;
     border-radius: 5px;
   }
 
@@ -45,13 +45,13 @@
       margin-bottom: 5px;
       svg {
         width: 10px;
-        fill: #E74D4D;
+        fill: $primary;
         stroke: #E74D4D;
       }
 
       .outlined-star {
         fill: white;
-        stroke: #E74D4D;
+        stroke: $primary;
         stroke-width: 40;
       }
     }

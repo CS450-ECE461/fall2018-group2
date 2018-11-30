@@ -1,28 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Artboard_30);
-      }
-
-      .cls-2 {
-        fill: #e74d4d;
-      }
-
-      .cls-3 {
-        fill: #fff;
-      }
-    </style>
-    <clipPath id="clip-Artboard_30">
-      <rect width="91" height="93"/>
-    </clipPath>
-  </defs>
-  <g id="Artboard_30" data-name="Artboard – 30" class="cls-1">
-    <rect class="cls-3" width="91" height="93"/>
-    <g id="Selected_Search" data-name="Selected Search" transform="translate(-43.261 -426.262)">
-      <g id="Group_219" data-name="Group 219" transform="translate(76.261 460.261)">
-        <path id="Path_123" data-name="Path 123" class="cls-2" d="M17.651,14.617a9.54,9.54,0,1,0-3.033,3.033L21.967,25,25,21.967Zm-3.192-3.192a5.25,5.25,0,0,1-3.033,3.033,5.146,5.146,0,0,1-1.875.352,5.26,5.26,0,1,1,5.26-5.26A5.146,5.146,0,0,1,14.459,11.425Z"/>
-      </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="25px" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search" transform="translate(-1.000000, -1.000000)" fill="#E74D4D" fill-rule="nonzero">
+            <g id="Selected_Search" transform="translate(0.739000, 0.738000)">
+                <g id="Group_219" transform="translate(0.261000, 0.261000)">
+                    <path d="M17.651,14.617 C20.2223581,10.5033241 19.2970844,5.11495821 15.5007139,2.09472923 C11.7043434,-0.925499749 6.24589366,-0.615749485 2.81557209,2.81457209 C-0.614749485,6.24489366 -0.924499749,11.7033434 2.09572923,15.4997139 C5.11595821,19.2960844 10.5043241,20.2213581 14.618,17.65 L21.967,25 L25,21.967 L17.651,14.617 Z M14.459,11.425 C13.9259504,12.8217234 12.8227234,13.9249504 11.426,14.458 C10.8284023,14.6911722 10.1924764,14.8105567 9.551,14.81 C6.64598222,14.81 4.291,12.4550178 4.291,9.55 C4.291,6.64498222 6.64598222,4.29 9.551,4.29 C12.4560178,4.29 14.811,6.64498222 14.811,9.55 C14.8115567,10.1914764 14.6921722,10.8274023 14.459,11.425 Z" id="Path_123"></path>
+                </g>
+            </g>
+        </g>
     </g>
-  </g>
 </svg>

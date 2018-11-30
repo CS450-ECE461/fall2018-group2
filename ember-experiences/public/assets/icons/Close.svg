@@ -1,33 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Artboard_32);
-      }
-
-      .cls-2, .cls-3 {
-        fill: #fff;
-      }
-
-      .cls-2 {
-        stroke: #fff;
-      }
-    </style>
-    <clipPath id="clip-Artboard_32">
-      <rect width="91" height="93"/>
-    </clipPath>
-  </defs>
-  <g id="Artboard_32" data-name="Artboard – 32" class="cls-1">
-    <rect class="cls-3" width="91" height="93"/>
-    <g id="Group_376" data-name="Group 376" transform="translate(-295.057 -127.954)">
-      <g id="Group_261" data-name="Group 261" transform="translate(332.954 166.954)">
-        <g id="Group_259" data-name="Group 259" transform="translate(0 0.021)">
-          <rect id="Rectangle_338" data-name="Rectangle 338" class="cls-2" width="2.618" height="20.155" transform="translate(14.252 0) rotate(45)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Close" transform="translate(-1.000000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+            <g id="Group_376" transform="translate(0.943000, 0.046000)">
+                <g id="Group_261" transform="translate(0.954000, 0.954000)">
+                    <g id="Group_259" transform="translate(0.000000, 0.021000)">
+                        <rect id="Rectangle_338" transform="translate(8.051734, 8.051471) rotate(45.000000) translate(-8.051734, -8.051471) " x="6.74273419" y="-2.02602864" width="2.618" height="20.155"></rect>
+                    </g>
+                    <g id="Group_260">
+                        <rect id="Rectangle_339" transform="translate(8.051266, 8.051471) rotate(45.000000) translate(-8.051266, -8.051471) " x="-2.02623419" y="6.74247136" width="20.155" height="2.618"></rect>
+                    </g>
+                </g>
+            </g>
         </g>
-        <g id="Group_260" data-name="Group 260" transform="translate(0 0)">
-          <rect id="Rectangle_339" data-name="Rectangle 339" class="cls-2" width="20.155" height="2.618" transform="translate(1.851) rotate(45)"/>
-        </g>
-      </g>
     </g>
-  </g>
 </svg>

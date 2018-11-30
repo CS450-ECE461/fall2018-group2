@@ -16,7 +16,7 @@
   input {
     width: 85%;
     height: 34px;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.089);
+    box-shadow: $shadow-up;
     border-radius: 5px;
     border: 0px;
     padding-left: 10px;

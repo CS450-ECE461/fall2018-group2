@@ -6,7 +6,7 @@
 * {
   margin: 0px;
   font-family: 'Montserrat', sans-serif;
-  color: #E74D4D;
+  color: $primary;
   font-size: 14px;
   -webkit-appearance: none;
 }
@@ -32,7 +32,7 @@ h1 {
   section {
     width: 100%;
     padding-bottom: 10px;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.089);
+    box-shadow: $shadow-up;
   }
 
   .notification-container {
@@ -118,13 +118,13 @@ h1 {
           margin-bottom: 5px;
           svg {
             width: 16px;
-            fill: #E74D4D;
-            stroke: #E74D4D;
+            fill: $primary;
+            stroke: $primary;
           }
 
           .outlined-star {
             fill: white;
-            stroke: #E74D4D;
+            stroke: $primary;
             stroke-width: 40;
           }
         }
@@ -161,7 +161,7 @@ h1 {
   }
 
   .become-host-container {
-    background-color: #E74D4D;
+    background-color: $primary;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -187,6 +187,114 @@ h1 {
       justify-content: center;
       text-align: center;
       padding-top: 20px;
+    }
+  }
+}
+
+.experience {
+  overflow-y: auto;
+
+  .red-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: $primary;
+    width: 100vw;
+    height: 210px;
+  }
+
+  .experience-content {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    section {
+      padding-bottom: 20px;
+      padding-top: 25px;
+      padding-left: 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+    }
+
+    #overview {
+      padding-top: 0px;
+
+      .title {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      .image-container {
+        margin-top: 10px;
+        margin-left: -30px;
+      }
+
+      .description {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-size: 20px;
+          margin-bottom: 10px;
+          width: 90%;
+        }
+        
+        #location-time-container {
+          margin-top: 10px;
+          display: flex;
+          align-content: center;
+          justify-content: space-between;
+
+          .location {
+            color: $secondary;;
+            font-size: 16px;
+            font-weight: 500;
+          }
+
+          .time-until-event-container {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+
+            span {
+              color: $secondary;;
+              margin-left: 10px;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .reviews {
+          margin-top: 25px;
+          
+          img {
+            width: 16px;
+          }
+        }
+
+        .review-num {
+          margin-left: 10px;
+        }
+      }
+    }
+
+    #details {
+      .title {
+        color: $primary;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      p {
+        padding-top: 10px;
+        color: $secondary;
+        font-size: 14px;
+        font-weight: $medium;
+
+        .read-more {
+          color: $primary;
+        }
+      }
     }
   }
 }
