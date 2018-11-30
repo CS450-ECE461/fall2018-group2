@@ -132,14 +132,32 @@ module.exports = Seed.extend ({
           return { user: dab.ref(`users.4`), experience: dab.ref(`experiences.${i}`) }
         }),
 
-        // All users like experiences #7, and #8
+        // 5 users like experiences #7 and #8
         dab.times(5, function (i) {
           return { user: dab.ref(`users.${i}`), experience: dab.ref(`experiences.6`) }
         }),
         dab.times(5, function (i) {
           return { user: dab.ref(`users.${i}`), experience: dab.ref(`experiences.7`) }
         }),
-      )
+      ),
+
+      bookings: dab.concat(
+
+        // Mateus books first 3 experiences
+        dab.times(3, function (i) {
+          return { user: dab.ref(`users.2`), experience: dab.ref(`experiences.${i}`) }
+        }),
+
+        // Seth books first 4 experiences
+        dab.times(4, function (i) {
+          return { user: dab.ref(`users.3`), experience: dab.ref(`experiences.${i}`) }
+        }),
+
+        // 5 users book experience #7
+        dab.times(5, function (i) {
+          return { user: dab.ref(`users.${i}`), experience: dab.ref(`experiences.6`) }
+        })
+      ),
     }
   }
 });
