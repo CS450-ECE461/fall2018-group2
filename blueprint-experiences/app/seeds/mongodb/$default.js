@@ -1,5 +1,6 @@
 const dab = require ('@onehilltech/dab');
 const {Seed} = require ('@onehilltech/blueprint-mongodb');
+const faker = require('faker');
 
 module.exports = Seed.extend ({
   model () {
@@ -53,46 +54,92 @@ module.exports = Seed.extend ({
         }
       ],
 
-      experiences: [
-        {
-          host: dab.ref('users.0'),
-          address: {
-            street: '450 Northeast St',
-            city: 'Indianapolis',
-            state: 'Indiana',
-            postalCode: '46200',
-            country: 'United States'
-          },
-          description: 'An event for all family and more.',
-          title: 'Basket Social'
-        },
-        {
-          host: dab.ref('users.1'),
-          address: {
-            street: '900 N Rose Avenue',
-            city: 'Bloomington',
-            state: 'Indiana',
-            postalCode: '47400',
-            country: 'United States'
-          },
-          description: 'Superb adventures from countryside rides to riverwalks',
-          title: 'Countryside Formals'
-        },
-        {
-          host: dab.ref('users.0'),
-          address: {
-            street: '900 N Rose Avenue',
-            city: 'Allentown',
-            state: 'Pennsylvania',
-            postalCode: '17400',
-            country: 'United States'
-          },
-          description: 'Superb adventures from countryside rides to riverwalks',
-          title: 'Community Outreach',
-          price: 29.50
-        }
-      ]
+      experiences: dab.concat (
 
+        dab.times(3, function () {
+          return {
+            host: dab.ref('users.0'),
+            address: {
+              street: faker.address.streetAddress(),
+              city: faker.address.city(),
+              state: faker.address.state(),
+              postalCode: faker.address.zipCode(),
+              country: faker.address.country()
+            },
+            description: faker.lorem.paragraph(),
+            title: faker.lorem.words(),
+            price: faker.commerce.price()
+          }
+        }),
+
+        dab.times(5, function (index) {
+          return {
+            host: dab.ref('users.2'),
+            address: {
+              street: faker.address.streetAddress(),
+              city: faker.address.city(),
+              state: faker.address.state(),
+              postalCode: faker.address.zipCode(),
+              country: "United States"
+            },
+            description: faker.lorem.paragraph(),
+            title: faker.lorem.words(),
+            price: faker.commerce.price()/index
+          }
+        }),
+
+        dab.times(2, function () {
+          return {
+            host: dab.ref('users.3'),
+            address: {
+              street: faker.address.streetAddress(),
+              city: faker.address.city(),
+              state: faker.address.state(),
+              postalCode: faker.address.zipCode(),
+              country: faker.address.country()
+            },
+            description: faker.lorem.paragraph(),
+            title: faker.lorem.words()
+          }
+        }),
+
+        dab.times(4, function (index) {
+          return {
+            host: dab.ref('users.3'),
+            address: {
+              street: faker.address.streetAddress(),
+              city: faker.address.city(),
+              state: faker.address.state(),
+              postalCode: faker.address.zipCode(),
+              country: faker.address.country()
+            },
+            description: faker.lorem.paragraph(),
+            title: faker.lorem.words(),
+            price: faker.commerce.price()/index
+          }
+        })
+      ),
+
+      favorites: dab.concat(
+
+        // Seth likes first 4 experiences
+        dab.times(4, function (i) {
+          return { user: dab.ref(`users.3`), experience: dab.ref(`experiences.${i}`) }
+        }),
+
+        // Leo likes first 3 experiences
+        dab.times(3, function (i) {
+          return { user: dab.ref(`users.4`), experience: dab.ref(`experiences.${i}`) }
+        }),
+
+        // All users like experiences #7, and #8
+        dab.times(5, function (i) {
+          return { user: dab.ref(`users.${i}`), experience: dab.ref(`experiences.6`) }
+        }),
+        dab.times(5, function (i) {
+          return { user: dab.ref(`users.${i}`), experience: dab.ref(`experiences.7`) }
+        }),
+      )
     }
   }
 });
