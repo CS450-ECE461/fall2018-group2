@@ -1,0 +1,83 @@
+<div class="experience">
+  {{header-bar title="Experience Title" rightIconType="like"}}
+
+  <div class="experience-content">
+    <div class="red-background"></div>
+    {{featured-carousel}}
+
+    <section id="overview">
+      <div class="description">
+        <span class="title">Experience Title Starts Here and May Extend to Three Lines Here</span>
+        <div id="location-time-container">
+          <span class="location">Indianapolis, IN</span>
+          <div class="time-until-event-container">
+            <img src="/assets/icons/Time.svg" alt="Time">
+            <span>2 Hours</span>
+          </div>
+        </div>
+        <span class="reviews">
+          <img src="/assets/icons/Star-selected.svg" alt="rating star">
+          <img src="/assets/icons/Star-selected.svg" alt="rating star">
+          <img src="/assets/icons/Star-selected.svg" alt="rating star">
+          <img src="/assets/icons/Star-selected.svg" alt="rating star">
+          <img src="/assets/icons/Star-unselected.svg" alt="rating star">
+          <span class="review-num">12 reviews</span>
+        </span>
+      </div>
+    </section>
+    <section id="details">
+      <span class="title">Details</span>
+      <p>
+        Have you ever wanted to color with goths? Well, you can (sort of)! 
+        They use all black crayons! Bring one of your favorite colors (besides black) 
+        and create a masterpiece. Get to know the goths around your area and bond over 
+        black crayons… 
+        <span class="read-more">read more</span>
+      </p>
+    </section>
+    <section id="provided">
+      <span class="title">Provided</span>
+      <ul>
+        <li><span>Black Crayons</span></li>
+        <li><span>Non alcoholic beverages</span></li>
+        <li><span>Snacks</span></li>
+        <li><span>A variety of coloring books and paper</span></li>
+        <li><span>A relaxed and fun environment and music of your choice</span></li>
+      </ul>
+    </section>
+    <section id="where">
+      <span class="title">Where we'll be</span>
+      <span id="address">13498 Rainbow Road, Indianapolis IN, 46204</span>
+      {{!-- To be replaced with real map --}}
+      <img src="/assets/images/map.png" alt="map">
+    </section>
+    <section id="calender">
+      <span class="title month">MONTH</span>
+      {{!-- To be replaced with real map --}}
+      <img src="/assets/images/calender.png" alt="map">
+    </section>
+    <section id="meet-host">
+      <img src="/assets/images/People/fly-man.jpg" alt="host profile image">
+      <span id="meet-host-title">Meet the host, Zach</span>
+      <p>
+        We take ourselves too seriously, lets relax and have 
+        some fun with crayons! When’s the last time you used 
+        a crayon? Probably kindergarten, right? We’ll I’m… 
+        <span class="read-more">read more</span>
+      </p>
+    </section>
+    <section id="reviews">
+      <span class="title">Reviews</span>
+      <div id="reviews-container">
+        {{review-list-item name="Jacklyn"}}
+        {{review-list-item name="Davis"}}
+        {{review-list-item name="Rick"}}
+      </div>
+      <div id="read-all-container">
+        <span>Read all reviews</span>
+      </div>
+    </section>
+  </div>
+
+  {{book-bar price=80}}
+</div>

@@ -1,26 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Artboard_5);
-      }
-
-      .cls-2 {
-        fill: rgba(0,0,0,0.25);
-      }
-
-      .cls-3 {
-        fill: #fff;
-      }
-    </style>
-    <clipPath id="clip-Artboard_5">
-      <rect width="91" height="93"/>
-    </clipPath>
-  </defs>
-  <g id="Artboard_5" data-name="Artboard – 5" class="cls-1">
-    <rect class="cls-3" width="91" height="93"/>
-    <g id="Selected_Location" data-name="Selected Location" transform="translate(-33.837 -671.023)">
-      <path id="Path_128" data-name="Path 128" class="cls-2" d="M9.33.212C8.983.132,8.631.072,8.278,0H7.067c-.227.04-.453.08-.677.118A7.6,7.6,0,0,0,1.119,11.575q3.119,5.089,6.249,10.173c.069.106.143.209.235.344.069-.095.12-.158.163-.227q3.214-5.236,6.419-10.474a7.121,7.121,0,0,0,1-3.324A7.636,7.636,0,0,0,9.33.212ZM7.423,11.7a4.083,4.083,0,1,1,4.239-3.883A4.079,4.079,0,0,1,7.423,11.7Z" transform="translate(71.836 707.477)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="23px" viewBox="0 0 16 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Location - Unselected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.25">
+        <g id="Location---Unselected" transform="translate(-1.000000, -1.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Selected_Location" transform="translate(0.163000, 0.977000)">
+                <path d="M10.166,0.689 C9.819,0.609 9.467,0.549 9.114,0.477 L7.903,0.477 C7.676,0.517 7.45,0.557 7.226,0.595 C4.7290444,1.00062561 2.59758137,2.62205424 1.5402816,4.92019187 C0.482981827,7.21832951 0.638451528,9.89190289 1.955,12.052 C4.03433333,15.4446667 6.11733333,18.8356667 8.204,22.225 C8.273,22.331 8.347,22.434 8.439,22.569 C8.508,22.474 8.559,22.411 8.602,22.342 C10.7446667,18.8513333 12.8843333,15.36 15.021,11.868 C15.6234143,10.8594484 15.9669536,9.71752387 16.021,8.544 C16.2275594,4.85372761 13.7614919,1.54527998 10.166,0.689 Z M8.259,12.177 C6.60557583,12.1118544 5.15495731,11.0552208 4.5858411,9.50146334 C4.01672489,7.94770591 4.44165679,6.20408855 5.66182516,5.08639245 C6.88199353,3.96869634 8.65610347,3.69795194 10.1541073,4.40083164 C11.6521112,5.10371134 12.5777706,6.64121687 12.498,8.294 C12.392105,10.5332804 10.4989579,12.2674371 8.259,12.177 Z" id="Path_128"></path>
+            </g>
+        </g>
     </g>
-  </g>
 </svg>
