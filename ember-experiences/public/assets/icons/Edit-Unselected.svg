@@ -1,24 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Artboard_18);
-      }
-
-      .cls-2 {
-        fill: rgba(0,0,0,0.25);
-      }
-
-      .cls-3 {
-        fill: #fff;
-      }
-    </style>
-    <clipPath id="clip-Artboard_18">
-      <rect width="91" height="93"/>
-    </clipPath>
-  </defs>
-  <g id="Artboard_18" data-name="Artboard – 18" class="cls-1">
-    <rect class="cls-3" width="91" height="93"/>
-    <path id="Path_158" data-name="Path 158" class="cls-2" d="M21.331,3.189,18.522.379a1.348,1.348,0,0,0-1.562-.25.118.118,0,0,0-.127.03l-.221.221L3.289,13.7,1.778,15.214a.129.129,0,0,0-.034.068l-.017-.017L0,21.711l6.446-1.727-.017-.017a.129.129,0,0,0,.068-.034L21.552,4.877a.118.118,0,0,0,.03-.127A1.349,1.349,0,0,0,21.331,3.189Z" transform="translate(35.273 36.016)"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Edit - Unselected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.25">
+        <g id="Edit---Unselected" fill="#000000">
+            <path d="M21.604,3.205 L18.795,0.395 C18.3830984,-0.01718791 17.7529727,-0.118040285 17.233,0.145 C17.1884856,0.128552558 17.1384494,0.140372122 17.106,0.175 L16.885,0.396 L3.562,13.716 L2.051,15.23 C2.03309302,15.2487365 2.02124503,15.2724325 2.017,15.298 L2,15.281 L0.273,21.727 L6.719,20 L6.702,19.983 C6.7275675,19.978755 6.75126347,19.966907 6.77,19.949 L21.825,4.893 C21.8596279,4.86055059 21.8714474,4.81051444 21.855,4.766 C22.1169716,4.24602347 22.0157707,3.61664256 21.604,3.205 Z" id="Path_158"></path>
+        </g>
+    </g>
 </svg>

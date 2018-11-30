@@ -1,28 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Artboard_21);
-      }
-
-      .cls-2, .cls-3 {
-        fill: #fff;
-      }
-
-      .cls-2 {
-        stroke: #fff;
-      }
-    </style>
-    <clipPath id="clip-Artboard_21">
-      <rect width="91" height="93"/>
-    </clipPath>
-  </defs>
-  <g id="Artboard_21" data-name="Artboard – 21" class="cls-1">
-    <rect class="cls-3" width="91" height="93"/>
-    <g id="Group_95" data-name="Group 95" transform="translate(-78.987 26.189)">
-      <g id="Group_94" data-name="Group 94" transform="translate(114.522 11.689)">
-        <path id="Path_103" data-name="Path 103" class="cls-2" d="M18.729,1.669c-2.3-2.591-6.255-1.9-8.69.491-.022.022-.022.022-.045,0C7.581-.23,3.6-.922,1.3,1.669-.819,4.06-.26,7.5,1.728,10.025a85.233,85.233,0,0,0,8.266,8.266c.022.022.022.022.045,0,.357-.357,5.63-4.781,8.266-8.266C20.248,7.456,20.851,4.06,18.729,1.669Z" transform="translate(0.047 -0.021)"/>
-      </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Saved - Selected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Saved---Selected" transform="translate(-1.000000, -1.000000)" fill="#FFFFFF" stroke="#FFFFFF">
+            <g id="Group_95" transform="translate(0.013000, 0.189000)">
+                <g id="Group_94" transform="translate(0.522000, 0.689000)">
+                    <path d="M19.776,2.648 C17.476,0.057 13.521,0.748 11.086,3.139 C11.064,3.161 11.064,3.161 11.041,3.139 C8.628,0.749 4.647,0.057 2.347,2.648 C0.228,5.039 0.787,8.479 2.775,11.004 C5.33791372,13.9452589 8.09974105,16.7070863 11.041,19.27 C11.063,19.292 11.063,19.292 11.086,19.27 C11.443,18.913 16.716,14.489 19.352,11.004 C21.295,8.435 21.898,5.039 19.776,2.648 Z" id="Path_103"></path>
+                </g>
+            </g>
+        </g>
     </g>
-  </g>
 </svg>

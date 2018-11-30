@@ -1,37 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Artboard_9);
-      }
-
-      .cls-2 {
-        fill: #e74d4d;
-      }
-
-      .cls-3 {
-        fill: #fff;
-      }
-    </style>
-    <clipPath id="clip-Artboard_9">
-      <rect width="91" height="93"/>
-    </clipPath>
-  </defs>
-  <g id="Artboard_9" data-name="Artboard – 9" class="cls-1">
-    <rect class="cls-3" width="91" height="93"/>
-    <g id="Calendar" transform="translate(-262 -421.224)">
-      <g id="Group_222" data-name="Group 222" transform="translate(298 459)">
-        <g id="Group_220" data-name="Group 220" transform="translate(3.859 6.637)">
-          <rect id="Rectangle_314" data-name="Rectangle 314" class="cls-2" width="15.435" height="0.054"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Calendar - Selected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Calendar---Selected" fill="#E74D4D">
+            <g id="Calendar" transform="translate(0.000000, 0.776000)">
+                <g id="Group_222">
+                    <g id="Group_220" transform="translate(3.859000, 6.637000)">
+                        <rect id="Rectangle_314" x="0" y="0" width="15.435" height="1"></rect>
+                    </g>
+                    <g id="Group_221" fill-rule="nonzero">
+                        <path d="M0,0 L0,18.768 L19.293,18.768 L19.293,0 L0,0 Z M1.932,5.536 L17.362,5.536 L17.362,16.836 L1.932,16.836 L1.932,5.536 Z" id="Path_124"></path>
+                    </g>
+                </g>
+                <g id="Group_223" transform="translate(4.017000, 7.161000)">
+                    <path d="M0,4.031 C0,1.462 1.424,3.55271368e-15 3.337,3.55271368e-15 C5.25,3.55271368e-15 6.674,1.457 6.674,4.031 C6.674,6.605 5.262,8.062 3.337,8.062 C1.412,8.062 0,6.6 0,4.031 Z M4.864,4.031 C4.864,2.262 4.24,1.531 3.341,1.531 C2.442,1.531 1.826,2.266 1.826,4.031 C1.826,5.796 2.45,6.531 3.341,6.531 C4.232,6.531 4.864,5.8 4.864,4.031 Z" id="Path_125" fill-rule="nonzero"></path>
+                    <polygon id="Path_126" points="11.161 0.135 11.161 7.925 9.361 7.925 9.361 1.584 7.799 1.584 7.799 0.135"></polygon>
+                </g>
+            </g>
         </g>
-        <g id="Group_221" data-name="Group 221">
-          <path id="Path_124" data-name="Path 124" class="cls-2" d="M0,0V18.768H19.293V0ZM1.932,5.536h15.43v11.3H1.932Z"/>
-        </g>
-      </g>
-      <g id="Group_223" data-name="Group 223" transform="translate(302.017 466.161)">
-        <path id="Path_125" data-name="Path 125" class="cls-2" d="M10.78,23.181c0-2.569,1.424-4.031,3.337-4.031s3.337,1.457,3.337,4.031-1.412,4.031-3.337,4.031S10.78,25.75,10.78,23.181Zm4.864,0c0-1.769-.624-2.5-1.523-2.5s-1.515.735-1.515,2.5.624,2.5,1.515,2.5S15.644,24.95,15.644,23.181Z" transform="translate(-10.78 -19.15)"/>
-        <path id="Path_126" data-name="Path 126" class="cls-2" d="M33.142,19.48v7.79h-1.8V20.929H29.78V19.48Z" transform="translate(-21.981 -19.345)"/>
-      </g>
     </g>
-  </g>
 </svg>

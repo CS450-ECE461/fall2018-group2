@@ -1,0 +1,14 @@
+<div class="header-bar">
+  <img
+    id="left-icon" 
+    src="/assets/icons/LeftArrow.svg" 
+    alt="Left Arrow"
+  >
+  <span id="header-bar-title">{{title}}</span>
+  {{#if showLike}}
+    <img id="right-icon" src="/assets/icons/Saved-Unselected.svg" alt="Left Arrow">
+  {{/if}}
+  {{#if showExit}}
+    <img id="right-icon" src="/assets/icons/Close.svg" alt="Left Arrow">
+  {{/if}}
+</div>

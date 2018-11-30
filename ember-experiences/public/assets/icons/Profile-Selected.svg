@@ -1,29 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Artboard_2);
-      }
-
-      .cls-2 {
-        fill: #e74d4d;
-      }
-
-      .cls-3 {
-        fill: #fff;
-      }
-    </style>
-    <clipPath id="clip-Artboard_2">
-      <rect width="91" height="93"/>
-    </clipPath>
-  </defs>
-  <g id="Artboard_2" data-name="Artboard – 2" class="cls-1">
-    <rect class="cls-3" width="91" height="93"/>
-    <g id="Selected_Profile" data-name="Selected Profile" transform="translate(-38 -241)">
-      <circle id="Ellipse_113" data-name="Ellipse 113" class="cls-2" cx="7.255" cy="7.255" r="7.255" transform="translate(76.795 272.425)"/>
-      <g id="Group_228" data-name="Group 228" transform="translate(73.977 291.165)">
-        <path id="Path_131" data-name="Path 131" class="cls-2" d="M20.147,37.353V46.22H0v-8.8c.006-.028.006-.05.011-.073l3.27-3.773H16.871Z" transform="translate(0 -33.58)"/>
-      </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="32px" viewBox="0 0 22 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Profile - Selected</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Profile---Selected" fill="#E74D4D">
+            <g id="Selected_Profile">
+                <circle id="Ellipse_113" cx="11.05" cy="7.68" r="7.255"></circle>
+                <g id="Group_228" transform="translate(0.977000, 18.165000)">
+                    <path d="M20.147,4.773 L20.147,13.64 L0,13.64 L0,4.84 C0.006,4.812 0.006,4.79 0.011,4.767 L3.281,0.994 L16.871,0.994 L20.147,4.773 Z" id="Path_131"></path>
+                </g>
+            </g>
+        </g>
     </g>
-  </g>
 </svg>

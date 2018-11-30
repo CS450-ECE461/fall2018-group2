@@ -10,24 +10,23 @@ describe ('app | routers | user', function () {
 
       it ('should get all users', function () {
         return request()
-          .get(`/v1/users/`)
+          .get(`/v1/users`)
           .withUserToken(0)
           .expect(200);
       });
-
     });
 
     describe ('POST', function () {
 
       it ('should create a user profile', function () {
         const user = {
-          firstName: "Leo",
-          lastName: "Neto",
+          firstName: "John",
+          lastName: "Zoom",
           role: ['admin']
         };
 
         return request()
-          .post(`/v1/users/`)
+          .post(`/v1/users`)
           .withUserToken(0)
           .send({user})
           .expect(200);
