@@ -8,12 +8,12 @@ module('Acceptance | explore', function(hooks) {
   test('visiting /explore', async function(assert) {
     await visit('/explore');
 
-    assert.equal(currentURL(), '/explore');
+    assert.equal(currentURL(), '/sign-in');
   });
 
   test('visiting /', async function(assert) {
     await visit('/');
 
-    assert.equal(currentURL(), '/explore');
+    assert.equal(currentURL(), '/sign-in');
   });
 });

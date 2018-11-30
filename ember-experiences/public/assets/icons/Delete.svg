@@ -1,49 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Artboard_14);
-      }
-
-      .cls-2, .cls-5 {
-        fill: none;
-      }
-
-      .cls-2 {
-        stroke: rgba(0,0,0,0.75);
-      }
-
-      .cls-3 {
-        fill: rgba(0,0,0,0.56);
-      }
-
-      .cls-4 {
-        stroke: none;
-      }
-
-      .cls-6 {
-        fill: #fff;
-      }
-    </style>
-    <clipPath id="clip-Artboard_14">
-      <rect width="91" height="93"/>
-    </clipPath>
-  </defs>
-  <g id="Artboard_14" data-name="Artboard – 14" class="cls-1">
-    <rect class="cls-6" width="91" height="93"/>
-    <g id="Group_324" data-name="Group 324" transform="translate(-282.895 -115.947)">
-      <g id="Ellipse_115" data-name="Ellipse 115" class="cls-2" transform="translate(319 153)">
-        <circle class="cls-4" cx="9.947" cy="9.947" r="9.947"/>
-        <circle class="cls-5" cx="9.947" cy="9.947" r="9.447"/>
-      </g>
-      <g id="Group_261" data-name="Group 261" transform="translate(325.631 159.631)">
-        <g id="Group_259" data-name="Group 259" transform="translate(0 0)">
-          <rect id="Rectangle_338" data-name="Rectangle 338" class="cls-3" width="1.026" height="7.9" transform="translate(0 0.725) rotate(-45)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Delete</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Delete">
+            <g id="Group_324" transform="translate(0.105000, 0.053000)">
+                <g id="Ellipse_115">
+                    <circle id="Oval" cx="9.947" cy="9.947" r="9.947"></circle>
+                    <circle id="Oval" stroke-opacity="0.75" stroke="#000000" cx="9.947" cy="9.947" r="9.447"></circle>
+                </g>
+                <g id="Group_261" transform="translate(6.631000, 6.631000)" fill="#000000" fill-opacity="0.560000002">
+                    <g id="Group_259">
+                        <rect id="Rectangle_338" transform="translate(3.155818, 3.155326) rotate(-45.000000) translate(-3.155818, -3.155326) " x="2.64281756" y="-0.794673993" width="1.026" height="7.9"></rect>
+                    </g>
+                    <g id="Group_260" transform="translate(0.000000, 0.008000)">
+                        <rect id="Rectangle_339" transform="translate(3.155818, 3.155674) rotate(-45.000000) translate(-3.155818, -3.155674) " x="-0.794182436" y="2.64267399" width="7.9" height="1.026"></rect>
+                    </g>
+                </g>
+            </g>
         </g>
-        <g id="Group_260" data-name="Group 260" transform="translate(0 0.008)">
-          <rect id="Rectangle_339" data-name="Rectangle 339" class="cls-3" width="7.9" height="1.026" transform="translate(0 5.586) rotate(-45)"/>
-        </g>
-      </g>
     </g>
-  </g>
 </svg>

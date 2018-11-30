@@ -1,24 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 91 93">
-  <defs>
-    <style>
-      .cls-1 {
-        clip-path: url(#clip-Artboard_19);
-      }
-
-      .cls-2 {
-        fill: #e74d4d;
-      }
-
-      .cls-3 {
-        fill: #fff;
-      }
-    </style>
-    <clipPath id="clip-Artboard_19">
-      <rect width="91" height="93"/>
-    </clipPath>
-  </defs>
-  <g id="Artboard_19" data-name="Artboard – 19" class="cls-1">
-    <rect class="cls-3" width="91" height="93"/>
-    <path id="Path_105" data-name="Path 105" class="cls-2" d="M7.866,0a7.866,7.866,0,1,0,7.866,7.866A7.866,7.866,0,0,0,7.866,0ZM6.687,9.092V2.437H8.18V7.588h5.4V9.081Z" transform="translate(37.766 39)"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Time</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Time" fill="#E74D4D" fill-rule="nonzero">
+            <path d="M8.632,0 C4.28772816,-2.6600993e-16 0.766,3.52172816 0.766,7.866 C0.766,12.2102718 4.28772816,15.732 8.632,15.732 C12.9762718,15.732 16.498,12.2102718 16.498,7.866 C16.498,3.52172816 12.9762718,2.19525418e-15 8.632,0 Z M7.453,9.092 L7.453,2.437 L8.946,2.437 L8.946,7.588 L14.346,7.588 L14.346,9.081 L7.453,9.092 Z" id="Path_105"></path>
+        </g>
+    </g>
 </svg>

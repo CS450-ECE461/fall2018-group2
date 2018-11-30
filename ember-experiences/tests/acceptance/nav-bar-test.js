@@ -13,14 +13,14 @@ module('Acceptance | nav bar', function(hooks) {
   });
 
   test('nav bar profiles button re-routes to profile', async function(assert) {
-    await visit('/explore');
+    await visit('/profile');
     await click('.profile-nav-link');
 
     assert.equal(currentURL(), '/profile');
   });
 
   test('nav bar experiences button re-routes to experiences', async function(assert) {
-    await visit('/explore');
+    await visit('/experiences');
     await click('.experiences-nav-link');
 
     assert.equal(currentURL(), '/experiences');
