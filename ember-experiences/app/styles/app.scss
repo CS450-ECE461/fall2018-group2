@@ -32,7 +32,7 @@ h1 {
   section {
     width: 100%;
     padding-bottom: 10px;
-    box-shadow: $shadow-up;
+    box-shadow: $shadow-down;
   }
 
   .notification-container {
@@ -211,7 +211,14 @@ h1 {
       padding-bottom: 20px;
       padding-top: 25px;
       padding-left: 20px;
+      padding-right: 20px;
       border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+
+      .title {
+        color: $primary;
+        font-size: 16px;
+        font-weight: bold;
+      }
     }
 
     #overview {
@@ -254,7 +261,6 @@ h1 {
           .time-until-event-container {
             display: flex;
             align-items: center;
-            margin-right: 20px;
 
             span {
               color: $secondary;;
@@ -279,14 +285,8 @@ h1 {
     }
 
     #details {
-      .title {
-        color: $primary;
-        font-size: 16px;
-        font-weight: bold;
-      }
-
       p {
-        padding-top: 10px;
+        padding-top: 15px;
         color: $secondary;
         font-size: 14px;
         font-weight: $medium;
@@ -294,6 +294,82 @@ h1 {
         .read-more {
           color: $primary;
         }
+      }
+    }
+
+    #provided {
+      ul {
+        padding-top: 15px;
+        padding-left: 20px;
+      }
+
+      ul li {
+        color: $primary;
+        list-style-type: disc;
+        font-size: 14px;
+        padding-bottom: 7px;
+      }
+    
+      ul li span {
+        color: $secondary;
+        font-weight: $medium;
+      }
+    }
+
+    #where {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      #address {
+        color: $secondary;
+        font-weight: $medium;
+        padding-top: 15px;
+        font-size: 14px;
+      }
+
+      img {
+        width: 100vw;
+        height: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        padding-top: 15px;
+        object-fit: cover;
+      }
+    }
+
+    #calender {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: $shadow-down;
+      border: none;
+
+      .month {
+        font-size: 20px;
+        font-weight: $bold;
+      }
+
+      img {
+        width: 100vw;
+        height: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        padding-top: 15px;
+        object-fit: fill;
+      }
+    }
+
+    #meet-host {
+      img {
+        width: 145px;
+        // height: 145px;
       }
     }
   }
