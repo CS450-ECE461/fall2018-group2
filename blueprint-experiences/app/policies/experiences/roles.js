@@ -1,4 +1,4 @@
-const {Policy, model} = require ('@onehilltech/blueprint');
+const { Policy, model } = require ('@onehilltech/blueprint');
 
 module.exports = Policy.extend ({
   failureCode: 'invalid_role',
@@ -7,14 +7,14 @@ module.exports = Policy.extend ({
 
   User: model ('user'),
 
-  role: null,
+  roles: null,
 
-  setParameters (role) {
-    this.role = role
+  setParameters (roles) {
+    this.roles = roles
   },
 
   runCheck (req) {
-    const selection = {_id: req.user._id, role: this.role};
+    const selection = {_id: req.user._id, roles: this.roles};
     return this.User.findOne (selection).then (user => !!user);
   }
 

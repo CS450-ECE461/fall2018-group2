@@ -5,7 +5,7 @@ const User = require('./user');
 const Experience = require('./experience');
 
 const bookingSchema = new Schema ({
-  user: { type: ObjectId, required: true, ref: 'User' },
+  guest: { type: ObjectId, required: true, ref: 'User' },
 
   experience: {type: ObjectId, required: true, ref: 'Experience' }
 
