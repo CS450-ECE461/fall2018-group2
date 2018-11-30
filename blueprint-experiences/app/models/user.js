@@ -6,8 +6,8 @@ const userSchema = new Schema ({
 
   lastName: {type: String, required: true, trim: true },
 
-  role: [{type: String, required: true, default: 'visitor'}],
+  roles: [{type: String, required: true, default: 'visitor'}],
 
 }, { softDelete: true });
 
-module.exports = mongodb.resource('user', userSchema, 'users');
+module.                                                                                                                                                                                                                          exports = mongodb.resource('user', userSchema, 'users');

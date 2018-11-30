@@ -14,7 +14,6 @@ describe ('app | routers | user', function () {
           .withUserToken(0)
           .expect(200);
       });
-
     });
 
     describe ('POST', function () {
