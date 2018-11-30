@@ -205,7 +205,7 @@ h1 {
 
   .experience-content {
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 
     section {
       padding-bottom: 20px;
@@ -367,9 +367,63 @@ h1 {
     }
 
     #meet-host {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: $shadow-down;
+
       img {
+        // padding-top: 10px;
         width: 145px;
-        // height: 145px;
+        height: 145px;
+        border-radius: $radius;
+        object-fit: cover;
+      }
+
+      #meet-host-title {
+        font-size: 16px;
+        font-weight: $bold;
+        padding-top: 30px;
+      }
+
+      p {
+        width: 300px;
+        font-size: 14px;
+        font-weight: $normal;
+        color: $secondary;
+        padding-top: 15px;
+      }
+    }
+
+    #reviews {
+      border-bottom: none;
+
+      #reviews-container {
+        padding-top: 30px;
+      }
+
+      #read-all-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100vw;
+        height: 50px;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+
+        span {
+          padding-bottom: 10px;
+          padding-left: 20px;
+          font-size: 12px;
+          font-weight: $bold;
+        }
       }
     }
   }
