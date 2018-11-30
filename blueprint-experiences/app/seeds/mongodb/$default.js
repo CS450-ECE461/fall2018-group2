@@ -5,13 +5,13 @@ module.exports = Seed.extend ({
   model () {
     return {
       users: [
-        {firstName: 'Ali', lastName: 'Albert', role: ['host', 'visitor']},
-        {firstName: 'Zoe', lastName: 'Ziran', role: ['admin']},
-        {firstName: 'Mateus', lastName: 'Jose', role: ['admin', 'host', 'visitor']},
-        {firstName: 'Seth', lastName: 'Fuller', role: ['admin', 'host', 'visitor']},
-        {firstName: 'Leo', lastName: 'Neto', role: ['admin, visitor']},
-        {firstName: 'Zach', lastName: 'Balda', role: ['admin', 'visitor']},
-        {firstName: 'Jose', lastName: 'Cortez', role: ['admin, visitor']}
+        {firstName: 'Ali', lastName: 'Albert', roles: ['host', 'visitor']},
+        {firstName: 'Zoe', lastName: 'Ziran', roles: ['admin']},
+        {firstName: 'Mateus', lastName: 'Jose', roles: ['admin', 'host', 'visitor']},
+        {firstName: 'Seth', lastName: 'Fuller', roles: ['admin', 'host', 'visitor']},
+        {firstName: 'Leo', lastName: 'Neto', roles: ['admin, visitor']},
+        {firstName: 'Zach', lastName: 'Balda', roles: ['admin', 'visitor']},
+        {firstName: 'Jose', lastName: 'Cortez', roles: ['admin, visitor']}
       ],
 
       native: [
