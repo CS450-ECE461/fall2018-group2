@@ -4,7 +4,9 @@ import Authenticated from 'ember-cli-gatekeeper/mixins/authenticated';
 export default Route.extend(Authenticated, {
   model() {
     return [{
+      url: 'default-experience',
       host: {
+        tag: 'default-experience',
         firstName: 'FirstName1',
         lastName: 'LastName1',
         roles: 'roles1'
@@ -22,6 +24,7 @@ export default Route.extend(Authenticated, {
       start: 1,
       end: 0
     }, {
+      url: 'default-experience',
       host: {
         firstName: 'FirstName2',
         lastName: 'LastName2',
