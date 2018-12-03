@@ -7,5 +7,6 @@ export default DS.Model.extend({
   description: DS.attr('string'),
   price: DS.attr('number'),
   start: DS.attr('number'),
-  end: DS.attr('number')
+  end: DS.attr('number'),
+  avatarUrl: DS.attr('string')
 });
