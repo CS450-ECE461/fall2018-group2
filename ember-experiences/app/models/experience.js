@@ -1,11 +1,16 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  address: DS.attr('address'),
+  id: DS.attr('string'),
   title: DS.attr('string'),
-  description: DS.attr('string'),
+  tag: DS.attr('string'),
+  images: DS.attr(),
   price: DS.attr('number'),
-  start: DS.attr('number'),
-  end: DS.attr('number'),
-  host: DS.belongsTo('user')
+  duration: DS.attr('number'),
+  address: DS.attr('address'),
+  description: DS.attr('string'),
+  provided: DS.attr(),
+
+  host: DS.belongsTo('user'),
+  reviews: DS.hasMany('review')
 });
