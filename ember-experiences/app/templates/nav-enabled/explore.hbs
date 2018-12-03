@@ -9,7 +9,8 @@
     <div class="content">
       <span class="title">Featured</span>
       <div class="featured-listing-container">
-        {{featured-listing}}
+
+        {{featured-listing model = model}}
       </div>
     </div>
   </section>
@@ -67,12 +68,9 @@
     <div class="content">
       <span class="title">Indianapolis, IN</span>
       <div class="list">
-        {{xp-list-item}}
-        {{xp-list-item}}
-        {{xp-list-item}}
-        {{xp-list-item}}
-        {{xp-list-item}}
-        {{xp-list-item}}
+        {{#each model as |experience|}}
+          {{xp-list-item experience = experience}}
+        {{/each}}
       </div>
     </div>
   </section>
