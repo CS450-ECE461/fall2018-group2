@@ -15,9 +15,60 @@ h1 {
   font-size: 3em;
 }
 
-.register-link, .login-link {
-  margin-top: 20px;
-  color: #A61F2B;
+.sign-in, .sign-up {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary;
+
+  h1 {
+    font-size: 24px;
+    font-weight: $bold;
+    color: white;
+    padding-top: 50%;
+    padding-left: 40px;
+    padding-bottom: 20%;
+  }
+
+  #form {
+    padding-left: 40px;
+    padding-right: 40px;
+    // width: 100%;
+
+    input {
+      width: calc(100vw - 80px);
+      background-color: $primary;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      border-bottom: 1px solid white;
+      caret-color: white;
+
+      label {
+        color: white;
+      }
+    }
+
+    
+
+    button {
+      background-color: $primary;
+      color: white;
+      box-shadow: none;
+    }
+
+    i {
+      outline: none;
+    }
+  }
+
+  .sign-up-link {
+    position: absolute;
+    bottom: 40px;
+    padding-left: 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: $bold;
+    text-decoration: none;
+  }
 }
 
 .explore {
