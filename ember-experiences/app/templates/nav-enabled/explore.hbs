@@ -6,23 +6,6 @@
     {{notification-box}}
   </section>
 
-  <!-- Example of how to data bind and link experiences -->
-  {{#each model.experiences as |experience|}}
-    {{#link-to "experience" experience.url}}
-      <p>Host first name: {{experience.host.firstName}}</p>
-      <p>Host last name: {{experience.host.lastName}}</p>
-      <p>Address:</p>
-      <p>  {{experience.address.street}}</p>
-      <p>  {{experience.address.city}}, {{experience.address.state}} {{experience.address.postalCode}}</p>
-      <p>  {{experience.address.country}}</p>
-      <p>{{experience.title}}</p>
-      <p>{{experience.description}}</p>
-      <p>{{experience.price}}</p>
-      <p>{{experience.start}}</p>
-      <p>{{experience.end}}</p>
-    {{/link-to}}
-  {{/each}}
-
   <!-- featured experiences -->
   <section class="featured-container">
     <div class="content">
