@@ -158,6 +158,25 @@ module.exports = Seed.extend ({
           return { user: dab.ref(`users.${i}`), experience: dab.ref(`experiences.6`) }
         })
       ),
+
+      reviews: dab.concat(
+
+        dab.times(3, function (i) {
+          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.${i}`), reviewer: dab.ref(`users.${i}`)}
+        }),
+
+        dab.times(3, function (i) {
+          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.3`), reviewer: dab.ref(`users.${i}`)}
+        }),
+
+        dab.times(3, function (i) {
+          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.4`), reviewer: dab.ref(`users.${i}`)}
+        }),
+
+        dab.times(5, function (i) {
+          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.6`), reviewer: dab.ref(`users.${i}`)}
+        }),
+      )
     }
   }
 });
