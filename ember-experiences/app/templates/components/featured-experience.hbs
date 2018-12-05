@@ -1,11 +1,14 @@
-<div class="featured-experience">
-  <a href="/experience/4">
-    <div class="image-container">
-      <img src="{{experience.avatarUrl}}" class="image-container" alt="carousel image">
-    </div>
-  </a>
-    <div class="details">
-      <span class="featured-title">{{experience.title}}<br></span>
-      <span class="featured-description">{{experience.description}}</span>
-    </div>
-</div>
+
+{{#link-to "experience" experience.id}}
+  <div class="featured-experience">
+    <a href="#">
+      <div class="image-container">
+        <img src="{{experience.avatarUrl}}" class="image-container" alt="carousel image">
+      </div>
+    </a>
+      <div class="details">
+        <span class="featured-title">{{experience.title}}<br></span>
+        <span class="featured-description">{{experience.description}}</span>
+      </div>
+  </div>
+{{/link-to}}

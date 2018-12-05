@@ -4,6 +4,7 @@ import Authenticated from 'ember-cli-gatekeeper/mixins/authenticated';
 export default Route.extend(Authenticated, {
   model() {
     return {
+      tag: 'default-experience',
       host: {
         firstName: 'FirstName1',
         lastName: 'LastName1',
@@ -22,5 +23,8 @@ export default Route.extend(Authenticated, {
       start: 1,
       end: 0
     }
+    // How to get a specific experience model based on the url:
+    // return this.store.findRecord('rental', params.id);
+    //   also change model() to model(params) at the top
   }
 });
