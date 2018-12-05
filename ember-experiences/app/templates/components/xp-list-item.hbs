@@ -1,11 +1,13 @@
 <div class="xp-list-item">
-  <div class="image"></div>
+  <div class="image">
+    <img src="{{experience.avatarUrl}}" class="image" alt="carousel image">
+  </div>
 
   <div class="description">
     <span class="tags">TAG</span>
-    <span class="description-title">Experience Title</span>
-    <span class="location">Indianapolis, IN</span>
-    <span class="price">$75 per person</span>
+    <span class="description-title">{{experience.title}}</span>
+    <span class="location">{{experience.address.city}}, {{experience.address.state}}</span>
+    <span class="price">${{experience.price}} per person</span>
     <span class="reviews">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
         <path 
