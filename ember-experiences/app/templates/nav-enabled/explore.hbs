@@ -1,20 +1,22 @@
 <div class="explore">
   {{search-bar}}
 
+  <!-- notifications -->
   <section class="notification-container">
     {{notification-box}}
   </section>
 
+  <!-- featured experiences -->
   <section class="featured-container">
     <div class="content">
       <span class="title">Featured</span>
       <div class="featured-listing-container">
-
-        {{featured-listing model = model}}
+        {{featured-listing model=model}}
       </div>
     </div>
   </section>
 
+  <!-- recommended experience -->
   <section class="suggested-container">
     <div class="content">
       <span class="title">Hi Seth, we think you'll really like this!</span>
@@ -64,12 +66,13 @@
     </div>
   </section>
 
+  <!-- local experiences grid -->
   <section class="list-container">
     <div class="content">
       <span class="title">Indianapolis, IN</span>
       <div class="list">
         {{#each model as |experience|}}
-          {{xp-list-item experience = experience}}
+          {{xp-list-item experience=experience}}
         {{/each}}
       </div>
     </div>
