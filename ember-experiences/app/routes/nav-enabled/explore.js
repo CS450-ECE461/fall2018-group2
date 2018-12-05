@@ -2,48 +2,84 @@ import Route from '@ember/routing/route';
 import Authenticated from 'ember-cli-gatekeeper/mixins/authenticated';
 
 export default Route.extend(Authenticated, {
-
-  model(){
-
-    this.store.createRecord('experience', {
-      title: 'Play BasketBall',
-      host: 'John Luke',
-      description:'this a camp where you learn to program while playing basketball',
-      price:95,
-      avatarUrl:'/assets/images/jump-rope.jpg',
+  model() {
+    return [{
+      host: {
+        firstName: 'FirstName1',
+        lastName: 'LastName1',
+        roles: 'roles1'
+      },
       address: {
-        street:'15th street',
-        city:'Indianapolis',
-        state:'Indiana'
-      }
-    });
-    this.store.createRecord('experience', {
-      title: 'Learn to Program',
-      host: 'Mateus Jose',
-      price:100,
-      description:'programming with us is fun',
-      avatarUrl:'/assets/images/turtle.jpg',
+        street: 'Experience 1 Street',
+        city: 'City1',
+        state: 'State1',
+        postalCode: 'PostalCode1',
+        country: 'Country1'
+      },
+      title: 'Experience 1 Title',
+      description: 'Experience 1 description',
+      price: 100,
+      start: 1,
+      end: 10,
+      avatarUrl: "/assets/images/jump-rope.jpg"
+    }, {
+      host: {
+        firstName: 'FirstName2',
+        lastName: 'LastName2',
+        roles: 'roles2'
+      },
       address: {
-        street:'15th street',
-        city:'chicago',
-        state:'Illinois'
-      }
-    });
-
-    this.store.createRecord('experience', {
-      title: 'Writing made fun',
-      host: 'seth Obama',
-      price:100,
-      description:'we write 3 books per week. just let your imagination run wildly',
-      avatarUrl:'/assets/images/peanutbutter.jpg',
+        street: 'Experience 2 Street',
+        city: 'City2',
+        state: 'State2',
+        postalCode: 'PostalCode2',
+        country: 'Country2'
+      },
+      title: 'Experience 2 Title',
+      description: 'Experience 2 description',
+      price: 200,
+      start: 2,
+      end: 20,
+      avatarUrl: "/assets/images/turtle.jpg"
+    }, {
+      host: {
+        firstName: 'FirstName3',
+        lastName: 'LastName3',
+        roles: 'roles3'
+      },
       address: {
-        street:'15th street',
-        city:'chicago',
-        state:'Illinois'
-      }
-    });
-
-
-    return this.store.findAll('experience');
-  },
+        street: 'Experience 3 Street',
+        city: 'City3',
+        state: 'State3',
+        postalCode: 'PostalCode3',
+        country: 'Country3'
+      },
+      title: 'Experience 3 Title',
+      description: 'Experience 3 description',
+      price: 300,
+      start: 3,
+      end: 30,
+      avatarUrl: "/assets/images/jump-rope.jpg"
+    }, {
+      host: {
+        firstName: 'FirstName4',
+        lastName: 'LastName4',
+        roles: 'roles4'
+      },
+      address: {
+        street: 'Experience 4 Street',
+        city: 'City4',
+        state: 'State4',
+        postalCode: 'PostalCode4',
+        country: 'Country4'
+      },
+      title: 'Experience 4 Title',
+      description: 'Experience 4 description',
+      price: 400,
+      start: 4,
+      end: 40,
+      avatarUrl: "/assets/images/turtle.jpg"
+    }]
+    //return this.store.findAll('experience');
+  }
 });
