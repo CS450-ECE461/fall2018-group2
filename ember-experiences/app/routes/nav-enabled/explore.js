@@ -20,7 +20,8 @@ export default Route.extend(Authenticated, {
       description: 'Experience 1 description',
       price: 100,
       start: 1,
-      end: 0
+      end: 0,
+      avatarUrl: "/assets/images/jump-rope.jpg"
     }, {
       host: {
         firstName: 'FirstName2',
@@ -38,8 +39,9 @@ export default Route.extend(Authenticated, {
       description: 'Experience 2 description',
       price: 200,
       start: 2,
-      end: 20
+      end: 20,
+      avatarUrl: "/assets/images/turtle.jpg"
     }]
     //return this.store.findAll('experience');
-  }
+  },
 });
