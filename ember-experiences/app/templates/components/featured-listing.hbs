@@ -1,8 +1,5 @@
 <div class="featured-listing">
-  {{featured-experience}}
-  {{featured-experience}}
-  {{featured-experience}}
-  {{featured-experience}}
-  {{featured-experience}}
-  {{featured-experience}}
+  {{#each model as |experience|}}
+    {{featured-experience experience=experience}}
+  {{/each}}
 </div>
