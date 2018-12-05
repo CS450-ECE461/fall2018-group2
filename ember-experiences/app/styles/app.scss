@@ -9,6 +9,7 @@
   color: $primary;
   font-size: 14px;
   -webkit-appearance: none;
+  text-decoration: none;
 }
 
 h1 {
@@ -89,7 +90,6 @@ h1 {
   .notification-container {
     width: 100%;
     height: 116px;
-    margin-top: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,6 +207,10 @@ h1 {
         flex-direction: row;
         flex-wrap: wrap;
         padding-top: 20px;
+      }
+
+      .description {
+        width: 144px;
       }
     }
   }
@@ -481,9 +485,14 @@ h1 {
 
 
 }
+
 .reviews-page{
   padding-top: 70px;
   .review-container{
     padding: 20px;
   }
+}
+
+.conversation {
+
 }
