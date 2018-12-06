@@ -2,18 +2,7 @@
   <h1 class="my-experience-page-title">My Experiences</h1>
 
 
-  <div style="width: 500px;">
-    {{#power-calendar-range
-      class="demo-range-calendar-with-pretty-range-ends-yo"
-      center=foo
-      selected=range
-      onCenterChange=(action (mut foo) value="date")
-      onSelect=(action (mut range) value="date") as |calendar|}}
-      {{calendar.nav}}
-      {{calendar.days}}
-    {{/power-calendar-range}}
 
-  </div>
 
 
   {{my-experience-container}}
