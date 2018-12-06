@@ -18,8 +18,8 @@ Router.map(function() {
   });
   this.route('experience', { path: '/experience/:id' }, function() {
     this.route('conversation');
+    this.route('reviews');
   });
-  this.route('experiences');
 });
 
 export default Router;

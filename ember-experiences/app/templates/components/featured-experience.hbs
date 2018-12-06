@@ -1,10 +1,14 @@
-<div class="featured-experience">
 
-  <div class="image-container"></div>
-
-  <div class="details">
-    <span class="featured-title">Event Theme</span>
-    <span class="featured-description">Description goes right here describe the experiences.</span>
+{{#link-to "experience" experience.id}}
+  <div class="featured-experience">
+    <a href="#">
+      <div class="image-container">
+        <img src="{{experience.avatarUrl}}" class="image-container" alt="carousel image">
+      </div>
+    </a>
+      <div class="details">
+        <span class="featured-title">{{experience.title}}<br></span>
+        <p class="featured-description">{{experience.description}}</p>
+      </div>
   </div>
-  
-</div>
+{{/link-to}}
