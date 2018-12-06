@@ -1,4 +1,21 @@
 
+
+
+//@import "ember-power-select";
+//@import "ember-modal-dialog/ember-modal-structure";
+//@import "bootstrap-bookingsync";
+//@import "ember-power-calendar";
+
+@import "ember-power-select";
+
+@import "ember-modal-dialog/ember-modal-structure";
+//@import "bootstrap-bookingsync";
+@import "ember-power-calendar";
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+
+
+
 @import "_styled";
 
 
@@ -493,6 +510,9 @@ h1 {
   }
 }
 
-.conversation {
-
+.conversation-page{
+  padding-top: 70px;
+  .conversation-container{
+    padding: 20px;
+  }
 }
