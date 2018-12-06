@@ -1,5 +1,11 @@
-<h1>Sign In</h1>
-{{gatekeeper-sign-in complete=(action "complete")}}
+<div class="sign-in">
+  <h1>Sign In</h1>
 
-<br>
-{{#link-to "sign-up" class="sign-up-link"}}Sign Up{{/link-to}}
+  <div id="form">
+    {{gatekeeper-sign-in complete=(action "complete")}}
+  </div>
+  
+
+  <br>
+  {{#link-to "sign-up" class="sign-up-link"}}Create an account{{/link-to}}
+</div>

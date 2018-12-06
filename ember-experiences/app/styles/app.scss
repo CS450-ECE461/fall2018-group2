@@ -1,4 +1,21 @@
 
+
+
+//@import "ember-power-select";
+//@import "ember-modal-dialog/ember-modal-structure";
+//@import "bootstrap-bookingsync";
+//@import "ember-power-calendar";
+
+@import "ember-power-select";
+
+@import "ember-modal-dialog/ember-modal-structure";
+//@import "bootstrap-bookingsync";
+@import "ember-power-calendar";
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+
+
+
 @import "_styled";
 
 
@@ -9,15 +26,67 @@
   color: $primary;
   font-size: 14px;
   -webkit-appearance: none;
+  text-decoration: none;
 }
 
 h1 {
   font-size: 3em;
 }
 
-.register-link, .login-link {
-  margin-top: 20px;
-  color: #A61F2B;
+.sign-in, .sign-up {
+  width: 100vw;
+  height: 100vh;
+  background-color: $primary;
+
+  h1 {
+    font-size: 24px;
+    font-weight: $bold;
+    color: white;
+    padding-top: 50%;
+    padding-left: 40px;
+    padding-bottom: 20%;
+  }
+
+  #form {
+    padding-left: 40px;
+    padding-right: 40px;
+    // width: 100%;
+
+    input {
+      width: calc(100vw - 80px);
+      background-color: $primary;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      border-bottom: 1px solid white;
+      caret-color: white;
+
+      label {
+        color: white;
+      }
+    }
+
+    
+
+    button {
+      background-color: $primary;
+      color: white;
+      box-shadow: none;
+    }
+
+    i {
+      outline: none;
+    }
+  }
+
+  .sign-up-link {
+    position: absolute;
+    bottom: 40px;
+    padding-left: 40px;
+    font-size: 18px;
+    color: white;
+    font-weight: $bold;
+    text-decoration: none;
+  }
 }
 
 .explore {
@@ -38,7 +107,6 @@ h1 {
   .notification-container {
     width: 100%;
     height: 116px;
-    margin-top: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,6 +225,10 @@ h1 {
         flex-wrap: wrap;
         padding-top: 20px;
       }
+
+      .description {
+        width: 144px;
+      }
     }
   }
 
@@ -204,7 +276,6 @@ h1 {
   }
 
   .experience-content {
-    margin-top: 60px;
     margin-bottom: 100px;
 
     section {
@@ -253,9 +324,10 @@ h1 {
           justify-content: space-between;
 
           .location {
-            color: $secondary;;
+            color: $secondary;
             font-size: 16px;
             font-weight: 500;
+            width: 200px;
           }
 
           .time-until-event-container {
@@ -426,5 +498,21 @@ h1 {
         }
       }
     }
+  }
+
+
+}
+
+.reviews-page{
+  padding-top: 70px;
+  .review-container{
+    padding: 20px;
+  }
+}
+
+.conversation-page{
+  padding-top: 70px;
+  .conversation-container{
+    padding: 20px;
   }
 }

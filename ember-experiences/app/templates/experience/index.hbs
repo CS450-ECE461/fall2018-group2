@@ -1,5 +1,6 @@
 <div class="experience">
-  {{header-bar title="Experience Title" rightIconType="like"}}
+  <h1>experience</h1>
+  {{header-bar title=model.title rightIconType="like"}}
 
   <div class="experience-content">
     <div class="red-background"></div>
@@ -7,9 +8,9 @@
 
     <section id="overview">
       <div class="description">
-        <span class="title">Experience Title Starts Here and May Extend to Three Lines Here</span>
+        <span class="title">{{model.title}}</span>
         <div id="location-time-container">
-          <span class="location">Indianapolis, IN</span>
+          <span class="location">{{model.address.city}}, {{model.address.state}}</span>
           <div class="time-until-event-container">
             <img src="/assets/icons/Time.svg" alt="Time">
             <span>2 Hours</span>
@@ -28,10 +29,7 @@
     <section id="details">
       <span class="title">Details</span>
       <p>
-        Have you ever wanted to color with goths? Well, you can (sort of)! 
-        They use all black crayons! Bring one of your favorite colors (besides black) 
-        and create a masterpiece. Get to know the goths around your area and bond over 
-        black crayons… 
+        {{model.description}}...
         <span class="read-more">read more</span>
       </p>
     </section>
@@ -47,22 +45,36 @@
     </section>
     <section id="where">
       <span class="title">Where we'll be</span>
-      <span id="address">13498 Rainbow Road, Indianapolis IN, 46204</span>
+      <span id="address">{{model.address.street}}, {{model.address.state}}, {{model.address.postalCode}}</span>
       {{!-- To be replaced with real map --}}
       <img src="/assets/images/map.png" alt="map">
     </section>
+    <!--TODO:this calendar must be deleted-->
     <section id="calender">
       <span class="title month">MONTH</span>
       {{!-- To be replaced with real map --}}
       <img src="/assets/images/calender.png" alt="map">
     </section>
+
+    <div >
+      {{#power-calendar-range
+        class="demo-range-calendar-with-pretty-range-ends-yo"
+        center=foo
+        selected=range
+        onCenterChange=(action (mut foo) value="date")
+        onSelect=(action (mut range) value="date") as |calendar|}}
+        {{calendar.nav}}
+        {{calendar.days}}
+      {{/power-calendar-range}}
+    </div>
+
     <section id="meet-host">
       <img src="/assets/images/People/fly-man.jpg" alt="host profile image">
       <span id="meet-host-title">Meet the host, Zach</span>
       <p>
-        We take ourselves too seriously, lets relax and have 
-        some fun with crayons! When’s the last time you used 
-        a crayon? Probably kindergarten, right? We’ll I’m… 
+        We take ourselves too seriously, lets relax and have
+        some fun with crayons! When’s the last time you used
+        a crayon? Probably kindergarten, right? We’ll I’m…
         <span class="read-more">read more</span>
       </p>
     </section>

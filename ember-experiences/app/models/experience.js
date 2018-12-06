@@ -1,9 +1,9 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  id: DS.attr('string'),
-  title: DS.attr('string'),
   tag: DS.attr('string'),
+  address: DS.attr(),
+  title: DS.attr('string'),
   images: DS.attr(),
   price: DS.attr('number'),
   duration: DS.attr('number'),
