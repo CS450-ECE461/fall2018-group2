@@ -115,7 +115,7 @@ module.exports = Seed.extend ({
             },
             description: faker.lorem.paragraph(),
             title: faker.lorem.words(),
-            price: faker.commerce.price()/index
+            price: faker.commerce.price()*(index)
           }
         })
       ),
