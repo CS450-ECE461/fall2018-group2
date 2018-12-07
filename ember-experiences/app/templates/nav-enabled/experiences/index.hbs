@@ -1,6 +1,25 @@
-<section class="my-experience-page">
-  <h1 class="my-experience-page-title">My Experiences</h1>
-  {{#each model as |experience|}}
-    {{my-experience-container experience=experience}}
-  {{/each}}
-</section>
+{{#swiper-container options=myOptions events=(hash sliderMove=(action "myClickHandler"))}}
+  {{#swiper-slide}}
+    <div class="my-experiences">
+      <div class="my-experience-header-bar">
+        <h1>My Experiences</h1>
+      </div>
+
+      <div class="content">
+        <section id="present">
+          <h2>Most Recent</h2>
+          {{#each model as |experience|}}
+            {{my-experience-container experience=experience}}
+          {{/each}}
+        </section>
+
+        <section id="past">
+          <h2>Past</h2>
+          {{#each model as |experience|}}
+            {{my-experience-container experience=experience}}
+          {{/each}}
+        </section>
+      </div>
+    </div>
+  {{/swiper-slide}}
+{{/swiper-container}}

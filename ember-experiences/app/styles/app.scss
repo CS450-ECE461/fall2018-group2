@@ -1,4 +1,21 @@
 
+
+
+//@import "ember-power-select";
+//@import "ember-modal-dialog/ember-modal-structure";
+//@import "bootstrap-bookingsync";
+//@import "ember-power-calendar";
+
+@import "ember-power-select";
+
+@import "ember-modal-dialog/ember-modal-structure";
+//@import "bootstrap-bookingsync";
+@import "ember-power-calendar";
+@import "ember-modal-dialog/ember-modal-structure";
+@import "ember-modal-dialog/ember-modal-appearance";
+
+
+
 @import "_styled";
 
 
@@ -9,6 +26,7 @@
   color: $primary;
   font-size: 14px;
   -webkit-appearance: none;
+  text-decoration: none;
 }
 
 h1 {
@@ -89,7 +107,6 @@ h1 {
   .notification-container {
     width: 100%;
     height: 116px;
-    margin-top: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,6 +225,10 @@ h1 {
         flex-wrap: wrap;
         padding-top: 20px;
       }
+
+      .description {
+        width: 144px;
+      }
     }
   }
 
@@ -255,7 +276,6 @@ h1 {
   }
 
   .experience-content {
-    margin-top: 60px;
     margin-bottom: 100px;
 
     section {
@@ -304,9 +324,10 @@ h1 {
           justify-content: space-between;
 
           .location {
-            color: $secondary;;
+            color: $secondary;
             font-size: 16px;
             font-weight: 500;
+            width: 200px;
           }
 
           .time-until-event-container {
@@ -481,9 +502,66 @@ h1 {
 
 
 }
+
+.my-experiences {
+  .my-experience-header-bar {
+    width: 100vw;
+    height: 72px;
+    background-color: white;
+    color: $primary;
+    position: fixed;
+    box-shadow: $shadow-down;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 100;
+
+    h1 {
+      font-size: 30px;
+      color: $primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .content {
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    section {
+      box-shadow: $shadow-down;
+      width: 100vw;
+
+      h2 {
+        padding: 20px;
+        font-weight: $medium;
+        font-size: 20px;
+      }
+    }
+
+    #past {
+      h2 {
+        opacity: none;
+      }
+
+      opacity: 0.5;
+    }
+  }
+}
+
 .reviews-page{
   padding-top: 70px;
   .review-container{
+    padding: 20px;
+  }
+}
+
+.conversation-page{
+  padding-top: 70px;
+  .conversation-container{
     padding: 20px;
   }
 }

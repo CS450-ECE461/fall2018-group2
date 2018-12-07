@@ -1,13 +1,13 @@
-{{#link-to "experience" experience.id}}
-  <div class="my-experience">
-    <div class="image-container"></div>
-    <div class="details">
-      <span class="experience-status">Coming Up</span>
-      <span class="experience-tag">TAG</span>
-      <span class="experience-title">{{experience.title}}</span>
-      <span class="experience-location">{{experience.address.city}}, {{experience.address.state}}</span>
-      <span class="experience-date">November 16, 2018</span>
-      <span class="experience-split-payment">Split Payment ${{experience.price}}</span>
+{{#link-to "experience" experience.id}}    
+    <div class="my-experience-container">
+      <div class="image-container"></div>
+      <div class="details">
+        <span class="experience-date">November 16</span>
+        <span class="experience-time">2:00pm - 3:00pm</span>
+        <span class="experience-tag">TAG</span>
+        <span class="experience-title">{{experience.title}}</span>
+        <span class="experience-location">{{experience.address.city}}, {{experience.address.state}}</span>
+        <span class="experience-cost">${{experience.price}} Per person</span>
+      </div>
     </div>
-  </div>
 {{/link-to}}

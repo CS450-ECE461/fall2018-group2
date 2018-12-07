@@ -1,0 +1,73 @@
+// route: conversation-message
+@import 'theme';
+
+.conversation-list-item {
+
+  .header{
+    height:62px;
+
+    .avatar{
+      float: left;
+      border-radius: 50%;
+      height:50px;
+      width:50px;
+
+    }
+    .user-name{
+      color: $primary;
+      font-size: 16px;
+      font-weight: bold;
+
+      margin-left:5px;
+      margin-top:20px;
+      float: left;
+    }
+    .time{
+      font-size: 12px;
+      font-weight: $medium;
+      color: black;
+      opacity: 0.25;
+      float: right;
+      margin-top:20px;
+    }
+
+
+  }
+
+  .message{
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: $normal;
+    color: $secondary;
+    padding-bottom: 5px;
+  }
+
+  .date-container{
+    display: flex;
+    justify-content:flex-end;
+    padding-bottom: 10px;
+    .date{
+      font-size: 12px;
+      font-weight: $medium;
+      color: black;
+      opacity: 0.25;
+      float: right;
+    }
+
+  }
+
+  .custom-border {
+    width: 100vw;
+    height: 1px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    background-color: rgba(0, 0, 0, 0.089);
+  }
+
+}
+
+

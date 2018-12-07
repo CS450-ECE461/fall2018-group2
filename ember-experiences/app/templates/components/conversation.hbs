@@ -1,0 +1,14 @@
+
+<div class="conversation-page">
+  <div class="conversation-title">
+    {{header-bar title="conversation-message" rightIconType="nothing"}}
+  </div>
+  <div class="conversation-container">
+    {{conversation-message name="Jacklyn" conversation=conversation}}
+
+
+    {{#power-calendar as |calendar|}}
+      {{calendar.days}}
+    {{/power-calendar}}
+  </div>
+</div>

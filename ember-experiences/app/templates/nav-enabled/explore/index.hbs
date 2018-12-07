@@ -1,0 +1,43 @@
+<div class="explore">
+  {{search-bar}}
+
+  {{!-- notifications --}}
+  <section class="notification-container">
+    {{notification-box}}
+  </section>
+
+  {{!-- featured experiences --}}
+  <section class="featured-container">
+    <div class="content">
+      <span class="title">Featured</span>
+      <div class="featured-listing-container">
+        {{featured-listing model=model.experiences}}
+      </div>
+    </div>
+  </section>
+
+  {{!-- recommended experience --}}
+  <section class="suggested-container">
+    <div class="content">
+      <span class="title">Hi Seth, we think you'll really like this!</span>
+      {{recommended-experience experience=model.recommended}}
+    </div>
+  </section>
+
+  {{!-- local experiences grid --}}
+  <section class="list-container">
+    <div class="content">
+      <span class="title">Indianapolis, IN</span>
+      <div class="list">
+        {{#each model.experiences as |experience|}}
+          {{xp-list-item experience=experience}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class="become-host-container">
+    <span class="become-host-title">Don’t See What You’re Looking For?</span>
+    <span class="become-host-details">Become a host and fill that space that may not exist yet!</span>
+  </section>
+</div>

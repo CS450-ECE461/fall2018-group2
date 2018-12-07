@@ -14,5 +14,9 @@ module.exports = {
       format: 'dev',
       immediate: true
     }
-  }
+  },
+
+  statics: [
+    '../public_html'
+  ]
 };
