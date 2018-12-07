@@ -58,13 +58,13 @@ module.exports = Seed.extend ({
   model () {
     return {
       users: [
-        {firstName: 'Ali', lastName: 'Albert', roles: ['host', 'visitor']},
-        {firstName: 'Zoe', lastName: 'Ziran', roles: ['admin']},
-        {firstName: 'Mateus', lastName: 'Jose', roles: ['admin', 'host', 'visitor']},
-        {firstName: 'Seth', lastName: 'Fuller', roles: ['admin', 'host', 'visitor']},
-        {firstName: 'Leo', lastName: 'Neto', roles: ['admin, visitor']},
-        {firstName: 'Zach', lastName: 'Balda', roles: ['admin', 'visitor']},
-        {firstName: 'Jose', lastName: 'Cortez', roles: ['admin, visitor']}
+        {first_name: 'Ali', last_name: 'Albert', roles: ['host', 'visitor']},
+        {first_name: 'Zoe', last_name: 'Ziran', roles: ['admin']},
+        {first_name: 'Mateus', last_name: 'Jose', roles: ['admin', 'host', 'visitor']},
+        {first_name: 'Seth', last_name: 'Fuller', roles: ['admin', 'host', 'visitor']},
+        {first_name: 'Leo', last_name: 'Neto', roles: ['admin, visitor']},
+        {first_name: 'Zach', last_name: 'Balda', roles: ['admin', 'visitor']},
+        {first_name: 'Jose', last_name: 'Cortez', roles: ['admin, visitor']}
       ],
 
       native: [
@@ -80,9 +80,9 @@ module.exports = Seed.extend ({
       accounts: dab.map (dab.get ('users'), ((user) => {
         return {
           _id: user._id,
-          username: `${user.firstName}${user.lastName}`.toLowerCase(),
+          username: `${user.first_name}${user.last_name}`.toLowerCase(),
           password: `freecandy`,
-          email: `${user.firstName}.${user.lastName}@experiences.com`.toLowerCase(),
+          email: `${user.first_name}.${user.last_name}@experiences.com`.toLowerCase(),
           scope: ['gatekeeper.account.create']
         }
       })),

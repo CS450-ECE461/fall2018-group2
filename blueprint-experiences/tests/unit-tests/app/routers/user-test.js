@@ -20,8 +20,8 @@ describe ('app | routers | user', function () {
 
       it ('should create a user profile', function () {
         const user = {
-          firstName: "John",
-          lastName: "Zoom",
+          first_name: "John",
+          last_name: "Zoom",
           role: ['admin']
         };
 
