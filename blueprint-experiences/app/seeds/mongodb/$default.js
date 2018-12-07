@@ -2,6 +2,29 @@ const dab = require ('@onehilltech/dab');
 const {Seed} = require ('@onehilltech/blueprint-mongodb');
 const faker = require('faker');
 
+const randomTitles = ['Cinderella Ride',
+                'Explore Room Class',
+                'Anonymous Storytelling',
+                'Software Engineering Hackathon',
+                'CSS for Dummies',
+                'Segue With Me',
+                'The Love Reunion VII',
+                'Who Took The Rabbit?',
+                'Cash Me Out Sight',
+                'Pun Tuation',
+                'Jungle Rodeo',
+                'Bleu Cheese Competition',
+                'The Klimber',
+                'Soup Sunday',
+                'Explore The Citadel',
+                'Indy 11 Soccer',
+                'The Infantry',
+                'Time Run',
+                'A Day of Titans',
+                'Waterfall Jump Skate',
+                'Free Candy',
+];
+
 module.exports = Seed.extend ({
   model () {
     return {
@@ -56,22 +79,6 @@ module.exports = Seed.extend ({
 
       experiences: dab.concat (
 
-        dab.times(3, function () {
-          return {
-            host: dab.ref('users.0'),
-            address: {
-              street: faker.address.streetAddress(),
-              city: faker.address.city(),
-              state: faker.address.state(),
-              postalCode: faker.address.zipCode(),
-              country: faker.address.country()
-            },
-            description: faker.lorem.paragraph(),
-            title: faker.lorem.words(),
-            price: faker.commerce.price()
-          }
-        }),
-
         dab.times(5, function (index) {
           return {
             host: dab.ref('users.2'),
@@ -82,13 +89,29 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: "United States"
             },
-            description: faker.lorem.paragraph(),
-            title: faker.lorem.words(),
+            description: faker.random.words(25),
+            title: randomTitles[index],
             price: faker.commerce.price()/index
           }
         }),
 
-        dab.times(2, function () {
+        dab.times(1, function (index) {
+          return {
+            host: dab.ref('users.0'),
+            address: {
+              street: faker.address.streetAddress(),
+              city: faker.address.city(),
+              state: faker.address.state(),
+              postalCode: faker.address.zipCode(),
+              country: faker.address.country()
+            },
+            description: faker.random.words(25),
+            title: randomTitles[index+5],
+            price: faker.commerce.price()
+          }
+        }),
+
+        dab.times(1, function (index) {
           return {
             host: dab.ref('users.3'),
             address: {
@@ -98,8 +121,8 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: faker.address.country()
             },
-            description: faker.lorem.paragraph(),
-            title: faker.lorem.words()
+            description: faker.random.words(25),
+            title: randomTitles[index+6]
           }
         }),
 
@@ -113,8 +136,8 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: faker.address.country()
             },
-            description: faker.lorem.paragraph(),
-            title: faker.lorem.words(),
+            description: faker.random.word(30),
+            title: randomTitles[index],
             price: faker.commerce.price()/index
           }
         })
@@ -162,19 +185,19 @@ module.exports = Seed.extend ({
       reviews: dab.concat(
 
         dab.times(3, function (i) {
-          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.${i}`), reviewer: dab.ref(`users.${i}`)}
+          return { rating: i, review: faker.random.words(5), experience: dab.ref(`experiences.${i}`), reviewer: dab.ref(`users.${i}`)}
         }),
 
         dab.times(3, function (i) {
-          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.3`), reviewer: dab.ref(`users.${i}`)}
+          return { rating: i, review: faker.random.words(5), experience: dab.ref(`experiences.3`), reviewer: dab.ref(`users.${i}`)}
         }),
 
         dab.times(3, function (i) {
-          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.4`), reviewer: dab.ref(`users.${i}`)}
+          return { rating: i, review: faker.random.words(5), experience: dab.ref(`experiences.4`), reviewer: dab.ref(`users.${i}`)}
         }),
 
         dab.times(5, function (i) {
-          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.6`), reviewer: dab.ref(`users.${i}`)}
+          return { rating: i, review: faker.random.words(5), experience: dab.ref(`experiences.6`), reviewer: dab.ref(`users.${i}`)}
         }),
       )
     }
