@@ -33,7 +33,7 @@ const experienceImages = [
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149541/ventures/dogs.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149539/ventures/dog-hiking.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149539/ventures/dalmatians.jpg",
-  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/frogger-highway.png",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544189459/ventures/photographer-3672010_640.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/exercise-outdoors.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149541/ventures/bunny-hiking.png",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/hitch-hike.jpg",
@@ -43,15 +43,15 @@ const experienceImages = [
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/home-dinner.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/tetris.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/human_tetris.jpg",
-  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149536/ventures/turtle.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149536/ventures/yoha-again.jpg",
-  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149535/ventures/yoga-class.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149534/ventures/meditate.jpg",
-  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/jump-rope.jpg",
-  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/segues.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/yoga-stretch.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/tetris.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/segues.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/jump-rope.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149536/ventures/turtle.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/home-dinner.jpg",
-  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/tetris.jpg"
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149535/ventures/yoga-class.jpg"
 ];
 
 module.exports = Seed.extend ({
