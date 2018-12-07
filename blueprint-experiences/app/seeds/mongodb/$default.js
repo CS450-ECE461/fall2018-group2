@@ -3,9 +3,9 @@ const {Seed} = require ('@onehilltech/blueprint-mongodb');
 const faker = require('faker');
 
 const randomTitles = ['Cinderella Ride',
-                'Explore Room Class',
-                'Anonymous Storytelling',
-                'Software Engineering Hackathon',
+                'Explore the Room',
+                'The Storyteller',
+                'Hack 4 Science',
                 'CSS for Dummies',
                 'Segue With Me',
                 'The Love Reunion VII',
@@ -13,7 +13,7 @@ const randomTitles = ['Cinderella Ride',
                 'Cash Me Out Sight',
                 'Pun Tuation',
                 'Jungle Rodeo',
-                'Bleu Cheese Competition',
+                'Bleu Competition',
                 'The Klimber',
                 'Soup Sunday',
                 'Explore The Citadel',
@@ -22,7 +22,10 @@ const randomTitles = ['Cinderella Ride',
                 'Time Run',
                 'A Day of Titans',
                 'Waterfall Jump Skate',
-                'Free Candy'];
+                'Free Candy',
+                'Water Skating',
+                'Motor Sliding',
+];
 
 const experienceImages = [
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149540/ventures/cooking-class.jpg",
