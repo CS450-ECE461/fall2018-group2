@@ -4,21 +4,20 @@
       <div class="my-experience-header-bar">
         <h1>My Experiences</h1>
       </div>
-      
+
       <div class="content">
+        <section id="present">
+          <h2>Most Recent</h2>
+          {{my-experience-container}}
+        </section>
 
-      <section id="present">
-        <h2>Most Recent</h2>
-        {{my-experience-container}}
-      </section>
-
-      <section id="past">
-        <h2>Past</h2>
-        {{my-experience-container}}
-        {{my-experience-container}}
-        {{my-experience-container}}
-      </section>
+        <section id="past">
+          <h2>Past</h2>
+          {{my-experience-container}}
+          {{my-experience-container}}
+          {{my-experience-container}}
+        </section>
+      </div>
     </div>
   {{/swiper-slide}}
-
 {{/swiper-container}}

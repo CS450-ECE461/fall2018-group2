@@ -13,7 +13,9 @@ Router.map(function() {
     this.route('experiences', function() {
       this.route('favorites');
     });
-    this.route('explore');
+    this.route('explore', function() {
+      this.route('search');
+    });
     this.route('profile');
   });
   this.route('experience', { path: '/experience/:id' }, function() {
