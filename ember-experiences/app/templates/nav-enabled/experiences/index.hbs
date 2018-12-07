@@ -1,13 +1,24 @@
-<section class="my-experience-page">
-  <h1 class="my-experience-page-title">My Experiences</h1>
+{{#swiper-container options=myOptions events=(hash sliderMove=(action "myClickHandler"))}}
+  {{#swiper-slide}}
+    <div class="my-experiences">
+      <div class="my-experience-header-bar">
+        <h1>My Experiences</h1>
+      </div>
+      
+      <div class="content">
 
+      <section id="present">
+        <h2>Most Recent</h2>
+        {{my-experience-container}}
+      </section>
 
+      <section id="past">
+        <h2>Past</h2>
+        {{my-experience-container}}
+        {{my-experience-container}}
+        {{my-experience-container}}
+      </section>
+    </div>
+  {{/swiper-slide}}
 
-
-
-  {{my-experience-container}}
-  {{my-experience-container}}
-  {{my-experience-container}}
-  {{my-experience-container}}
-  {{my-experience-container}}
-</section>
+{{/swiper-container}}

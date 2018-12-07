@@ -22,7 +22,6 @@ Router.map(function() {
     this.route('conversation');
     this.route('reviews');
   });
-  this.route('experiences');
 });
 
 export default Router;
