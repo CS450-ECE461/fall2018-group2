@@ -2,6 +2,32 @@ const dab = require ('@onehilltech/dab');
 const {Seed} = require ('@onehilltech/blueprint-mongodb');
 const faker = require('faker');
 
+const randomTitles = ['Cinderella Ride',
+  'Explore the Room',
+  'The Storyteller',
+  'Hack 4 Science',
+  'CSS for Dummies',
+  'Segue With Me',
+  'The Love Reunion VII',
+  'Who Took The Rabbit?',
+  'Cash Me Out Sight',
+  'Pun Tuation',
+  'Jungle Rodeo',
+  'Bleu Competition',
+  'The Klimber',
+  'Soup Sunday',
+  'Explore The Citadel',
+  'Indy 11 Soccer',
+  'The Infantry',
+  'Time Run',
+  'A Day of Titans',
+  'Waterfall Jump Skate',
+  'Free Candy',
+  'Water Skating',
+  'Motor Sliding',
+];
+
+
 const experienceImages = [
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149540/ventures/cooking-class.jpg",
   "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149541/ventures/dogs.jpg",
@@ -94,7 +120,7 @@ module.exports = Seed.extend ({
             },
             image: experienceImages[index],
             description: faker.lorem.paragraph(),
-            title: faker.lorem.words(),
+            title: randomTitles[index],
             price: faker.commerce.price()
           }
         }),
@@ -111,7 +137,7 @@ module.exports = Seed.extend ({
             },
             image: experienceImages[index],
             description: faker.lorem.paragraph(),
-            title: faker.lorem.words(),
+            title: randomTitles[index+3],
             price: faker.commerce.price()/index
           }
         }),
@@ -128,7 +154,7 @@ module.exports = Seed.extend ({
             },
             image: experienceImages[index+5],
             description: faker.lorem.paragraph(),
-            title: faker.lorem.words()
+            title: randomTitles[index+5]
           }
         }),
 
@@ -144,7 +170,7 @@ module.exports = Seed.extend ({
             },
             image: experienceImages[index+7],
             description: faker.lorem.paragraph(),
-            title: faker.lorem.words(),
+            title: randomTitles[index],
             price: faker.commerce.price()*(index)
           }
         })
