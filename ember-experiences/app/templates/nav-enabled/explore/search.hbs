@@ -1,1 +1,9 @@
-{{outlet}}
+<section class="list-container">
+  <div class="content">
+    <div class="list">
+      {{#each model.experiences as |experience|}}
+        {{xp-list-item experience=experience}}
+      {{/each}}
+    </div>
+  </div>
+</section>
