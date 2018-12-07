@@ -16,6 +16,8 @@ const experienceSchema = new Schema ({
 
   address: addressSchema,
 
+  image: { type: String, required: false},
+
   title: { type: String, required: true, trim: true },
 
   description: { type: String, required: true, trim: true },
