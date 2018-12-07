@@ -228,19 +228,19 @@ module.exports = Seed.extend ({
       reviews: dab.concat(
 
         dab.times(3, function (i) {
-          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.${i}`), reviewer: dab.ref(`users.${i}`)}
+          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.${i}`), user: dab.ref(`users.${i}`)}
         }),
 
         dab.times(3, function (i) {
-          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.3`), reviewer: dab.ref(`users.${i}`)}
+          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.3`), user: dab.ref(`users.${i}`)}
         }),
 
         dab.times(3, function (i) {
-          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.4`), reviewer: dab.ref(`users.${i}`)}
+          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.4`), user: dab.ref(`users.${i}`)}
         }),
 
         dab.times(5, function (i) {
-          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.6`), reviewer: dab.ref(`users.${i}`)}
+          return { rating: i, review: faker.lorem.words(), experience: dab.ref(`experiences.6`), user: dab.ref(`users.${i}`)}
         }),
       )
     }
