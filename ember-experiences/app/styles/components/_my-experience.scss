@@ -1,60 +1,51 @@
 // route: my-experience
 
-.my-experience-page{
+.my-experience-container {
+  padding: 10px;
+  display: flex;
 
-  .my-experience-page-title{
-    font-size: 30px;
-    padding: 10px;
+  .image-container {
+    background-color: $primary;
+    width: 145px;
+    height: 145px;
+    border-radius: 5px;
   }
-  .my-experience {
-    //margin-right: 7px;
-    padding: 10px;
-    display: flex;
 
-
-    .image-container {
-      background-color: $primary;
-      width: 145px;
-      height: 145px;
-      border-radius: 5px;
-    }
-
-    .details {
-      padding: 7px;
+  .details {
+    padding: 7px;
+    display: block;
+    .experience-status {
       display: block;
-      .experience-status {
-        display: block;
-      }
-      .experience-tag {
-        font-weight: bold;
-        color:gray;
-        display: block;
-        padding-top: 14px;
-      }
-      .experience-title {
-        font-weight: bold;
-        display: block;
-        padding-top: 5px;
-      }
-      .experience-location {
-        font-weight: bold;
-        color:black;
-        display: block;
-        padding-top: 10px;
-      }
-      .experience-date {
-        font-weight: bold;
-        color:lightgray;
-        display: block;
-        padding-top: 7px;
-
-      }
-      .experience-split-payment {
-        font-weight: bold;
-        color:lightgray;
-        display: block;
-      }
+    }
+    .experience-tag {
+      font-weight: bold;
+      color:gray;
+      display: block;
+      padding-top: 14px;
+    }
+    .experience-title {
+      font-weight: bold;
+      display: block;
+      padding-top: 5px;
+    }
+    .experience-location {
+      font-weight: bold;
+      color:black;
+      display: block;
+      padding-top: 10px;
+    }
+    .experience-date {
+      font-weight: bold;
+      color:lightgray;
+      display: block;
+      padding-top: 7px;
 
     }
+    .experience-split-payment {
+      font-weight: bold;
+      color:lightgray;
+      display: block;
+    }
+
   }
 }

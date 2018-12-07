@@ -503,6 +503,46 @@ h1 {
 
 }
 
+.my-experiences {
+  .my-experience-header-bar {
+    width: 100vw;
+    height: 72px;
+    background-color: white;
+    color: $primary;
+    position: fixed;
+    box-shadow: $shadow-down;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    h1 {
+      font-size: 30px;
+      color: $primary;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .content {
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    section {
+      box-shadow: $shadow-down;
+      width: 100vw;
+
+      h2 {
+        padding: 20px;
+        font-weight: $medium;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 .reviews-page{
   padding-top: 70px;
   .review-container{
