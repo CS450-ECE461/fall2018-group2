@@ -22,7 +22,32 @@ const randomTitles = ['Cinderella Ride',
                 'Time Run',
                 'A Day of Titans',
                 'Waterfall Jump Skate',
-                'Free Candy',
+                'Free Candy'];
+
+const experienceImages = [
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149540/ventures/cooking-class.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149541/ventures/dogs.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149539/ventures/dog-hiking.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149539/ventures/dalmatians.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/frogger-highway.png",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/exercise-outdoors.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149541/ventures/bunny-hiking.png",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/hitch-hike.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/jump-rope.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/segues.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/yoga-stretch.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/home-dinner.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/tetris.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/human_tetris.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149536/ventures/turtle.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149536/ventures/yoha-again.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149535/ventures/yoga-class.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149534/ventures/meditate.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/jump-rope.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/segues.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/yoga-stretch.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/home-dinner.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/tetris.jpg"
 ];
 
 module.exports = Seed.extend ({
@@ -89,13 +114,14 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: "United States"
             },
+            image: experienceImages[index],
             description: faker.random.words(25),
             title: randomTitles[index],
             price: faker.commerce.price()/index
           }
         }),
 
-        dab.times(1, function (index) {
+        dab.times(2, function (index) {
           return {
             host: dab.ref('users.0'),
             address: {
@@ -105,13 +131,14 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: faker.address.country()
             },
+            image: experienceImages[index],
             description: faker.random.words(25),
             title: randomTitles[index+5],
             price: faker.commerce.price()
           }
         }),
 
-        dab.times(1, function (index) {
+        dab.times(2, function (index) {
           return {
             host: dab.ref('users.3'),
             address: {
@@ -121,6 +148,7 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: faker.address.country()
             },
+            image: experienceImages[index+5],
             description: faker.random.words(25),
             title: randomTitles[index+6]
           }
@@ -136,11 +164,13 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: faker.address.country()
             },
+            image: experienceImages[index],
             description: faker.random.word(30),
-            title: randomTitles[index],
-            price: faker.commerce.price()/index
+            title: randomTitles[index+7],
+            price: faker.commerce.price() * index
           }
         })
+
       ),
 
       favorites: dab.concat(
