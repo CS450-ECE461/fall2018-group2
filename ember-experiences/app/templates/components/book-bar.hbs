@@ -1,9 +1,11 @@
 <div class="book-bar">
   <div class="price">
-    <span id="price-num">${{price}}</span>
+    <span id="price-num">${{experience.price}}</span>
     Per person
   </div>
-  <div id="book-button">
-    BOOK
-  </div>
+  {{#link-to "nav-enabled.experiences"}}
+    <div id="book-button">
+      BOOK
+    </div>
+  {{/link-to}}
 </div>

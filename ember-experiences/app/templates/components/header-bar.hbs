@@ -9,9 +9,11 @@
     </a>
   </div>
 
-  <span id="header-bar-title">{{title}}</span>
+  <span id="header-bar-title">{{experience.title}}</span>
   {{#if showLike}}
-    <img id="right-icon" src="/assets/icons/Saved-Unselected.svg" alt="Left Arrow">
+    {{#link-to "nav-enabled.experiences.favorites"}}
+      <img id="right-icon" src="/assets/icons/Saved-Unselected.svg" alt="Favorite">
+    {{/link-to}}
   {{/if}}
   {{#if showExit}}
     <img id="right-icon" src="/assets/icons/Close.svg" alt="Left Arrow">
