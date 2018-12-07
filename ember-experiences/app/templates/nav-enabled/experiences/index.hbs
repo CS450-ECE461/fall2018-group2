@@ -10,15 +10,15 @@
       <div class="content">
         <section id="present">
           <h2>Most Recent</h2>
-          {{#each model as |experience|}}
-            {{my-experience-container experience=experience}}
+          {{#each model.bookings as |booking|}}
+            {{my-experience-container experience=booking.experience}}
           {{/each}}
         </section>
 
         <section id="past">
           <h2>Past</h2>
-          {{#each model as |experience|}}
-            {{my-experience-container experience=experience}}
+          {{#each model.bookings as |booking|}}
+            {{my-experience-container experience=booking.experience}}
           {{/each}}
         </section>
       </div>

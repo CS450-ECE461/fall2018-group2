@@ -1,8 +1,17 @@
 {{#swiper-container options=myOptions events=(hash sliderMove=(action "myClickHandler"))}}
   {{#swiper-slide}}
-    <h1>favorites</h1>
-    {{#each model as |experience|}}
-      {{my-experience-container experience=experience}}
-    {{/each}}
+    <div class="my-experiences">
+      <div class="my-experience-header-bar">
+        <h1>Favorites</h1>
+      </div>
+
+      <div class="content">
+        <section>
+          {{#each model.favorites as |favorite|}}
+            {{my-experience-container experience=favorite.experience}}
+          {{/each}}
+        </section>
+      </div>
+    </div>
   {{/swiper-slide}}
 {{/swiper-container}}

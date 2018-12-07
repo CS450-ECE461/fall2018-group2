@@ -157,6 +157,11 @@ module.exports = Seed.extend ({
           return { user: dab.ref(`users.3`), experience: dab.ref(`experiences.${i}`) }
         }),
 
+        // Zach likes first 5 experiences
+        dab.times(5, function (i) {
+          return { user: dab.ref(`users.5`), experience: dab.ref(`experiences.${i}`) }
+        }),
+
         // Leo likes first 3 experiences
         dab.times(3, function (i) {
           return { user: dab.ref(`users.4`), experience: dab.ref(`experiences.${i}`) }
@@ -181,6 +186,11 @@ module.exports = Seed.extend ({
         // Seth books first 4 experiences
         dab.times(4, function (i) {
           return { user: dab.ref(`users.3`), experience: dab.ref(`experiences.${i}`) }
+        }),
+
+        // Zach books first 4 experiences
+        dab.times(4, function (i) {
+          return { user: dab.ref(`users.5`), experience: dab.ref(`experiences.${i}`) }
         }),
 
         // 5 users book experience #7
