@@ -2,6 +2,32 @@ const dab = require ('@onehilltech/dab');
 const {Seed} = require ('@onehilltech/blueprint-mongodb');
 const faker = require('faker');
 
+const experienceImages = [
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149540/ventures/cooking-class.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149541/ventures/dogs.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149539/ventures/dog-hiking.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149539/ventures/dalmatians.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/frogger-highway.png",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/exercise-outdoors.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149541/ventures/bunny-hiking.png",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/hitch-hike.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/jump-rope.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/segues.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/yoga-stretch.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/home-dinner.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/tetris.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/human_tetris.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149536/ventures/turtle.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149536/ventures/yoha-again.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149535/ventures/yoga-class.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149534/ventures/meditate.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/jump-rope.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149538/ventures/segues.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/yoga-stretch.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/home-dinner.jpg",
+  "https://res.cloudinary.com/ekletik-studios/image/upload/v1544149537/ventures/tetris.jpg"
+];
+
 module.exports = Seed.extend ({
   model () {
     return {
@@ -56,7 +82,7 @@ module.exports = Seed.extend ({
 
       experiences: dab.concat (
 
-        dab.times(3, function () {
+        dab.times(3, function (index) {
           return {
             host: dab.ref('users.0'),
             address: {
@@ -66,6 +92,7 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: faker.address.country()
             },
+            image: experienceImages[index],
             description: faker.lorem.paragraph(),
             title: faker.lorem.words(),
             price: faker.commerce.price()
@@ -82,13 +109,14 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: "United States"
             },
+            image: experienceImages[index],
             description: faker.lorem.paragraph(),
             title: faker.lorem.words(),
             price: faker.commerce.price()/index
           }
         }),
 
-        dab.times(2, function () {
+        dab.times(2, function (index) {
           return {
             host: dab.ref('users.3'),
             address: {
@@ -98,6 +126,7 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: faker.address.country()
             },
+            image: experienceImages[index+5],
             description: faker.lorem.paragraph(),
             title: faker.lorem.words()
           }
@@ -113,9 +142,10 @@ module.exports = Seed.extend ({
               postalCode: faker.address.zipCode(),
               country: faker.address.country()
             },
+            image: experienceImages[index+7],
             description: faker.lorem.paragraph(),
             title: faker.lorem.words(),
-            price: faker.commerce.price()/index
+            price: faker.commerce.price()*(index)
           }
         })
       ),
