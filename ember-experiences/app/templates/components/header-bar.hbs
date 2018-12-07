@@ -1,9 +1,14 @@
 <div class="header-bar">
-  <img
-    id="left-icon" 
-    src="/assets/icons/LeftArrow.svg" 
-    alt="Left Arrow"
-  >
+  <div>
+    <a href='#' {{ action 'back' }}>
+      <img
+        id="left-icon"
+        src="/assets/icons/LeftArrow.svg"
+        alt="Left Arrow"
+      >
+    </a>
+  </div>
+
   <span id="header-bar-title">{{title}}</span>
   {{#if showLike}}
     <img id="right-icon" src="/assets/icons/Saved-Unselected.svg" alt="Left Arrow">
