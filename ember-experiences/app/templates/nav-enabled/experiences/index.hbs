@@ -1,9 +1,11 @@
+<div class="my-experiences">
+  <div class="my-experience-header-bar">
+        <h1>My Experiences</h1>
+  </div>
 {{#swiper-container options=myOptions events=(hash sliderMove=(action "myClickHandler"))}}
   {{#swiper-slide}}
-    <div class="my-experiences">
-      <div class="my-experience-header-bar">
-        <h1>My Experiences</h1>
-      </div>
+    
+      
 
       <div class="content">
         <section id="present">
@@ -20,6 +22,7 @@
           {{/each}}
         </section>
       </div>
-    </div>
+    
   {{/swiper-slide}}
 {{/swiper-container}}
+</div>
