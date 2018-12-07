@@ -9,5 +9,5 @@ export default DS.Model.extend({
   price: DS.attr('number'),
   start: DS.attr('number'),
   end: DS.attr('number'),
-  avatarUrl: DS.attr('string')
+  image: DS.attr('string')
 });
