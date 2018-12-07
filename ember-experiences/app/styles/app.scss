@@ -516,6 +516,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-content: center;
+    z-index: 100;
 
     h1 {
       font-size: 30px;
@@ -539,6 +540,10 @@ h1 {
         font-weight: $medium;
         font-size: 20px;
       }
+    }
+
+    #past {
+      color: grey;
     }
   }
 }

@@ -1,8 +1,9 @@
 // route: my-experience
 
 .my-experience-container {
-  padding: 10px;
   display: flex;
+  padding-left: 20px;
+  padding-bottom: 20px;
 
   .image-container {
     background-color: $primary;
@@ -12,7 +13,7 @@
   }
 
   .details {
-    padding: 7px;
+    padding-left: 7px;
     display: block;
     .experience-status {
       display: block;
@@ -25,25 +26,39 @@
     }
     .experience-title {
       font-weight: bold;
+      font-size: 14px;
       display: block;
       padding-top: 5px;
     }
     .experience-location {
-      font-weight: bold;
-      color:black;
+      font-weight: $medium;
+      color:#000000;
+      opacity: 0.86;
       display: block;
       padding-top: 10px;
     }
     .experience-date {
       font-weight: bold;
-      color:lightgray;
+      font-size: 12px;
+      font-size: $medium;
+      color:#000000;
+      opacity: 0.56;
       display: block;
       padding-top: 7px;
-
     }
-    .experience-split-payment {
-      font-weight: bold;
-      color:lightgray;
+
+    .experience-time {
+      font-weight: $medium;
+      font-size: 12px;
+      color:#000000;
+      opacity: 0.56;
+      display: block;
+    }
+
+    .experience-cost {
+      font-weight: $bold;
+      color:#000000;
+      opacity: 0.56;
       display: block;
     }
 
